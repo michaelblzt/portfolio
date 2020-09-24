@@ -1,0 +1,53 @@
+/* 
+----------	SETUP 
+*/
+
+//@import typographic grid
+@import '../../node_modules/modularscale-sass/stylesheets/modularscale';
+
+// @import Muli from gfonts
+@import url('https://fonts.googleapis.com/css?family=Muli:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+// Create font-face for Martini from Dafont
+@font-face {
+  font-family: 'Martini';
+  src: url('../font/Martini.eot?#iefix') format('embedded-opentype'),  url('../font/Martini.otf')  format('opentype'),
+	     url('../font/Martini.woff') format('woff'), url('../font/Martini.ttf')  format('truetype'), url('../font/Martini.svg#Martini') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+----------	Guide 
+*/
+
+/* 
+ms(-2) - 0.512rem  = 08px
+ms(-1) - 0.64rem   = 10px 
+ms(0) -  1rem      = 16px
+ms(1) -  1.25rem;  = 20px
+ms(2) -  1.563rem  = 25px
+ms(3) -  1.953rem  = 31px
+ms(4) -  2.441rem  = 39px
+ms(5) -  3.052rem  = 48px
+ms(6) -  3.815rem  = 61px
+ms(7) -  4.768rem  = 76px
+ms(8) -  5.96rem   = 95px
+ms(9) -  7.451rem  = 119px
+ms(10) - 9.313rem  = 119px
+ms(11) - 11.642rem = 186px
+*/
+
+
+
+/* 
+----------	Styles 
+*/
+
+// Define the typographic grid (https://github.com/modularscale/modularscale-sass)
+$modularscale: (
+  base: 1rem,
+  ratio: 1.25,
+);
+
+

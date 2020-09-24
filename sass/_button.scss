@@ -1,0 +1,55 @@
+.button{
+	display:inline-block;
+	color: white;
+	margin-top: 1rem;
+	border-radius: 1.563rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.05rem;
+	-webkit-appearance: none;
+	opacity: 1;
+	@include transition;
+	font-size: ms(-2);
+	border: 0;
+	cursor: pointer;
+	text-align:center;
+
+	&:hover{
+		opacity: 0.8;
+	}
+
+	@media #{$phone} {
+		margin: 0 auto;
+		display:block;
+		width:90%;
+	}
+}
+
+.button--small{
+	padding: 1rem 1.25rem;
+
+	@media #{$phone}{
+		padding: 1.25rem 1.563rem;
+	}
+}
+
+.button--margin-bottom{
+	margin: 0 auto 1rem auto !important;
+}
+
+.button--big{
+	padding: 1.25rem 1.563rem;
+}
+
+.button--pink{
+	background-color: #ff4967;
+}
+
+.button--yellow{
+	background-color: $color-yellow;
+	color: $color-black;
+}
+
+.button--black{
+	background-color: $color-black;
+}

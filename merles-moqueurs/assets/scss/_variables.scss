@@ -1,0 +1,92 @@
+/*
+ms(-2) - 0.512rem  = 08px
+ms(-1) - 0.64rem   = 10px 
+ms(0) -  1rem      = 16px
+ms(1) -  1.25rem;  = 20px
+ms(2) -  1.563rem  = 25px
+ms(3) -  1.953rem  = 31px
+ms(4) -  2.441rem  = 39px
+ms(5) -  3.052rem  = 48px
+ms(6) -  3.815rem  = 61px
+ms(7) -  4.768rem  = 76px
+ms(8) -  5.96rem   = 95px
+ms(9) -  7.451rem  = 119px
+ms(10) - 9.313rem  = 119px
+ms(11) - 11.642rem = 186px
+*/
+
+/* 
+----------	media queries 
+*/
+
+$small: "only screen and (max-width : 576px)";
+$medium: "only screen and (max-width : 768px)";
+$large:"only screen and (max-width : 992px)";
+$extra-large:"only screen and (min-width : 1200px)";
+
+/* 
+----------	FONT 
+*/
+
+$m-0: 1rem;
+$m-1: 1.25rem;
+$m-2: 1.563rem;
+$m-3: 1.953rem;
+$m-4: 2.441rem;
+$m-5: 3.052rem;
+$m-6: 3.815rem;
+$m-7: 4.768rem;
+$m-8: 5.96rem;
+$m-9: 7.451rem;
+$m-10: 9.313rem;
+$m-11: 11.642rem;
+$m-12: 14.55rem;
+$m-13: 18.19rem;
+
+
+
+/* 
+----------	FONT 
+*/
+
+// Gestion Font
+$font-stack-body: 'Muli', Helvetica, sans-serif;
+$font-stack-title: 'Martini', 'Muli', Helvetica, sans-serif;
+
+// Font weights
+$veryLight: 100;
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+
+/* 
+----------	COLOR 
+*/
+
+// Gestion color
+$primary-black: #191919;
+$secondary-black: #272727;
+$tertiary-black: #383838;
+
+$primary-grey-light: #DCDCDC;
+$primary-yellow: #FFB917;
+
+
+/* 
+----------	Layout 
+*/
+
+@mixin create-flex-wrap{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@mixin transition {
+	-webkit-transition: all 0.25s ease-in-out; /* Safari */
+	-moz-transition: all 0.25s ease-in-out; /* Firefox */
+	transition: all 0.25s ease-in-out;	
+}

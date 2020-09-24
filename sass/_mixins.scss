@@ -1,0 +1,85 @@
+@mixin underlining-horizontal{
+	background-repeat: repeat-x; // make it horizontal
+	background-position: 0 100%; // change the second value to adjust how far from the top the underline should be
+	background-size: 100% 15px; // change the second value to the desired height of the underline
+}
+
+@mixin underlining--yellow{
+	background-image: -webkit-linear-gradient(left, $color-yellow 0%, $color-yellow 100%);
+	background-image: -o-linear-gradient(left, $color-yellow 0%, $color-yellow 100%);
+	background-image: linear-gradient(to right, $color-yellow 0%, $color-yellow 100%);
+}
+
+@mixin underlining--sand{
+	background-image: -webkit-linear-gradient(left, $color-sand 0%, $color-sand 100%);
+	background-image: -o-linear-gradient(left, $color-sand 0%, $color-sand 100%);
+	background-image: linear-gradient(to right, $color-sand 0%, $color-sand 100%);
+}
+
+@mixin underlining--blue{
+	background-image: -webkit-linear-gradient(left, rgba(208, 228, 244, 0.5) 0%, rgba(208, 228, 244, 0.5) 100%);
+	background-image: -o-linear-gradient(left, rgba(208, 228, 244, 0.5) 0%, rgba(208, 228, 244, 0.5) 100%);
+	background-image: linear-gradient(to right, rgba(208, 228, 244, 0.5) 0%, rgba(208, 228, 244, 0.5) 100%);
+}
+
+@mixin transition {
+	-webkit-transition: all 0.25s ease-in-out; /* Safari */
+	-moz-transition: all 0.25s ease-in-out; /* Firefox */
+	transition: all 0.25s ease-in-out;
+}
+
+@mixin gradient-typography-base{
+	background-clip: text;
+	color: white !important;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+    font-family: 'TTNorms-Bold', Arial;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+// @keyframes reverseGradient{
+// 	0% {background-size: 200% 200%}
+//   	50% {background-size: 300% 300%}
+//   	75% {background-size: 400% 400%}
+//   	100% {background-size: 300% 300%}
+// }
+
+@mixin padding-inside-blocks--xl {
+	padding: 5.96rem 0;
+}
+
+@mixin padding-inside-blocks--lg {
+	padding: 4.768rem 0;
+}
+
+@mixin padding-inside-blocks {
+	padding: 3.815rem 0;
+}
+
+@mixin padding-inside-blocks--xs {
+	padding: 1.953rem 0;
+}
+
+@mixin box-shadow{
+	-webkit-box-shadow: 10px 10px 55px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 10px 10px 55px 0px rgba(0,0,0,0.08);
+	box-shadow: 10px 10px 55px 0px rgba(0,0,0,0.08);
+}
+
+@mixin create-flex-wrap{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@mixin font-8{
+	font-size: 2.441rem; // 39px
+}

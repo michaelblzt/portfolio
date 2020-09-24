@@ -1,0 +1,283 @@
+// Toutes les dépendences scss (font, reset, ... sont installées dans _base.scss)
+@import 'base';
+
+body{
+	background-color: $primary-black;
+	font-family: $font-stack-body;
+	font-size: 1.25rem; // 21px
+	line-height:1.5;
+	color: $primary-grey-light;
+	font-weight: $veryLight;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+
+}
+
+.header-head{
+
+	#logo-merlesMoqueurs{
+		display: block;
+		width: 11.5rem;
+	}
+
+}// .header-head
+
+.nav-link{
+	color: rgba(255, 255, 255, 0.8) !important;
+	font-weight: $regular;
+	@include transition;
+	font-size: ms(0);
+
+	i{
+		margin-right:8px;
+	}
+
+	&:hover, .active, .current-menu-item{
+		color: rgba(255, 255, 255, 1)!important;
+	}
+}
+
+h1{
+	font-family: $font-stack-body;
+	font-weight: $bold;
+	font-size: ms(5);
+}
+
+h2{
+  font-family: $font-stack-title;
+  font-size: ms(5);
+  color: white;
+  margin-bottom: ms(1);
+  line-height: 1.25;
+}
+
+h3{
+	@extend h2;
+	font-size: ms(3);
+  	line-height: 1;
+}
+
+p{
+	margin-bottom:1rem;
+
+	strong{
+		color: white;
+		font-weight: $bold;
+	}
+}
+
+.btn-mm{
+	display: inline-block;
+	background-color: transparent;
+	border: 1px solid $primary-grey-light;
+	padding: $m-1;
+	margin: $m-1 auto;
+	color: white;
+	@include transition;
+	border-radius: 0.5rem;
+
+	&:hover{
+		border: 1px solid $primary-yellow;
+		color: white;
+		text-decoration: none;
+	}
+
+}
+
+
+.mb-4{
+	margin-bottom: $m-4;
+}
+
+.space-section{
+	padding: $m-6;
+
+	@media #{$small} {
+		padding: $m-2;
+	}
+
+}
+
+.mastahead{
+
+	// Gestion des img
+	&__home{
+		background:linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/equipes-mm.jpg);
+		background-size:cover;
+	}
+
+	//Gestion des content
+	&__wrapper{
+		padding: $m-12 0 $m-8 0;
+
+		h1{
+			color: white;
+
+			span{
+				color: $primary-yellow;
+				font-family: $font-stack-title;
+				font-size: ms(7);
+				font-weight: $light;
+			}
+		}
+	} /* .wrapper */
+}/* .mastahead */
+
+.presentation{
+
+	h2{
+		font-family: $font-stack-body;
+		font-weight: $light;
+
+		span{
+			font-family: $font-stack-title;
+			color: $primary-yellow;
+			font-size: ms(6);
+		}
+
+	}
+
+} // /.presentation
+
+.block-menu{
+
+	& > div{
+		article{
+			min-height:265px;
+			padding: $m-2 $m-1;
+			background-color: $tertiary-black;
+			border-radius: 0.5rem;
+			border-top: solid $primary-yellow 1rem;
+			position:relative;
+
+			hr{
+				background-color: rgba(255,255,255,0.2);
+			}
+
+			@media #{$small} {
+				margin-bottom: $m-2;
+			}
+
+			p{
+				font-size: ms(4);
+				font-weight: $bold;
+				color: white;
+			}
+
+		}/* article */
+
+		.short-block{ // for "Plat du jour"
+			@extend article;
+			padding-top: $m-6;
+
+			h3{
+				position:relative;
+				top:-1rem;
+			}
+		}
+	}
+}/* .block-menu */
+
+.block-cuisine{
+	background-color: $secondary-black;
+	border-radius: 1rem;
+	display:block;
+
+	h2{
+		font-size: ms(7);
+
+		&::after{
+			display: block;
+			content: '';
+			width: $m-8;
+			height: 0.5rem;
+			background-color: $primary-yellow;
+			margin-top: $m-2;
+		}
+	}
+}/*  .block-cuisine */
+
+.img-poster{
+	background: url(../img/img-poster.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position:relative;
+	min-height:500px;
+	margin: $m-6 auto;
+	display: block;
+	overflow-y: hidden;
+}
+
+
+
+	h3{
+		margin-bottom: $m-1;
+	}
+
+// Affichage Google Maps
+iframe{
+	border: 0;
+ 	width: 100%;
+ 	height: auto;
+ 	display:block;
+
+}
+
+.navigation-list{
+	display:block;
+	margin-top: $m-1;
+}
+
+
+// Gère le curseur pour le typed.js
+.typed-cursor{
+	opacity: 1;
+	 -webkit-animation: blink 0.8s infinite;
+	-moz-animation: blink 0.8s infinite;
+	-ms-animation: blink 0.8s infinite;
+	-o-animation: blink 0.8s infinite;
+	animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; }	
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+}
+@-ms-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+}
+@-o-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+}

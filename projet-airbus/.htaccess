@@ -1,0 +1,7 @@
+<Files airbus.html>
+AuthUserFile /www/cryptingPass/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Projet Airbus"
+AuthType Basic
+require valid-user
+</Files>

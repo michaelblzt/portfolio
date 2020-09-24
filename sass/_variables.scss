@@ -1,0 +1,67 @@
+// Media Queries
+$tablet: "only screen and (max-width : 1024px)";
+$phone: "only screen and (max-width : 767px)";
+$retina:"(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$bigScreens:"only screen and (min-width : 1600px)";
+$bigHeightScreens:"only screen and (min-height : 900px)";
+
+// Color
+$color-yellow: #FFCF56;
+$color-black: rgba(25, 25, 25, 1);
+$color-grey-light: #f2eceb;
+$color-grey-medium: #a2a2a2;
+$color-grey-dark: rgba(107, 107, 107, 1);
+$color-sand: #FAF7F1;
+$blue-light: rgba(208, 228, 244, 1);
+$color-blue: #ABCFED;
+
+$pechavy-color: #4E8F36;
+$carl-color: #D0E4F4;
+$naturamind-color: #FDD860;
+$kreasound-color: #506EFB;
+$flexig-color: #5CBC5A;
+$teleshopping-color: #EEF4FF;
+$novotel-color: #B4C8E1;
+$bartoux-color: #EE6EAB;
+$pmu-color: #E2E2E2;
+
+.transition{
+    -webkit-transition: all 0.25s ease-in-out; /* Safari */
+    transition:  all 0.25s ease-in-out;
+}
+
+p, h1, h2, h3, a, span, strong, em, i{
+
+    &::-moz-selection{
+        color: $color-yellow !important;
+        background:#FFFFFF !important ;
+        padding:1rem;
+     }
+     
+     &::selection{
+        color: $color-yellow !important;
+        background:#FFFFFF !important ;
+        padding:1rem;
+     }
+
+} 
+
+.gradient-red-1{background: linear-gradient(to right, #ff5858, #f857a6);}
+.gradient-yellow-1{background: linear-gradient(to right, #fffC00, #ffffff);}
+.gradient-blue-1{background: linear-gradient(to right, #1c92d2, #f2fcfe);}
+.gradient-green-1{background: linear-gradient(to right, #a8ff78, #78ffd6);}
+
+// Clearfix
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clearfix {display: block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+
+

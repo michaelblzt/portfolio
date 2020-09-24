@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'TTNorms-ThinItalic';
+  src: url('TTNorms-ThinItalic.eot?#iefix') format('embedded-opentype'),  url('TTNorms-ThinItalic.otf')  format('opentype'),
+	     url('TTNorms-ThinItalic.woff') format('woff'), url('TTNorms-ThinItalic.ttf')  format('truetype'), url('TTNorms-ThinItalic.svg#TTNorms-ThinItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
