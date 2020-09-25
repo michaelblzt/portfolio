@@ -16,9 +16,10 @@ header{
 		position:relative;
 		z-index:9999;
 
-		#logo-michaelblaizot{
+		.logo-michaelblaizot{
 			fill :white;
 			width:4.75rem;
+			display:block;
 			
 			.st0{
 				fill:#FFFFFF;
