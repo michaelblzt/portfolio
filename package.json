@@ -1,32 +1,33 @@
 {
-  "name": "website",
+  "name": "portfolio2018",
   "version": "1.0.0",
-  "description": "Portfolio 2018",
-  "main": "gulpfile.js",
+  "description": "Personal portfolio",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/index.html --port 8080",
+    "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.html --out-dir ./dist/",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
   },
-  "author": "Michaël Blaizot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelblzt/portfolio.git"
+  },
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.2.6",
-    "breakpoint-sass": "^2.7.1",
-    "gulp": "^4.0.2",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^3.2.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-watch-sass": "^1.4.1",
-    "mathsass": "^0.10.1",
-    "modularscale-sass": "^3.0.5",
-    "sass-loader": "^6.0.6"
+  "bugs": {
+    "url": "https://github.com/michaelblzt/portfolio/issues"
   },
+  "homepage": "https://github.com/michaelblzt/portfolio#readme",
   "dependencies": {
-    "aos": "^2.3.0",
+    "eslint": "^7.9.0",
+    "gulp": "^4.0.2",
     "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-sass": "^1.4.1",
+    "modularscale-sass": "^3.0.10",
     "nprogress": "^0.2.0",
-    "sass": "^1.22.7",
-    "susy": "^3.0.5"
+    "parcel-bundler": "^1.12.4"
   }
 }
