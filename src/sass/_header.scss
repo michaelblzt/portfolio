@@ -19,14 +19,14 @@ header{
 		.logo-michaelblaizot{
 			fill :white;
 			width:4.75rem;
-			display:block;
-			
+
 			.st0{
 				fill:#FFFFFF;
+				display: block;
 				@include transition;
 			}
 			.st1{
-				fill:#333333;
+				fill: #ffffff;
 				@include transition;
 			}
 
