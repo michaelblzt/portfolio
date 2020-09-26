@@ -11,7 +11,8 @@ header{
 
 	
 	.logo-container{
-		@include transition;
+		@include transitio
+		display: block;
 		padding: 1rem 1.953rem;
 		position:relative;
 		z-index:9999;

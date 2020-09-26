@@ -890,11 +890,6 @@ body{
 //	PROJETS
 // ----------------------------------------------------------------------------------------
 
-#pmu-projet{
-	img{
-		//@include box-shadow-none; 
-	}
-}
 .projets__wrapper{
 
 	.container--lg{
@@ -984,10 +979,6 @@ body{
 	.projets__figure{
 		max-width:100%;
 		margin: 3.052rem auto;
-
-		img{
-			//@include box-shadow-custom;
-		}
 		
 
 		figcaption{
