@@ -177,11 +177,11 @@ html[xmlns] .clearfix {
   font-style: normal;
 }
 
-.fontBold, h1 strong, h3, .wrapper-title h2, .wrapper-title p, #code-block .code-block__container .code-block__element .code-block__txt h3, #services .list-services-container .title, .projets__wrapper .projets__paragraphe .projets__title {
+.fontBold, h1 strong, h3, .wrapper-title h2, .wrapper-title p, #code-block .code-block__container .code-block__element .code-block__txt h3, #services .list-services-container .title, .projets__wrapper .projets__paragraphe .projets__title, .projets__wrapper .projets__paragraphe h4 {
   font-family: 'TTNorms-Bold', Arial, sans-serif;
 }
 
-.fontRegular, h2, body, #code-block .code-block__container .code-block__element .code-block__txt p, #services .list-services-container li, #wrapper__about .mastahead__about p em {
+.fontRegular, h2, h4, body, #code-block .code-block__container .code-block__element .code-block__txt p, #services .list-services-container li, #wrapper__about .mastahead__about p em {
   font-family: 'TTNorms-Regular', Arial, sans-serif;
 }
 
@@ -199,7 +199,7 @@ html[xmlns] .clearfix {
 
 h1 {
   color: #191919;
-  font-size: 3.05176rem;
+  font-size: 3.375rem;
 }
 
 h1 strong {
@@ -208,30 +208,35 @@ h1 strong {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 1.95312rem;
+    font-size: 3.375rem;
   }
 }
 
 @media only screen and (max-width: 767px) {
   h1 {
-    font-size: 1.5625rem;
+    font-size: 2.25rem;
     text-align: center;
     max-width: 100%;
   }
 }
 
 h2 {
-  font-size: 2.44141rem;
+  font-size: 2.25rem;
   color: #a2a2a2;
 }
 
 h3 {
-  font-size: 1.95312rem;
+  font-size: 2.25rem;
   color: #191919;
 }
 
 h3 a {
   text-decoration: none;
+  color: #191919;
+}
+
+h4 {
+  font-size: 2.25rem;
   color: #191919;
 }
 
@@ -245,24 +250,25 @@ h3 a {
 .wrapper-title h2 {
   color: rgba(0, 0, 0, 0.05);
   text-align: center;
-  font-size: 5.96046rem;
+  font-size: 5.0625rem;
   top: 0;
   width: 100%;
 }
 
 @media only screen and (max-width: 1024px) {
   .wrapper-title h2 {
-    font-size: 2.44141rem;
+    font-size: 5.0625rem;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .wrapper-title h2 {
-    font-size: 1.95312rem;
+    font-size: 3.375rem;
   }
 }
 
 .wrapper-title p {
+  font-size: 1rem;
   color: #191919;
   text-align: center;
   position: relative;
@@ -306,8 +312,12 @@ h3 a {
   }
 }
 
+p {
+  font-size: 1.5rem;
+}
+
 .emoji-type {
-  font-size: 3.05176rem;
+  font-size: 7.59375rem;
 }
 
 .transition {
@@ -481,7 +491,7 @@ header .nav-site--normal ul li :last-child {
 header .nav-site--normal ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
   /* Firefox */
@@ -674,7 +684,7 @@ header .nav-site--modif input ~ nav > ul > li > a {
   color: #a2a2a2;
   font-family: 'TTNorms-Regular', Arial, sans-serif;
   display: block;
-  font-size: 4.76837rem;
+  font-size: 17.08594rem;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
   /* Firefox */
@@ -860,7 +870,7 @@ footer a:hover {
   /* Safari */
   /* Firefox */
   transition: all 0.25s ease-in-out;
-  font-size: 0.64rem;
+  font-size: 0.66667rem;
   border: 0;
   cursor: pointer;
   text-align: center;
@@ -910,6 +920,7 @@ footer a:hover {
 }
 
 body {
+  font-size: 1rem;
   line-height: 1.5;
   color: #6b6b6b;
   background-color: white;
@@ -1052,7 +1063,7 @@ body {
 }
 
 .content-block__container .txt-container small {
-  font-size: 0.64rem;
+  font-size: 0.44444rem;
   color: #a2a2a2;
 }
 
@@ -1149,7 +1160,7 @@ body {
 }
 
 .popup-projets .popup-projets__pLeft p {
-  font-size: 1.5625rem;
+  font-size: 2.25rem;
   color: #191919;
 }
 
@@ -1275,6 +1286,7 @@ body {
 }
 
 .link--light, .projet__navigation .projet__navigation__inside .projet-navigation__link {
+  font-size: 1rem;
   color: #191919;
   text-decoration: none;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1385,17 +1397,16 @@ body {
   text-align: center;
   color: #f2eceb;
   margin-top: 1rem;
-  font-size: 2.44141rem;
+  font-size: 5.0625rem;
 }
 
 .design-block .projets-voir .link--light, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link {
   text-align: center;
   color: #a2a2a2;
   margin: 1.953rem auto;
-  width: 200px;
   text-transform: uppercase;
-  font-size: 1.25rem;
-  display: block;
+  font-size: 1.5rem;
+  display: inline;
 }
 
 .design-block .projets-voir .link--light:hover, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link:hover {
@@ -1712,7 +1723,7 @@ body {
 }
 
 #wrapper__about .mastahead__about p {
-  font-size: 2.44141rem;
+  font-size: 2.25rem;
   color: #a2a2a2;
   max-width: 75%;
   margin-bottom: 1rem;
@@ -1770,7 +1781,7 @@ body {
 }
 
 #wrapper__about p {
-  font-size: 1.95312rem;
+  font-size: 3.375rem;
 }
 
 #wrapper__about .presentation-block .img-container {
@@ -1907,6 +1918,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.projets__wrapper .projets__paragraphe h4 {
+  font-size: 1.5rem;
+  color: #191919;
+}
+
 @media only screen and (max-width: 767px) {
   .projets__wrapper .projets__paragraphe {
     max-width: 100%;
@@ -1983,7 +1999,7 @@ body {
 
 .projet__navigation .projet__navigation__inside .projet-navigation__link {
   color: #f2eceb;
-  font-size: 3.05176rem;
+  font-size: 7.59375rem;
   margin-right: 1.953rem;
 }
 
@@ -1999,14 +2015,14 @@ body {
 }
 
 .projet__navigation .projet__navigation__inside p {
-  font-size: 3.05176rem;
+  font-size: 7.59375rem;
   margin-right: 1.953rem;
   color: #191919;
 }
 
 @media only screen and (max-width: 767px) {
   .projet__navigation .projet__navigation__inside p {
-    font-size: 1.5625rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -2052,7 +2068,7 @@ body {
 }
 
 .contact-block form .form-group small {
-  font-size: 0.64rem;
+  font-size: 0.44444rem;
   color: #a2a2a2;
 }
 

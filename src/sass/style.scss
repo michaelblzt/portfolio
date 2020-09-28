@@ -1,9 +1,9 @@
 // Toutes les dépendences scss (font, reset, ... sont installées dans _base.scss)
 @import 'base';
 
-
 body{
 	@extend .fontRegular;
+	font-size:1rem;
 	line-height: 1.5;
 	color: $color-grey-dark;
 	background-color: white;
@@ -57,6 +57,69 @@ body{
 	@media #{$tablet} {
 		@include padding-inside-blocks--xs;	
 	}
+
+	.wrapper-title{
+		position: relative;
+		width: 100%;
+		display: block;
+		margin-bottom: 1.25rem;
+	  
+		h2{
+		  color: rgba(0, 0, 0, 0.05);
+		  text-align: center;
+		  font-size: ms(8);
+		  top: 0;
+		  width: 100%;
+		  @extend .fontBold;
+	  
+		  @media #{$tablet} {
+			font-size: ms(4);
+		  }
+	  
+		  @media #{$phone} {
+			font-size: ms(3);
+		  }
+		}
+	  
+		p{
+		  font-size: ms(0);
+		  color: $color-black;
+		  text-align: center;
+		  position: relative;
+		  display: block;
+		  top: -65px;
+		  @extend .fontBold;
+		  text-transform: uppercase;
+	  
+			@media #{$tablet} {
+			  top: 0;
+			}
+	  
+			@media #{$phone} {
+			  top: 0;
+			}
+		}
+	  
+		&::after{
+		  display: block;
+		  margin: 0 auto;
+		  position: relative;
+		  top: -1.563rem;
+		  content: '';
+		  width: 50px;
+		  height: 2px;
+		  background-color: $color-yellow;
+	  
+		  @media #{$phone, $tablet} {
+			opacity: 0;
+		  }
+		}
+	  
+		@media #{$phone, $tablet} {
+		  margin: 0 0 1.953rem 0;
+		}
+	  
+	  }
 
 
 }
@@ -279,7 +342,6 @@ body{
 		color: white;
 
 		strong{
-			// color: $color-yellow;
 			color:$color-yellow;
 		}
 	}
@@ -313,6 +375,7 @@ body{
 }
 
 .link--light{
+	font-size:ms(0);
     color: $color-black;
     text-decoration: none;
     @include transition;
@@ -499,13 +562,14 @@ body{
 		}
 
 		.link--light{
+			width: auto;
 			text-align: center;
 			color: $color-grey-medium;
 			margin: 1.953rem auto;
-			width:200px;
 			text-transform: uppercase;
-			font-size:ms(1);
+			font-size:ms(2);
 			display: block;
+			max-width: 250px;
 
 			&:hover{
 				color:$color-black;
@@ -791,7 +855,7 @@ body{
 		}
 
 		p{
-			font-size: ms(4);
+			font-size: ms(2);
 			@extend .fontLight;
 			color: $color-grey-medium;
 			max-width: 75%;
@@ -961,6 +1025,12 @@ body{
 		p{
 			font-size:1.25rem;
 			margin-bottom: 1rem;
+		}
+
+		h4{
+			@extend .fontBold;
+			font-size: ms(1);
+			color: $color-black;
 		}
 
 
