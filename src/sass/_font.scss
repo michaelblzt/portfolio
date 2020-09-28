@@ -20,7 +20,7 @@ ms(11) - 11.642rem = 186px
 
 // @import des fonts
 @import "variables";
-@import '../node_modules/modularscale-sass/stylesheets/modularscale';
+@import '../modularscale-sass/stylesheets/modularscale';
 
 @font-face {
   font-family: 'TTNorms-Light';
@@ -127,7 +127,7 @@ h2{
 
 h3{
   @extend .fontBold;
-  font-size: ms(3);
+  font-size: ms(1);
   color: $color-black;
 
   a{

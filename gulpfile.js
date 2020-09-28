@@ -12,8 +12,8 @@ const minify = require('gulp-minify');
 
 
 // Variables de chemins
-var source = './sass'; // dossier de travail
-var destination = './css'; // dossier à livrer
+var source = '/sass'; // dossier de travail
+var destination = '/css'; // dossier à livrer
 
 // Pour sass:watch
 const watchSass = require("gulp-watch-sass")
