@@ -110,6 +110,7 @@ body{
 		max-height:540px;
 		max-width: 540px;
 		margin: 0 auto;
+		@include transition;
 	}
 
 	.txt-container{
