@@ -12,17 +12,10 @@ jQuery(document).ready(function($) {
                     'background-color': 'rgba(25,25,25,1)',
                 });
 
-                $('.logo-michaelblaizot').css({
+                $('#logo-michaelblaizot').css({
                     'width': '3.815rem',
                 });
 
-                $('.logo-michaelblaizot .st0').css({
-                    'fill': '#FFFFFF', 
-                });
-
-                $('.logo-michaelblaizot .st1').css({
-                    'fill': '#333333', 
-                });
 
                 $(".label-menu").css('top', '1.953rem');
             } else {
@@ -31,17 +24,17 @@ jQuery(document).ready(function($) {
                     'transition': 'all 0.25s ease-in',
                 });
 
-                $('.logo-michaelblaizot').css({
+                $('#logo-michaelblaizot').css({
                     'width': '4.75rem', 
                     'transition': 'all 0.25s ease-in',
                     'display': 'block',
                 });
 
-                $('.logo-michaelblaizot .st0').css({
+                $('#logo-michaelblaizot .st0').css({
                     'fill': '#FFFFFF', 
                 });
 
-                $('.logo-michaelblaizot .st1').css({
+                $('#logo-michaelblaizot .st1').css({
                     'fill': '#333333', 
                 });
 
@@ -59,7 +52,8 @@ jQuery(document).ready(function($) {
                 $("header").css({
                     'background-color': 'rgba(25,25,25,1)',
                 });
-                $('.logo-michaelblaizot').css({
+
+                $('#logo-michaelblaizot').css({
                     'width': '3.052rem',
                 });
 
@@ -72,22 +66,23 @@ jQuery(document).ready(function($) {
 
                 $(".label-menu").css('top', '1.953rem');
                 
-                $('.logo-michaelblaizot').css({
+                $('#logo-michaelblaizot').css({
                     'width': '3.052rem',
                     'transition': 'all 0.25s ease-in',
                 });
 
-                $('.logo-michaelblaizot .st0').css({
+                $('#logo-michaelblaizot .st0').css({
                     'fill': '#FFFFFF', 
                 });
-                $('.logo-michaelblaizot .st1').css({
+
+                $('#logo-michaelblaizot .st1').css({
                     'fill': '#333333', 
                 });
             }
         });
     } else {
         $("header").css('background-color', 'rgba(25,25,25,0)');
-        $('.logo-michaelblaizot').css({
+        $('#logo-michaelblaizot').css({
             'width': '3.052rem',
             'display': 'block',
         });
