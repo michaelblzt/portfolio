@@ -110,7 +110,6 @@ body{
 		max-height:540px;
 		max-width: 540px;
 		margin: 0 auto;
-		@include transition;
 	}
 
 	.txt-container{
@@ -964,11 +963,6 @@ body{
 			@extend .fontBold;
 			color: $color-black;
 			margin-bottom: 0.512rem;		
-		}
-
-		h3{
-			margin-bottom: 1.564rem;
-			color:#FFF000;	
 		}
 
 		p{

@@ -226,7 +226,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.95312rem;
   color: #191919;
 }
 
@@ -1039,10 +1039,6 @@ body {
   max-height: 540px;
   max-width: 540px;
   margin: 0 auto;
-  -webkit-transition: all 0.25s ease-in-out;
-  /* Safari */
-  /* Firefox */
-  transition: all 0.25s ease-in-out;
 }
 
 .content-block__container .txt-container {
@@ -1900,11 +1896,6 @@ body {
   font-size: 1.25rem;
   color: #191919;
   margin-bottom: 0.512rem;
-}
-
-.projets__wrapper .projets__paragraphe h3 {
-  margin-bottom: 1.564rem;
-  color: #FFF000;
 }
 
 .projets__wrapper .projets__paragraphe p {
