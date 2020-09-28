@@ -279,7 +279,8 @@ body{
 		color: white;
 
 		strong{
-			color: $color-yellow;
+			// color: $color-yellow;
+			color:$color-yellow;
 		}
 	}
 
@@ -346,14 +347,6 @@ body{
 	background-position: 100% 50%;
 	background-size:cover;
 }
-
-// .mastahead__contact{
-// 	background:  -webkit-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/bg-contact.jpg) no-repeat;
-// 	background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/bg-contact.jpg) no-repeat;
-// 	background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/bg-contact.jpg) no-repeat;
-// 	background-position: 100% 50%;
-// 	background-size:cover;
-// }
 
 
 
@@ -979,7 +972,6 @@ body{
 	.projets__figure{
 		max-width:100%;
 		margin: 3.052rem auto;
-		
 
 		figcaption{
 			@extend .fontItalic;

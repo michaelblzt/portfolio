@@ -13,9 +13,9 @@ var watch = require('gulp-watch-sass'); // Pour Compress
 var minify = require('gulp-minify'); // Variables de chemins
 
 
-var source = './sass'; // dossier de travail
+var source = 'src/sass'; // dossier de travail
 
-var destination = './css'; // dossier à livrer
+var destination = 'src/css'; // dossier à livrer
 // Pour sass:watch
 
 var watchSass = require("gulp-watch-sass"); // Juste prepros le sass
