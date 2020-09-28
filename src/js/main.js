@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function($) {
     var scroll_start = 0;
     var startchange = $(".start-change");
@@ -12,7 +11,7 @@ jQuery(document).ready(function($) {
                     'background-color': 'rgba(25,25,25,1)',
                 });
 
-                $('.logo-michaelblaizot').css({
+                $('svg').css({
                     'width': '3.815rem',
                 });
 
@@ -24,17 +23,17 @@ jQuery(document).ready(function($) {
                     'transition': 'all 0.25s ease-in',
                 });
 
-                $('.logo-michaelblaizot').css({
+                $('svg').css({
                     'width': '4.75rem', 
                     'transition': 'all 0.25s ease-in',
                     'display': 'block',
                 });
 
-                $('.logo-michaelblaizot .st0').css({
+                $('svg .st0').css({
                     'fill': '#FFFFFF', 
                 });
 
-                $('.logo-michaelblaizot .st1').css({
+                $('svg .st1').css({
                     'fill': '#333333', 
                 });
 
@@ -53,7 +52,7 @@ jQuery(document).ready(function($) {
                     'background-color': 'rgba(25,25,25,1)',
                 });
 
-                $('.logo-michaelblaizot').css({
+                $('svg').css({
                     'width': '3.052rem',
                 });
 
@@ -66,23 +65,23 @@ jQuery(document).ready(function($) {
 
                 $(".label-menu").css('top', '1.953rem');
                 
-                $('.logo-michaelblaizot').css({
+                $('svg').css({
                     'width': '3.052rem',
                     'transition': 'all 0.25s ease-in',
                 });
 
-                $('.logo-michaelblaizot .st0').css({
+                $('svg .st0').css({
                     'fill': '#FFFFFF', 
                 });
 
-                $('.logo-michaelblaizot .st1').css({
+                $('svg .st1').css({
                     'fill': '#333333', 
                 });
             }
         });
     } else {
         $("header").css('background-color', 'rgba(25,25,25,0)');
-        $('.logo-michaelblaizot').css({
+        $('svg').css({
             'width': '3.052rem',
             'display': 'block',
         });
