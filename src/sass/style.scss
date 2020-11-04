@@ -545,6 +545,18 @@ body{
 		}	
 	}
 
+	.maskcoop-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $maskcoop-color;
+					color: $color-black;
+				}
+			}
+		}	
+	}
+
 	// FIN Spécification par projets
 
 	.last{

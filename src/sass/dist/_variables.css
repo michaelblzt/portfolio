@@ -1,0 +1,53 @@
+.transition {
+  -webkit-transition: all 0.25s ease-in-out;
+  /* Safari */
+  transition: all 0.25s ease-in-out;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+  color: #FFCF56 !important;
+  background: #FFFFFF !important;
+  padding: 1rem;
+}
+p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+  color: #FFCF56 !important;
+  background: #FFFFFF !important;
+  padding: 1rem;
+}
+
+.gradient-red-1 {
+  background: linear-gradient(to right, #ff5858, #f857a6);
+}
+
+.gradient-yellow-1 {
+  background: linear-gradient(to right, #fffC00, #ffffff);
+}
+
+.gradient-blue-1 {
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+}
+
+.gradient-green-1 {
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}

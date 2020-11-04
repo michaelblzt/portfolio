@@ -1307,6 +1307,10 @@ body {
   background: #B4C8E1;
   color: #191919;
 }
+.design-block .maskcoop-projet:hover .txt-container .button--black {
+  background: #ccebe2;
+  color: #191919;
+}
 .design-block .last {
   margin-bottom: 0;
 }
