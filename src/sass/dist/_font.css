@@ -104,11 +104,11 @@ html[xmlns] .clearfix {
   font-weight: normal;
   font-style: normal;
 }
-.fontBold, h3, h1 strong {
+.fontBold, h3, h2, h1 strong {
   font-family: "TTNorms-Bold", Arial, sans-serif;
 }
 
-.fontRegular, h4, h2 {
+.fontRegular, h4 {
   font-family: "TTNorms-Regular", Arial, sans-serif;
 }
 
@@ -145,13 +145,15 @@ h1 strong {
 }
 
 h2 {
-  font-size: 211.7582368136rem;
-  color: #a2a2a2;
+  font-size: 2.44140625rem;
+  color: #191919;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
   font-size: 1.953125rem;
   color: #191919;
+  margin-bottom: 1rem;
 }
 h3 a {
   text-decoration: none;

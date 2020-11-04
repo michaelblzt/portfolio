@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ul li, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -80,12 +80,12 @@ ms(11) - 11.642rem = 186px
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -164,15 +164,15 @@ html[xmlns] .clearfix {
   font-weight: normal;
   font-style: normal;
 }
-.fontBold, .projets__wrapper .projets__paragraphe h4, .projets__wrapper .projets__paragraphe .projets__title, #services .list-services-container .title, #code-block .code-block__container .code-block__element .code-block__txt h3, .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title h2, h3, h1 strong {
+.fontBold, .projets__wrapper .projets__paragraphe h4, .projets__wrapper .projets__paragraphe .projets__title, #services .list-services-container .title, #code-block .code-block__container .code-block__element .code-block__txt h3, .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title h2, h3, h2, h1 strong {
   font-family: "TTNorms-Bold", Arial, sans-serif;
 }
 
-.fontRegular, #wrapper__about .mastahead__about p em, #services .list-services-container li, #code-block .code-block__container .code-block__element .code-block__txt p, body, h4, h2 {
+.fontRegular, #wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li em, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li em, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li em, #services .list-services-container li, #code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li, body, h4 {
   font-family: "TTNorms-Regular", Arial, sans-serif;
 }
 
-.fontLight, #wrapper__about .mastahead__about p, .popup-projets .popup-projets__pLeft p, h1 {
+.fontLight, #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li, .popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets .popup-projets__pLeft li, h1 {
   font-family: "TTNorms-Light", Arial, sans-serif;
 }
 
@@ -205,13 +205,15 @@ h1 strong {
 }
 
 h2 {
-  font-size: 211.7582368136rem;
-  color: #a2a2a2;
+  font-size: 2.44140625rem;
+  color: #191919;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
   font-size: 1.953125rem;
   color: #191919;
+  margin-bottom: 1rem;
 }
 h3 a {
   text-decoration: none;
@@ -223,7 +225,7 @@ h4 {
   color: #191919;
 }
 
-p {
+p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ul li {
   font-size: 1.25rem;
 }
 
@@ -237,12 +239,12 @@ p {
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -291,12 +293,12 @@ html[xmlns] .clearfix {
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -637,7 +639,7 @@ header .nav-site--modif input ~ nav .nav-site__social-list {
     margin-top: 15%;
   }
 }
-header .nav-site--modif input ~ nav .nav-site__social-list p {
+header .nav-site--modif input ~ nav .nav-site__social-list p, header .nav-site--modif input ~ nav .nav-site__social-list .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol header .nav-site--modif input ~ nav .nav-site__social-list li, header .nav-site--modif input ~ nav .nav-site__social-list .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul header .nav-site--modif input ~ nav .nav-site__social-list li {
   color: #6b6b6b;
   text-align: center;
 }
@@ -696,12 +698,12 @@ header .nav-site--modif input:checked + label::before {
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -751,7 +753,7 @@ footer {
   color: #6b6b6b;
   text-align: center;
 }
-footer p {
+footer p, footer .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol footer li, footer .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul footer li {
   font-size: 1rem;
 }
 footer a {
@@ -774,15 +776,15 @@ footer a:hover {
   padding: 1rem;
   text-align: center;
 }
-.colophon p {
+.colophon p, .colophon .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .colophon li, .colophon .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .colophon li {
   color: #999;
   font-size: 1rem;
 }
-.colophon p a {
+.colophon p a, .colophon .projets__wrapper .projets__paragraphe ol li a, .projets__wrapper .projets__paragraphe ol .colophon li a, .colophon .projets__wrapper .projets__paragraphe ul li a, .projets__wrapper .projets__paragraphe ul .colophon li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
-.colophon p a:hover {
+.colophon p a:hover, .colophon .projets__wrapper .projets__paragraphe ol li a:hover, .projets__wrapper .projets__paragraphe ol .colophon li a:hover, .colophon .projets__wrapper .projets__paragraphe ul li a:hover, .projets__wrapper .projets__paragraphe ul .colophon li a:hover {
   color: white;
 }
 
@@ -929,7 +931,7 @@ body {
     font-size: 1.953125rem;
   }
 }
-.section-wrapper .wrapper-title p {
+.section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li {
   font-size: 1rem;
   color: #191919;
   text-align: center;
@@ -939,12 +941,12 @@ body {
   text-transform: uppercase;
 }
 @media only screen and (max-width : 1024px) {
-  .section-wrapper .wrapper-title p {
+  .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li {
     top: 0;
   }
 }
 @media only screen and (max-width : 767px) {
-  .section-wrapper .wrapper-title p {
+  .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li {
     top: 0;
   }
 }
@@ -1051,7 +1053,7 @@ body {
   background-image: -o-linear-gradient(left, #FFCF56 0%, #FFCF56 100%);
   background-image: linear-gradient(to right, #FFCF56 0%, #FFCF56 100%);
 }
-.content-block__container .txt-container p {
+.content-block__container .txt-container p, .content-block__container .txt-container .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .content-block__container .txt-container li, .content-block__container .txt-container .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .content-block__container .txt-container li {
   margin: 1.953rem 0;
   color: #a2a2a2;
 }
@@ -1115,7 +1117,7 @@ body {
 .popup-projets .popup-projets__pLeft {
   width: 58%;
 }
-.popup-projets .popup-projets__pLeft p {
+.popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets .popup-projets__pLeft li {
   font-size: 1.5625rem;
   color: #191919;
 }
@@ -1124,7 +1126,7 @@ body {
     margin-bottom: 1rem;
     width: 100%;
   }
-  .popup-projets .popup-projets__pLeft p {
+  .popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets .popup-projets__pLeft li {
     font-size: 1.564rem;
     text-align: center;
   }
@@ -1155,7 +1157,7 @@ body {
 .popup-projets:hover {
   background-color: #191919;
 }
-.popup-projets:hover .popup-projets__pLeft p {
+.popup-projets:hover .popup-projets__pLeft p, .popup-projets:hover .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets:hover .popup-projets__pLeft li, .popup-projets:hover .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets:hover .popup-projets__pLeft li {
   color: white;
 }
 .popup-projets:hover .popup-projets__pRight .button--black {
@@ -1216,7 +1218,7 @@ body {
   transition: all 0.25s ease-in-out;
 }
 
-.link--light, .projet__navigation .projet__navigation__inside .projet-navigation__link {
+.link--light, .projet__navigation .projet__navigation__inside .projet-navigation__link, .projets__wrapper .projets__paragraphe a {
   font-size: 1rem;
   color: #191919;
   text-decoration: none;
@@ -1233,7 +1235,7 @@ body {
   background-image: -o-linear-gradient(left, #FFCF56 0%, #FFCF56 100%);
   background-image: linear-gradient(to right, #FFCF56 0%, #FFCF56 100%);
 }
-.link--light:hover, .projet__navigation .projet__navigation__inside .projet-navigation__link:hover {
+.link--light:hover, .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projets__wrapper .projets__paragraphe a:hover {
   color: #191919;
   background-size: 100% 8px;
 }
@@ -1311,13 +1313,13 @@ body {
 .design-block .projets-voir {
   padding: 1.953rem 0;
 }
-.design-block .projets-voir p {
+.design-block .projets-voir p, .design-block .projets-voir .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .design-block .projets-voir li, .design-block .projets-voir .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .design-block .projets-voir li {
   text-align: center;
   color: #f2eceb;
   margin-top: 1rem;
   font-size: 2.44140625rem;
 }
-.design-block .projets-voir .link--light, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link {
+.design-block .projets-voir .link--light, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link, .design-block .projets-voir .projets__wrapper .projets__paragraphe a, .projets__wrapper .projets__paragraphe .design-block .projets-voir a {
   width: auto;
   text-align: center;
   color: #a2a2a2;
@@ -1327,7 +1329,7 @@ body {
   display: block;
   max-width: 250px;
 }
-.design-block .projets-voir .link--light:hover, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link:hover {
+.design-block .projets-voir .link--light:hover, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link:hover, .design-block .projets-voir .projets__wrapper .projets__paragraphe a:hover, .projets__wrapper .projets__paragraphe .design-block .projets-voir a:hover {
   color: #191919;
   background-size: 100% 15px;
 }
@@ -1406,7 +1408,7 @@ body {
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-#code-block .code-block__container .code-block__element .code-block__txt p {
+#code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li {
   font-size: 1rem;
   color: #a2a2a2;
   width: 90%;
@@ -1581,17 +1583,17 @@ body {
 #wrapper__about .mastahead__about .content-block__wrapper {
   height: auto !important;
 }
-#wrapper__about .mastahead__about p {
+#wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
   font-size: 1.5625rem;
   color: #a2a2a2;
   max-width: 75%;
   margin-bottom: 1rem;
 }
-#wrapper__about .mastahead__about p em {
+#wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li em, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li em, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li em {
   color: white;
 }
 @media only screen and (max-width : 767px) {
-  #wrapper__about .mastahead__about p {
+  #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
     max-width: 100%;
     font-size: 1.25rem;
     text-align: center;
@@ -1628,7 +1630,7 @@ body {
     text-align: center;
   }
 }
-#wrapper__about p {
+#wrapper__about p, #wrapper__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about li, #wrapper__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about li {
   font-size: 1.953125rem;
 }
 #wrapper__about .presentation-block .img-container {
@@ -1708,6 +1710,9 @@ body {
   background-image: linear-gradient(to right, #FFCF56 0%, #FFCF56 100%);
   background-size: 100% 0.512rem;
 }
+.projets__wrapper .projet__tags li a {
+  font-size: 1.25rem;
+}
 @media only screen and (max-width : 767px) {
   .projets__wrapper .projet__tags {
     justify-content: space-between;
@@ -1719,19 +1724,35 @@ body {
 .projets__wrapper .projets__paragraphe {
   margin: 3.052rem 0;
   max-width: 80%;
+  margin: 0 auto;
 }
 .projets__wrapper .projets__paragraphe .projets__title {
   font-size: 1.25rem;
   color: #191919;
   margin-bottom: 0.512rem;
 }
-.projets__wrapper .projets__paragraphe p {
+.projets__wrapper .projets__paragraphe p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ul li {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+}
+.projets__wrapper .projets__paragraphe p strong, .projets__wrapper .projets__paragraphe ol li strong, .projets__wrapper .projets__paragraphe ul li strong {
+  color: #191919;
+}
+.projets__wrapper .projets__paragraphe a {
+  font-size: 1.25rem;
+}
+.projets__wrapper .projets__paragraphe ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+.projets__wrapper .projets__paragraphe ol {
+  list-style: lower-alpha;
+  margin-left: 2rem;
 }
 .projets__wrapper .projets__paragraphe h4 {
   font-size: 1.25rem;
   color: #191919;
+  margin-bottom: 1rem;
 }
 @media only screen and (max-width : 767px) {
   .projets__wrapper .projets__paragraphe {
@@ -1789,7 +1810,7 @@ body {
   width: 100%;
 }
 .projet__navigation .projet__navigation__inside .projet-navigation__link {
-  color: #f2eceb;
+  color: #a2a2a2;
   font-size: 3.0517578125rem;
   margin-right: 1.953rem;
 }
@@ -1802,13 +1823,13 @@ body {
     font-size: 1.563rem;
   }
 }
-.projet__navigation .projet__navigation__inside p {
+.projet__navigation .projet__navigation__inside p, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .projet__navigation .projet__navigation__inside li, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .projet__navigation .projet__navigation__inside li {
   font-size: 3.0517578125rem;
   margin-right: 1.953rem;
   color: #191919;
 }
 @media only screen and (max-width : 767px) {
-  .projet__navigation .projet__navigation__inside p {
+  .projet__navigation .projet__navigation__inside p, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .projet__navigation .projet__navigation__inside li, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .projet__navigation .projet__navigation__inside li {
     font-size: 1.5625rem;
   }
 }

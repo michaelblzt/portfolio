@@ -118,15 +118,17 @@ h1{
 }
 
 h2{
-  font-size: ms(24);
-  @extend .fontRegular;
-  color: $color-grey-medium;
+  font-size: ms(4);
+  @extend .fontBold;
+  color: $color-black;
+  margin-bottom: 1.25rem;
 }
 
 h3{
   @extend .fontBold;
   font-size: ms(3);
   color: $color-black;
+  margin-bottom: 1rem;
 
   a{
     text-decoration: none;

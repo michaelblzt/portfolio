@@ -1000,6 +1000,9 @@ body{
 				@include underlining--yellow;
 				background-size: 100% 0.512rem;
 			}
+			a{
+				font-size: 1.25rem;
+			}
 		}
 
 		@media #{$phone}{
@@ -1014,6 +1017,7 @@ body{
 	.projets__paragraphe{
 		margin: 3.052rem 0;
 		max-width: 80%;
+		margin: 0 auto;
 
 		.projets__title{
 			font-size:1.25rem;
@@ -1025,12 +1029,41 @@ body{
 		p{
 			font-size:1.25rem;
 			margin-bottom: 1rem;
+
+			strong{
+				color: $color-black;
+			}
 		}
+
+		a{
+			@extend .link--light;
+			font-size: 1.25rem;
+		}
+
+		ul{
+			list-style: disc; 
+			margin-left: 2rem;
+
+			li{
+				@extend p;
+			}
+		}
+
+		ol{
+			list-style: lower-alpha;
+			margin-left: 2rem;
+
+			li{
+				@extend p;
+			}
+		}
+
 
 		h4{
 			@extend .fontBold;
 			font-size: ms(1);
 			color: $color-black;
+			margin-bottom: 1rem;
 		}
 
 
@@ -1100,7 +1133,7 @@ body{
 
 		.projet-navigation__link{
 			@extend .link--light;
-			color: $color-grey-light;
+			color: $color-grey-medium;
 			font-size: ms(5);
 			margin-right: 1.953rem;
 
