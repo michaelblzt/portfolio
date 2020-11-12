@@ -74,10 +74,12 @@ body{
 	  
 		  @media #{$tablet} {
 			font-size: ms(4);
+			color: rgba(0, 0, 0, 0.25);
 		  }
 	  
 		  @media #{$phone} {
 			font-size: ms(3);
+			color: rgba(0, 0, 0, 0.25);
 		  }
 		}
 	  
@@ -149,7 +151,7 @@ body{
 
 .content-block__container{
 	background: transparent;
-	@include transition;
+	//@include transition;
 	text-decoration:none;
 	width:100%;
 	display:flex;
@@ -173,6 +175,7 @@ body{
 		max-height:540px;
 		max-width: 540px;
 		margin: 0 auto;
+		@include transition;
 	}
 
 	.txt-container{
@@ -395,12 +398,18 @@ body{
 
 // ------------- Section "Head" -------------
 
+
 .mastahead__home{
 	background:  -webkit-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/animFont-very-light.gif) no-repeat;
 	background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/animFont-very-light.gif) no-repeat;
 	background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/animFont-very-light.gif) no-repeat;
 	background-position: 100% 50%;
 	background-size:cover;
+
+	@media #{$phone} {	
+		background: none;
+		background-color: $color-black;
+	}
 }
 
 .mastahead__works{
@@ -656,6 +665,7 @@ body{
 					font-size:1.25rem;
 					color:$color-black;
 					@include transition;
+					margin-bottom: 0.5rem;
 				}
 
 				p{
@@ -802,21 +812,9 @@ body{
 	background-position: 100% 36%;
 
 	.contact-container{
-		display:flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-
-		
 
 		h4{
-			font-size: 1.563rem;
 			color: $color-grey-medium;
-
-			@media #{$phone} {
-				font-size: 1.25rem;
-				text-align:center;
-			}
 		}
 
 		a{
@@ -835,12 +833,27 @@ body{
 		    	opacity: 0.8;
 		    }
 
-		    @media #{$phone} {
-		    	display:block;
-				text-align:center;
-				font-size: 1.25rem;
-		    }
+		}
+	}
 
+	@media #{$phone} {
+		background: none;
+		background-color: $color-yellow;
+		
+		h4{
+			font-size: 1.25rem !important;
+			text-align: center;
+			color: $color-black !important;
+			opacity: 0.75;
+		}
+
+		a{
+			color: $color-black !important;
+			display: block;
+			text-align: center;
+			font-family: 'TTNorms-Bold';
+			font-size: 1.25rem !important;
+		
 		}
 	}
 }	
@@ -896,6 +909,8 @@ body{
 				}
 			}
 		}
+
+	
 	}
 
 	.presentation-wrapper{

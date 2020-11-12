@@ -28,28 +28,12 @@
 	transition: all 0.25s ease-in-out;
 }
 
-@mixin gradient-typography-base{
-	background-clip: text;
-	color: white !important;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
- 
-    font-family: 'TTNorms-Bold', Arial;
-}
-
 @mixin border-radius($radius) {
 	border-radius: $radius;
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 }
 
-// @keyframes reverseGradient{
-// 	0% {background-size: 200% 200%}
-//   	50% {background-size: 300% 300%}
-//   	75% {background-size: 400% 400%}
-//   	100% {background-size: 300% 300%}
-// }
 
 @mixin padding-inside-blocks--xl {
 	padding: 5.96rem 0;
