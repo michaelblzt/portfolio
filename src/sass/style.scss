@@ -105,37 +105,6 @@ body{
 	position:relative;
 	top:63vh;
 	margin-bottom:63vh;
-
-	.projets-voir{
-		@include padding-inside-blocks--xs;
-
-		p{
-			text-align:center;
-			color: $color-grey-light;
-			margin-top:1rem;
-			font-size: ms(4);
-		}
-
-		.link--light{
-			width: auto;
-			text-align: center;
-			color: $color-grey-medium;
-			margin: 1.953rem auto;
-			text-transform: uppercase;
-			font-size:ms(2);
-			display: block;
-			max-width: 250px;
-
-			&:hover{
-				color:$color-black;
-				background-size: 100% 15px; // change the second value to the desired height of the underline
-			}
-		}
-
-		@media #{$phone}{
-			@include padding-inside-blocks--xs;
-		}
-	}
 }
 
 .section-wrapper{
@@ -229,121 +198,110 @@ body{
 	}
 }
 
+// Blocks projets
+.content-block{
+	&__wrapper{
+		margin:1.953rem;
 
-.content-block__wrapper{
-	margin:1.953rem;
-
-	@media #{$tablet}{
-		margin: 3.052rem 0;
-	}
-}
-
-.content-block__container{
-	background: transparent;
-	//@include transition;
-	text-decoration:none;
-	width:100%;
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	position:relative;
-
-	.projet__link-global{
-		position:absolute;
-		top: 0; left: 0;
-		width:100%;
-		height: 100%;
-		z-index: 999;
+		@media #{$tablet}{
+			margin: 3.052rem 0;
+		}
 	}
 
-	.img-container{
-		display: block;
-		width: 50%;
-		max-height:540px;
-		max-width: 540px;
-		margin: 0 auto;
+	&__container{
+		background: transparent;
 		@include transition;
-	}
-
-	.txt-container{
-		width: 45%;
-		// padding-right: 5%;
-		display:block;
-		text-align: left;
-
-		small{
-			font-size: ms(-2);
-			color: $color-grey-medium;
-		}
-
-		h3{
-			@include transition;
-			
-
-			em{
-				@include underlining-horizontal;
-				@include underlining--yellow;
-			}
-		}
-
-		p{
-			margin: 1.953rem 0;
-			color:$color-grey-medium;
-		}
-
-		ul{
-			margin: 1.953rem 0;
-			li{
-				font-size: ms(0);
-				color:$color-grey-medium;
-				font-family: 'TTNorms-Regular', serif;
-			
-				span{
-					color:$color-yellow;
-				}
-			}
-
-		}
-	}
-
-
-	@media #{$phone} {
+		text-decoration:none;
+		width:100%;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		position:relative;
 
 		.img-container{
-			margin-bottom: 0;
-			width:100%;
+			display: block;
+			width: 50%;
+			max-height:540px;
+			max-width: 540px;
+			margin: 0 auto;
+			@include transition;
 		}
-		.txt-container{
-			background: white;
-			width: 100%;
-			text-align:center;
-			padding: 1rem;
 
-			a{
-				width:75%;
-				margin: 0 auto;
+		.txt-container{
+			width: 45%;
+			display: block;
+			text-align: left;
+
+			small{
+				font-size: ms(-1);
+				color: $color-grey-medium;
 			}
 
 			h3{
-				font-size:1.563rem;
+				
+				em{
+					@include underlining-horizontal;
+					@include underlining--yellow;
+				}
+			}
+
+			p{
+				margin: 1.953rem 0;
+				color:$color-grey-medium;
 			}
 
 			ul{
-				margin: 15px 0;
+				margin: 1.953rem 0;
+
+				li{
+					font-size: ms(0);
+					color: $color-grey-medium;
+				
+					span{
+						color:$color-yellow;
+					}
+				}
+
 			}
-			
 		}
-	}
 
-	&:hover{
-		.img-container{
-		-webkit-box-shadow: 10px 10px 55px 0px rgba(0,0,0,0.08);
-		-moz-box-shadow: 10px 10px 55px 0px rgba(0,0,0,0.08);
-		box-shadow: 10px 10px 55px 0px rgba(0,0,0,0.08);
+		@media #{$phone} {
 
-		}	
+			.img-container{
+				margin-bottom: 0;
+				width:100%;
+			}
+			.txt-container{
+				background: white;
+				width: 100%;
+				text-align:center;
+				padding: 1rem;
+
+				a{
+					width:75%;
+					margin: 0 auto;
+				}
+
+				h3{
+					font-size:1.563rem;
+				}
+
+				ul{
+					margin: 15px 0;
+				}
+				
+			}
+		}
+
+		&:hover{
+			.img-container{
+			-webkit-box-shadow: 10px 32px 64px 0px rgba(0,0,0,0.15);
+			-moz-box-shadow: 10px 32px 64px 0px rgba(0,0,0,0.15);
+			box-shadow: 10px 32px 64px 0px rgba(0,0,0,0.10);
+			}	
+		}
 	}
 }
 
@@ -495,6 +453,10 @@ body{
 		background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
 		background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
 		background-position: 100% 50%;
+
+		h1{
+			text-align:left !important;
+		}
 	}
 
 	@media #{$phone} {
@@ -503,6 +465,7 @@ body{
 
 	h1{
 		color: white;
+		text-align:center;
 
 		strong{
 			color:$color-yellow;
@@ -529,8 +492,37 @@ body{
 		}
 	}
 
-	.wrapper-max{
-		padding: 0 !important;
+	.projets-voir{
+		@include padding-inside-blocks--xs;
+
+		p{
+			text-align:center;
+			color: $color-grey-medium;
+			margin-top:1rem;
+			font-size: ms(4);
+			display:inline-block;
+			width:100%;
+		}
+
+		.link--light{
+			width: auto;
+			text-align: center;
+			color: $color-grey-medium;
+			margin: 1.953rem auto;
+			text-transform: uppercase;
+			font-size:ms(2);
+			display: block;
+			max-width: 250px;
+
+			&:hover{
+				color:$color-black;
+				background-size: 100% 15px; // change the second value to the desired height of the underline
+			}
+		}
+
+		@media #{$phone}{
+			@include padding-inside-blocks--xs;
+		}
 	}
 
 	.content-block__wrapper{
@@ -1019,15 +1011,6 @@ body{
 	.presentation-wrapper{
 		background-color: #FAFAFA;
 	}
-	
-	h1{
-		color: white;
-		text-align:left;
-
-		@media #{$phone} {	
-			text-align:center;
-		}
-	}
 
 	.work-sector{
 		margin-bottom: 1rem;
@@ -1070,11 +1053,11 @@ body{
 }
 
 // -------------------------
-//	FIN ABOUT
+//	FIN ABOUT about.html
 // -------------------------
 
 // ----------------------------------------------------------------------------------------
-//	PROJETS
+//	PROJETS projets.html
 // ----------------------------------------------------------------------------------------
 
 .projets__wrapper{
@@ -1296,79 +1279,6 @@ body{
 
 // ----------------------------------------------------------------------------------------
 //	FIN PROJETS
-// ----------------------------------------------------------------------------------------
-
-
-// ----------------------------------------------------------------------------------------
-//	PAGE CONTACT
-// ----------------------------------------------------------------------------------------
-
-.contact-block{
-	form{
-		width: 100%;
-		display: block;
-		margin: 0 auto;
-		.form-group{
-			margin-bottom:1.25rem;
-
-			label, input{
-				display:block;
-			}
-
-			label{
-				//color: $color-black;
-				color: red;
-			}
-
-			.form-control{
-				padding: 1rem;
-				border: 1px solid $color-grey-medium;
-				//background-color: $color-grey-light;
-				background-color: red;
-				width: 30%;
-				margin: 0.512rem 0 0;
-
-				@media #{$phone} {
-					width: 100%;
-				}
-			}
-
-			input:focus, textarea:focus{
-				background-color: white;
-				outline: 1px $color-black;
-			}
-
-			small{
-				font-size: ms(-2);
-				color: $color-grey-medium;
-			}
-		}
-
-		.alert{
-			display:block;
-			margin-bottom:1rem;
-			padding:0.512rem;
-			border-radius: 2px;
-
-		}
-
-		.alert-danger{
-			background-color: #FFD7DA;
-			border: 1px solid #DF1F2D;
-			color: #DF1F2D;
-		}
-
-		.alert-success{
-			background-color: #C5F9E0;
-			border: 1px solid #00E676;
-			color: #00B35C;
-		}
-	}
-}
-
-
-// ----------------------------------------------------------------------------------------
-//	FIN PAGE CONTACT
 // ----------------------------------------------------------------------------------------
 
 
