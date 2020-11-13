@@ -15,22 +15,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   padding: 1rem;
 }
 
-.gradient-red-1 {
-  background: linear-gradient(to right, #ff5858, #f857a6);
-}
-
-.gradient-yellow-1 {
-  background: linear-gradient(to right, #fffC00, #ffffff);
-}
-
-.gradient-blue-1 {
-  background: linear-gradient(to right, #1c92d2, #f2fcfe);
-}
-
-.gradient-green-1 {
-  background: linear-gradient(to right, #a8ff78, #78ffd6);
-}
-
 .clearfix:after {
   content: ".";
   display: block;

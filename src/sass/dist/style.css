@@ -177,14 +177,19 @@ h1 strong {
 }
 @media only screen and (max-width : 1024px) {
   h1 {
-    font-size: 1.953125rem;
+    font-size: 2.44140625rem;
   }
 }
 @media only screen and (max-width : 767px) {
   h1 {
-    font-size: 1.5625rem;
+    font-size: 1.953125rem;
     text-align: center;
     max-width: 100%;
+  }
+}
+@media only screen and (max-width : 375px) {
+  h1 {
+    font-size: 1.5625rem;
   }
 }
 
@@ -805,12 +810,61 @@ body {
   background: #191919 url(../images/loader.svg) no-repeat center center;
 }
 
+.jumbo-video {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 63vh;
+}
+.jumbo-video, .jumbo-video video, .jumbo-video .viewport-header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 63vh;
+}
+.jumbo-video .overlay-video {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 63vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.jumbo-video video {
+  object-fit: cover;
+  width: 100vw;
+  height: 63vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.jumbo-video .viewport-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jumbo-video .viewport-header h1 {
+  color: white;
+  max-width: 75%;
+}
+.jumbo-video .viewport-header h1 strong {
+  color: #FFCF56;
+}
+@media only screen and (max-width : 767px) {
+  .jumbo-video .viewport-header h1 {
+    max-width: 90%;
+  }
+}
+
 .container--lg {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
-  padding: 0 1.953rem;
 }
 @media only screen and (min-width : 1600px) {
   .container--lg {
@@ -831,6 +885,40 @@ body {
 @media only screen and (max-width : 1024px) {
   .container--md {
     width: 95%;
+  }
+}
+
+.design-block-home {
+  position: relative;
+  top: 63vh;
+  margin-bottom: 63vh;
+}
+.design-block-home .projets-voir {
+  padding: 1.953rem 0;
+}
+.design-block-home .projets-voir p, .design-block-home .projets-voir .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .design-block-home .projets-voir li, .design-block-home .projets-voir .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .design-block-home .projets-voir li {
+  text-align: center;
+  color: #f2eceb;
+  margin-top: 1rem;
+  font-size: 2.44140625rem;
+}
+.design-block-home .projets-voir .link--light, .design-block-home .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link, .projet__navigation .projet__navigation__inside .design-block-home .projets-voir .projet-navigation__link, .design-block-home .projets-voir .projets__wrapper .projets__paragraphe a, .projets__wrapper .projets__paragraphe .design-block-home .projets-voir a {
+  width: auto;
+  text-align: center;
+  color: #a2a2a2;
+  margin: 1.953rem auto;
+  text-transform: uppercase;
+  font-size: 1.5625rem;
+  display: block;
+  max-width: 250px;
+}
+.design-block-home .projets-voir .link--light:hover, .design-block-home .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projet__navigation .projet__navigation__inside .design-block-home .projets-voir .projet-navigation__link:hover, .design-block-home .projets-voir .projets__wrapper .projets__paragraphe a:hover, .projets__wrapper .projets__paragraphe .design-block-home .projets-voir a:hover {
+  color: #191919;
+  background-size: 100% 15px;
+}
+@media only screen and (max-width : 767px) {
+  .design-block-home .projets-voir {
+    padding: 1.953rem 0;
   }
 }
 
@@ -1103,24 +1191,6 @@ body {
   color: #191919;
 }
 
-.mastahead {
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  padding: 9.313rem 5.96rem 5.96rem 5.96rem;
-}
-@media only screen and (max-width : 767px) {
-  .mastahead {
-    padding: 5.96rem 1rem 3.092rem 1rem;
-  }
-}
-.mastahead h1 {
-  color: white;
-}
-.mastahead h1 strong {
-  color: #FFCF56;
-}
-
 .social-media-list {
   display: flex;
   flex-direction: row;
@@ -1178,6 +1248,12 @@ body {
   background-size: 100% 8px;
 }
 
+.mastahead {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding: 9.313rem 5.96rem 5.96rem 5.96rem;
+}
 .mastahead__home {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/animFont-very-light.gif) no-repeat;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/animFont-very-light.gif) no-repeat;
@@ -1191,13 +1267,29 @@ body {
     background-color: #191919;
   }
 }
-
 .mastahead__works {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/bg-works.jpg) no-repeat;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/bg-works.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/bg-works.jpg) no-repeat;
   background-position: 100% 50%;
   background-size: cover;
+}
+.mastahead__about {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+  background-position: 100% 50%;
+}
+@media only screen and (max-width : 767px) {
+  .mastahead {
+    padding: 5.96rem 1rem 3.092rem 1rem;
+  }
+}
+.mastahead h1 {
+  color: white;
+}
+.mastahead h1 strong {
+  color: #FFCF56;
 }
 
 .design-block {
@@ -1257,34 +1349,6 @@ body {
 }
 .design-block .last {
   margin-bottom: 0;
-}
-.design-block .projets-voir {
-  padding: 1.953rem 0;
-}
-.design-block .projets-voir p, .design-block .projets-voir .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .design-block .projets-voir li, .design-block .projets-voir .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .design-block .projets-voir li {
-  text-align: center;
-  color: #f2eceb;
-  margin-top: 1rem;
-  font-size: 2.44140625rem;
-}
-.design-block .projets-voir .link--light, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link, .design-block .projets-voir .projets__wrapper .projets__paragraphe a, .projets__wrapper .projets__paragraphe .design-block .projets-voir a {
-  width: auto;
-  text-align: center;
-  color: #a2a2a2;
-  margin: 1.953rem auto;
-  text-transform: uppercase;
-  font-size: 1.5625rem;
-  display: block;
-  max-width: 250px;
-}
-.design-block .projets-voir .link--light:hover, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link:hover, .design-block .projets-voir .projets__wrapper .projets__paragraphe a:hover, .projets__wrapper .projets__paragraphe .design-block .projets-voir a:hover {
-  color: #191919;
-  background-size: 100% 15px;
-}
-@media only screen and (max-width : 767px) {
-  .design-block .projets-voir {
-    padding: 1.953rem 0;
-  }
 }
 
 #code-block {
@@ -1473,16 +1537,69 @@ body {
 
 #contact-me {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.giphy.com/media/3o6ZtePMHI8NvAiYRG/giphy.gif) no-repeat top center;
-  background-size: cover;
-  background-position: 100% 36%;
+  height: 35vh;
 }
-#contact-me .contact-container h4 {
+#contact-me .contact-video {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 35vh;
+}
+#contact-me .contact-video, #contact-me .contact-video video, #contact-me .contact-video .contact-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35vh;
+}
+@media only screen and (max-width : 767px) {
+  #contact-me .contact-video, #contact-me .contact-video video, #contact-me .contact-video .contact-container {
+    height: 20vh;
+  }
+}
+#contact-me .contact-video video {
+  object-fit: cover;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#contact-me .contact-video .overlay-video {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width : 767px) {
+  #contact-me .contact-video .overlay-video {
+    height: 20.1vh;
+  }
+}
+#contact-me .contact-video .contact-container {
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+}
+@media only screen and (max-width : 767px) {
+  #contact-me .contact-video .contact-container {
+    height: 20vh;
+  }
+}
+#contact-me .contact-video .contact-container h4 {
   color: #a2a2a2;
+  width: 100%;
 }
-#contact-me .contact-container a {
+#contact-me .contact-video .contact-container a {
   color: #FFCF56;
   font-size: 1.563rem;
+  width: 100%;
   overflow: hidden;
   position: relative;
   outline: none;
@@ -1496,22 +1613,18 @@ body {
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-#contact-me .contact-container a:hover {
+#contact-me .contact-video .contact-container a:hover {
   opacity: 0.8;
 }
 @media only screen and (max-width : 767px) {
   #contact-me {
-    background: none;
-    background-color: #FFCF56;
+    height: 20vh;
   }
   #contact-me h4 {
     font-size: 1.25rem !important;
     text-align: center;
-    color: #191919 !important;
-    opacity: 0.75;
   }
   #contact-me a {
-    color: #191919 !important;
     display: block;
     text-align: center;
     font-family: "TTNorms-Bold";
@@ -1522,18 +1635,12 @@ body {
 #wrapper__about {
   position: relative;
 }
-#wrapper__about .mastahead__about {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
-  background-position: 100% 50%;
-}
 #wrapper__about .mastahead__about .content-block__wrapper {
   height: auto !important;
 }
 #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
   font-size: 1.5625rem;
-  color: #a2a2a2;
+  color: rgba(255, 255, 255, 0.8);
   max-width: 75%;
   margin-bottom: 1rem;
 }
@@ -1563,6 +1670,7 @@ body {
 }
 #wrapper__about h1 {
   color: white;
+  text-align: left;
 }
 @media only screen and (max-width : 767px) {
   #wrapper__about h1 {
@@ -1579,7 +1687,7 @@ body {
   }
 }
 #wrapper__about p, #wrapper__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about li, #wrapper__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about li {
-  font-size: 1.953125rem;
+  font-size: 1.5625rem;
 }
 #wrapper__about .presentation-block .img-container {
   background: url(../images/about/tof_mb_juin2015.jpg) center center no-repeat;

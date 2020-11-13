@@ -107,13 +107,17 @@ h1{
   }
 
   @media #{$tablet} {
-    font-size: ms(3);
+    font-size: ms(4);
   }
 
   @media #{$phone} {
-    font-size: ms(2);
+    font-size: ms(3);
     text-align: center;
     max-width: 100%;
+  }
+
+  @media #{$phone-xxs} {
+    font-size: ms(2);
   }
 }
 
