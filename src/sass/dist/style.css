@@ -1254,13 +1254,6 @@ body {
   background-size: cover;
   padding: 9.313rem 5.96rem 5.96rem 5.96rem;
 }
-.mastahead__home {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/animFont-very-light.gif) no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/animFont-very-light.gif) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/animFont-very-light.gif) no-repeat;
-  background-position: 100% 50%;
-  background-size: cover;
-}
 @media only screen and (max-width : 767px) {
   .mastahead__home {
     background: none;

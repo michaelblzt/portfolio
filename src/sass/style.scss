@@ -475,11 +475,6 @@ body{
 	padding: 9.313rem 5.96rem 5.96rem 5.96rem;
 
 	&__home{
-		background:  -webkit-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/animFont-very-light.gif) no-repeat;
-		background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/animFont-very-light.gif) no-repeat;
-		background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/animFont-very-light.gif) no-repeat;
-		background-position: 100% 50%;
-		background-size:cover;
 	
 		@media #{$phone} {	
 			background: none;
