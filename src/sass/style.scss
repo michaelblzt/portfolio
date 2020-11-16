@@ -649,6 +649,20 @@ body{
 		}	
 	}
 
+	.pme_partner-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $pme_partner-color;
+					color: white;
+				}
+			}
+		}	
+	}
+
+
+
 	// FIN Spécification par projets
 
 	.last{
@@ -1130,7 +1144,7 @@ body{
 	.projets__paragraphe{
 		margin: 3.052rem 0;
 		max-width: 80%;
-		margin: 0 auto;
+		margin: 0 auto 3.052rem auto;
 
 		.projets__title{
 			font-size:1.25rem;
@@ -1182,6 +1196,7 @@ body{
 
 		@media #{$phone}{
 			max-width: 100%;
+			margin-bottom: 3.052rem;
 		}
 	}
 

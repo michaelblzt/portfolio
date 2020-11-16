@@ -325,11 +325,11 @@ header .logo-container {
   position: relative;
   z-index: 9999;
 }
-header .logo-container .logo-michaelblaizot {
+header .logo-container svg {
   width: 4.75rem;
   display: block;
 }
-header .logo-container .logo-michaelblaizot .st0 {
+header .logo-container svg .st0 {
   background-color: #FFFFFF;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
@@ -337,7 +337,7 @@ header .logo-container .logo-michaelblaizot .st0 {
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-header .logo-container .logo-michaelblaizot .st1 {
+header .logo-container svg .st1 {
   background-color: #333333;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
@@ -346,14 +346,14 @@ header .logo-container .logo-michaelblaizot .st1 {
   transition: all 0.25s ease-in-out;
 }
 @media only screen and (max-width : 767px) {
-  header .logo-container .logo-michaelblaizot {
+  header .logo-container svg {
     width: 3.052rem;
   }
 }
-header .logo-container .logo-michaelblaizot:hover .st0 {
+header .logo-container svg:hover .st0 {
   background-color: #333333;
 }
-header .logo-container .logo-michaelblaizot:hover .st1 {
+header .logo-container svg:hover .st1 {
   background-color: #FFFFFF;
 }
 header .nav-site--normal {
@@ -1331,6 +1331,10 @@ body {
   background: #ccebe2;
   color: #191919;
 }
+.design-block .pme_partner-projet:hover .txt-container .button--black {
+  background: #4c98d4;
+  color: white;
+}
 .design-block .last {
   margin-bottom: 0;
 }
@@ -1755,7 +1759,7 @@ body {
 .projets__wrapper .projets__paragraphe {
   margin: 3.052rem 0;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 3.052rem auto;
 }
 .projets__wrapper .projets__paragraphe .projets__title {
   font-size: 1.25rem;
@@ -1788,6 +1792,7 @@ body {
 @media only screen and (max-width : 767px) {
   .projets__wrapper .projets__paragraphe {
     max-width: 100%;
+    margin-bottom: 3.052rem;
   }
 }
 .projets__wrapper .projets__figure {
