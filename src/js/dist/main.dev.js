@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
           'transition': 'all 0.25s ease-in'
         });
         $('svg').css({
-          'width': '4.75rem',
+          //'width': '4.75rem', 
           'transition': 'all 0.25s ease-in',
           'display': 'block'
         });
@@ -73,6 +73,7 @@ jQuery(document).ready(function ($) {
     $("header").css('background-color', 'rgba(25,25,25,0)');
     $('svg').css({
       'width': '3.052rem',
+      //'width': '1.953rem',
       'display': 'block'
     });
     $(".label-menu").css('top', '3.953rem');
