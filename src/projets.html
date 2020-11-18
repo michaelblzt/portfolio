@@ -1,19 +1,6 @@
 <!doctype html>
-
 <html lang="fr">
-
 <head class="js">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76675132-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-76675132-2');
-	</script>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="author" content="Michaël Blaizot">
@@ -36,7 +23,6 @@
 	<script src='../node_modules/nprogress/nprogress.js'></script>
 	<script src="js/lazysizes.min.js" type="text/javascript" async></script>
 	<link rel='stylesheet' href='../node_modules/nprogress/nprogress.css'/>
-
 	<meta name="google-site-verification" content="fZAfTkxfdFpSkKJgHE1ds4QwVRyiYOec0a7B_yLMUkk" />
 	<script>
 	  (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
@@ -58,12 +44,19 @@
 	  trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
 	  (window,"UA-76675132-1",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
 	</script>
-
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76675132-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-76675132-2');
+	</script>
 </head>
-
 <body class="animated fadeIn">
-
 <div id="preloader"></div>
+
+<!-- Header -->
 <header data-aos="fade-down">
 	<a class="logo-container" href="index.html" data-aos="fade-down" data-aos-delay="300">
 		<svg viewBox="0 0 123 109">
@@ -115,6 +108,7 @@
 	</div>	
 </header>
 
+<!-- Jumbo -->
 <section class="mastahead mastahead__works section-wrapper">
 	<div class="container--lg">
 		<h1 data-aos="fade-down" data-aos-delay="250">
@@ -123,6 +117,7 @@
 	</div>
 </section>
 
+<!-- Work -> Design -->
 <section class="design-block section-wrapper start-change">
 	
 	<div class="container--lg">
@@ -145,7 +140,26 @@
 		<article class="content-block__wrapper hideme">
 			<div class="content-block__container maskcoop-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/maskcoop.html"><img src="images/home-page-work/home-img-maskcoop.jpg" alt="Image MASKCOOP presentation" class="lazyload"></a>
+					<a href="projets/maskcoop.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-maskcoop-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-maskcoop-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-maskcoop-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-maskcoop.jpg"
+								data-src="images/home-page-work/home-img-maskcoop-2x.jpg"
+								class="lazyload"
+								alt="img maskcoop presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2020</small>
@@ -163,11 +177,30 @@
 		<article class="content-block__wrapper hideme">
 			<div class="content-block__container pme_partner-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/pme_partner.html"><img src="images/home-page-work/home-img-pme_partner.jpg" alt="Image PME PARTNER presentation" class="lazyload"></a>
+					<a href="projets/pme_partner.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-pme_partner-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-pme_partner-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-pme_partner-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-pme_partner.jpg"
+								data-src="images/home-page-work/home-img-pme_partner-1x.jpg"
+								class="lazyload"
+								alt="Image PME PARTNER presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2020</small>
-					<h3><a href="projets/pme_partner.html">De nouvelles interfaces graphiques et des process numériques optimisées avec <em>PME Partner</em>.</a></h3>
+					<h3><a href="projets/pme_partner.html">De nouvelles interfaces graphiques et des process numériques optimisés avec <em>PME Partner</em>.</a></h3>
 					<ul>
 						<li>UX / UI Design</li>
 						<li>Conseils éditoriaux</li>
@@ -181,7 +214,26 @@
 		<article class="content-block__wrapper hideme">
 			<div class="content-block__container teleshopping-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/teleshopping.html"><img src="images/home-page-work/home-img-teleshopping.jpg" alt="Image TELESHOPPING presentation" class="lazyload"></a>
+					<a href="projets/teleshopping.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-teleshopping-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-teleshopping-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-teleshopping-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-teleshopping.jpg"
+								data-src="images/home-page-work/home-img-teleshopping-1x.jpg"
+								class="lazyload"
+								alt="img TELESHOPPING presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2019</small>
@@ -199,7 +251,26 @@
 		<article class="content-block__wrapper hideme">
 			<div class="content-block__container pechavy-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/pechavy.html"><img src="images/home-page-work/home-img-pechavy.jpg" alt="Image PECHAVY presentation" class="lazyload"></a>
+					<a href="projets/pechavy.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-pechavy-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-pechavy-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-pechavy-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-pechavy.jpg"
+								data-src="images/home-page-work/home-img-pechavy-1x.jpg"
+								class="lazyload"
+								alt="img pechavy presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2018</small>
@@ -216,11 +287,30 @@
 		<article class="content-block__wrapper hideme">
 			<div class="content-block__container pmu-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/pmu.html"><img src="images/home-page-work/home-img-pmu.jpg" alt="Image PMU ESPORT presentation" class="lazyload"></a>
+					<a href="projets/pmu.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-pmu-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-pmu-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-pmu-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-pmu.jpg"
+								data-src="images/home-page-work/home-img-pmu-1x.jpg"
+								class="lazyload"
+								alt="img pmu presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2018</small>
-					<h3>Création de l'interface des paris en ligne pour le <em>PMU E-sport</em>.</h3>
+					<h3><a href="projets/pmu.html">Création de l'interface des paris en ligne pour le <em>PMU E-sport</em>.</a></h3>
 					<ul>
 						<li>UX Design</li>
 						<li>UI Design</li>
@@ -230,14 +320,33 @@
 			</div>
 		</article>
 
-		<article class="content-block__wrapper">
+		<article class="content-block__wrapper hideme">
 			<div class="content-block__container kreasound-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/kreasound.html"><img src="images/home-page-work/home-img-kreasound.jpg" alt="Image KREASOUND presentation" class="lazyload"></a>
+					<a href="projets/kreasound.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-kreasound-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-kreasound-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-kreasound-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-kreasound.jpg"
+								data-src="images/home-page-work/home-img-kreasound-1x.jpg"
+								class="lazyload"
+								alt="img kreasound presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2018</small>
-					<h3>Redesign original pour un site de compétitions de remix pour artistes MAO avec <em>Kreasound</em>.</h3>
+					<h3><a href="projets/kreasound.html">Redesign original pour un site de compétitions de remix pour artistes MAO avec <em>Kreasound</em>.</a></h3>
 					<ul>
 						<li>UX Design</li>
 						<li>Direction Artistique</li>
@@ -249,14 +358,33 @@
 			</div>
 		</article>
 
-		<article class="content-block__wrapper">
+		<article class="content-block__wrapper hideme">
 			<div class="content-block__container carl-projet ">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/carl.html"><img src="images/home-page-work/home-img-carl.jpg" alt="Image CARL presentation" class="lazyload"></a>
+					<a href="projets/carl.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-carl-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-carl-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-carl-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-carl.jpg"
+								data-src="images/home-page-work/home-img-carl-1x.jpg"
+								class="lazyload"
+								alt="img carl presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2017</small>
-					<h3>Digitaliser le service de majordomes dans les hôtels avec <em>CARL</em></h3>
+					<h3><a href="projets/carl.html">Digitaliser le service de majordomes dans les hôtels avec <em>CARL</em></a></h3>
 					<ul>
 						<li>UX Design</li>
 						<li>Webdesign et Design UI</li>
@@ -267,14 +395,33 @@
 			</div>
 		</article>
 
-		<article class="content-block__wrapper">
+		<article class="content-block__wrapper hideme">
 			<div class="content-block__container naturamind-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/naturamind.html"><img src="images/home-page-work/home-img-naturamind.jpg" alt="Image NATURAMIND presentation" class="lazyload"></a>
+					<a href="projets/naturamind.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-naturamind-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-naturamind-2x.jpg"
+								media="(resolution: 150dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-naturamind-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-naturamind.jpg"
+								data-src="images/home-page-work/home-img-naturamind-1x.jpg"
+								class="lazyload"
+								alt="img naturamind presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2017</small>
-					<h3>Un e-commerce pour des compléments alimentaires bios et naturels avec <em>Naturamind</em>.</h3>
+					<h3><a href="projets/naturamind.html">Un e-commerce pour des compléments alimentaires bios et naturels avec <em>Naturamind</em>.</a></h3>
 					<ul>
 						<li>UX Design</li>
 						<li>Webdesign et Design UI</li>
@@ -286,14 +433,33 @@
 			</div>
 		</article>
 
-		<article class="content-block__wrapper">
+		<article class="content-block__wrapper last hideme">
 			<div class="content-block__container flexig-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/flexig.html"><img src="images/home-page-work/home-img-flexig.jpg" alt="Image FLEXIG presentation" class="lazyload"></a>
+					<a href="projets/flexig.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-flexig-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-flexig-2x.jpg"
+								media="(resolution: 150dpi" />
+							<source
+								data-srcset="images/home-page-work/home-img-flexig-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-flexig.jpg"
+								data-src="images/home-page-work/home-img-flexig-1x.jpg"
+								class="lazyload"
+								alt="img flexig presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2016</small>
-					<h3>Une app mobile médicale destinée à simplifier le traitement des patients avec <em>Octapharma</em>. </h3>
+					<h3><a href="projets/flexig.html">Une app mobile médicale destinée à simplifier le traitement des patients avec <em>Octapharma</em>.</a></h3>
 					<ul>
 						<li>UX Design</li>
 						<li>UI Design</li>
@@ -303,14 +469,33 @@
 			</div>
 		</article>
 
-		<article class="content-block__wrapper">
+		<article class="content-block__wrapper last hideme">
 			<div class="content-block__container bartoux-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/galeries-bartoux.html"><img src="images/home-page-work/home-img-bartoux.jpg" alt="Image GALERIES BARTOUX presentation" class="lazyload"></a>
+					<a href="projets/galeries-bartoux.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-bartoux-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-bartoux-2x.jpg"
+								media="(resolution: 150dpi" />
+							<source
+								data-srcset="images/home-page-work/home-img-bartoux-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-bartoux.jpg"
+								data-src="images/home-page-work/home-img-bartoux-1x.jpg"
+								class="lazyload"
+								alt="img galeries bartoux presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2015</small>
-					<h3>Un site pour un réseau de galeries d'art avec <em>les Galeries Bartoux</em>. </h3>
+					<h3><a href="projets/galeries-bartoux.html">Un site pour un réseau de galeries d'art avec <em>les Galeries Bartoux</em>.</a></h3>
 					<ul>
 						<li>UX Design</li>
 						<li>UI Design</li>
@@ -321,32 +506,48 @@
 			</div>
 		</article>
 
-		<article class="content-block__wrapper last">
+		<article class="content-block__wrapper last hideme">
 			<div class="content-block__container novotel-projet">
 				<div class="img-container" data-aos="fade-up">
-					<a href="projets/novotel.html"><img src="images/home-page-work/home-img-novotel.jpg" alt="Image NOVOTEL presentation" class="lazyload"></a>
+					<a href="projets/novotel.html">
+						<picture>
+							<source
+								data-srcset="images/home-page-work/home-img-novotel-1x.jpg"
+								media="(min-resolution: 72dpi)" />
+							<source
+								data-srcset="images/home-page-work/home-img-novotel-2x.jpg"
+								media="(resolution: 150dpi" />
+							<source
+								data-srcset="images/home-page-work/home-img-novotel-3x.jpg"
+								media="(max-resolution: 300dpi)" />
+							
+							<img
+								src="images/home-page-work/home-img-novotel.jpg"
+								data-src="images/home-page-work/home-img-novotel-1x.jpg"
+								class="lazyload"
+								alt="img novotel presentation"
+								/>
+						</picture>
+					</a>
 				</div>
 				<div class="txt-container" data-aos="fade-up">
 					<small>2015</small>
-					<h3>Un e-learning de tutos beauté pour accompagner la transformation des hôtels avec <em>Novotel</em>.</h3>
+					<h3><a href="projets/novotel.html">Un site pour un réseau de galeries d'art avec <em>les Galeries Bartoux</em>.</a></h3>
 					<ul>
-						<li>UX / UI Design</li>
-						<li>E-learning</li>
+						<li>UX Design</li>
+						<li>UI Design</li>
 						<li>Direction Artistique</li>
 					</ul>
 					<a class="button button--small button--black" href="projets/novotel.html">Voir le projet</a>
 				</div>
 			</div>
 		</article>
-	</div>
 	<article class="projets-voir">
 		<p>Bientôt...</p>
 	</article>
-
 </section>
 
-<!-- Travaux Code -->
-
+<!-- Work -> Code -->
 <section id="code-block" class="section-wrapper">
 
 	<div class="container--lg">
@@ -354,9 +555,7 @@
 			<h2>Travaux front-end</h2>
 			<p>Sélection d'intégrations responsives</p>
 		</div>
-	
 		<div class="code-block__container">
-
 			<article class="code-block__element" data-aos="fade-up">
 				<a href="https://azertyjobs.com/" class="overlay" title="Voir le site">
 					<p class="hidden-txt"> Voir le site </p>
@@ -395,30 +594,29 @@
 					<p>UX / UI Design + développement pour Bourrelier Avocat</p>
 				</div>
 			</article>
-
 		</div>
-
 	</div>
-
 </section>
 
 <!-- Section Contact me -->
 <section id="contact-me" class="hideme section-wrapper--pmax">
-	<div class="container--lg">
+	<div class="contact-video">
+		<video playsinline autoplay muted loop poster="images/contact-me-poster.jpg" id="vidContact">
+			<source src="images/contact-me-video.mp4" type="video/mp4">
+		</video>
+		<div class="overlay-video"></div>
 		<div class="contact-container">
-			<h4>Un projet, une question ? N'hésitez pas ! <br/><a href="#">michael.blzt@gmail.com</a></h4>
+			<h4>Un projet, une question ? </h4>
+			<a href="mailto:michael.blzt@gmail.com">michael.blzt@gmail.com</a>
 		</div>
 	</div>
 </section>
-<!-- FIN Section Contact me -->
 
 <!-- FOOTER -->
 <footer id="footer" class="section-wrapper hideme">
 	<div class="container--lg">
- 
 		<a href="mailto:michael.blzt@gmail.com" title="Envoyer un email">michael.blzt@gmail.com</a><br />
 		<p>2019 - Tous droits réservés - Made with 🍺 + ❤️ </p><br />
-
 		<ul class="social-media-list">
 			<li class="social-media-item"><a href="https://twitter.com/MichaelBlaizot" target="_blank" title="Profil Twitter"><i class="fa fa-twitter"></i></a></li>
 			<li class="social-media-item"><a href="https://dribbble.com/MichaelBlaizot" target="_blank" title="Profil Pinterest"><i class="fa fa-dribbble"></i></a></li>
@@ -426,11 +624,8 @@
 			<li class="social-media-item"><a href="https://www.linkedin.com/in/micha%C3%ABl-blaizot-882a3888?trk=hp-identity-name" target="_blank" title="Profil Linkedin"><i class="fa fa-linkedin"></i></a></li>
 			<li class="social-media-item"><a href="https://www.instagram.com/mikblaiz/" target="_blank" title="Profil Instagram"><i class="fa fa-instagram"></i></a></li>
 		</ul>
-
 	</div>
-
 </footer>
-<!-- FIN FOOTER -->
 
 <div class="colophon">
 	<p>Hey psssst... Si vous cherchez de talentueux développeurs pour votre prochain projet, n'hésitez pas à rendre visite à <a href="https://www.clement-andraud.com/" target="_blank"> Clément Andraud</a> et <a href="http://laurent-masforne.com/" target="_blank">Laurent Masforné</a>. Dites leur que vous venez de ma part :)</p>
@@ -440,8 +635,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
-
-
 </body>
-
 </html>
