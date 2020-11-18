@@ -128,18 +128,28 @@ jQuery(document).ready(function ($) {
       scroll_start = $(this).scrollTop();
 
       if (scroll_start > offset.top) {
-        $("header").css('background-color', 'rgba(25,25,25,1)');
-        $('#logo-michaelblaizot').css('width', '3.815rem');
+        $("header").css({
+          'background-color': 'rgba(25,25,25,1)'
+        });
+        $('svg').css({
+          'width': '3.815rem'
+        });
         $(".label-menu").css('top', '1.953rem');
       } else {
         $('header').css({
           'background-color': 'rgba(0,0,0,0)',
           'transition': 'all 0.25s ease-in'
         });
-        $('.header--bg_black').css('background-color', 'rgba(25,25,25,1)');
-        $('#logo-michaelblaizot').css({
+        $('svg').css({
           'width': '4.75rem',
-          'transition': 'all 0.25s ease-in'
+          'transition': 'all 0.25s ease-in',
+          'display': 'block'
+        });
+        $('svg .st0').css({
+          'fill': '#FFFFFF'
+        });
+        $('svg .st1').css({
+          'fill': '#333333'
         });
         $(".label-menu").css({
           'top': '1.953rem',
@@ -155,27 +165,34 @@ jQuery(document).ready(function ($) {
         $("header").css({
           'background-color': 'rgba(25,25,25,1)'
         });
-        $('#logo-michaelblaizot').css('width', '3.052rem');
+        $('svg').css({
+          'width': '3.052rem'
+        });
         $(".label-menu").css('top', '1.953rem');
       } else {
         $('header').css({
           'background-color': 'rgba(0,0,0,0)',
           'transition': 'all 0.25s ease-in'
         });
-        $('.header--bg_black').css({
-          'background-color': 'rgba(25,25,25,1)',
-          'transition': 'all 0.25s ease-in'
-        });
         $(".label-menu").css('top', '1.953rem');
-        $('#logo-michaelblaizot').css({
+        $('svg').css({
           'width': '3.052rem',
           'transition': 'all 0.25s ease-in'
+        });
+        $('svg .st0').css({
+          'fill': '#FFFFFF'
+        });
+        $('svg .st1').css({
+          'fill': '#333333'
         });
       }
     });
   } else {
     $("header").css('background-color', 'rgba(25,25,25,0)');
-    $('#logo-michaelblaizot').css('width', '3.052rem');
+    $('svg').css({
+      'width': '3.052rem',
+      'display': 'block'
+    });
     $(".label-menu").css('top', '3.953rem');
   } // init AOS for front animation : fade-up, fade-down.... 
 
@@ -212,7 +229,7 @@ jQuery(document).ready(function ($) {
 });
 
 (function () {
-  // Back to Top - by CodyHouse.co
+  // Back to Top 
   var backTop = document.getElementsByClassName('js-cd-top')[0],
       // browser window scroll (in pixels) after which the "back to top" link is shown
   offset = 300,
@@ -316,7 +333,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64484" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51845" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
