@@ -97,12 +97,12 @@ jQuery(document).ready(function($) {
         disable: window.innerWidth < 1024
     });
 
-     // init the loading bar
-     $(window).load(function(){
-        $('#preloader').fadeOut('slow',function(){$(this).remove();});
-        NProgress.start();
-        NProgress.done();
-    });
+    //  // init the loading bar
+    //  $(window).load(function(){
+    //     $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    //     NProgress.start();
+    //     NProgress.done();
+    // });
 
 
 
