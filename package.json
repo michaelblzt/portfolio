@@ -27,6 +27,7 @@
     "gulp-util": "^3.0.8",
     "gulp-watch-sass": "^1.4.1",
     "lazysizes": "^5.2.2",
+    "loading-attribute-polyfill": "^1.5.4",
     "modularscale-sass": "^3.0.10",
     "nprogress": "^0.2.0",
     "parcel-bundler": "^1.12.4"
