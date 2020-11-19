@@ -83,13 +83,15 @@ jQuery(document).ready(function ($) {
     easing: 'ease-out-back',
     duration: 1000,
     disable: window.innerWidth < 1024
-  }); //  // init the loading bar
-  //  $(window).load(function(){
-  //     $('#preloader').fadeOut('slow',function(){$(this).remove();});
-  //     NProgress.start();
-  //     NProgress.done();
-  // });
+  }); // init the loading bar
 
+  $(window).load(function () {
+    $('#preloader').fadeOut('slow', function () {
+      $(this).remove();
+    });
+    NProgress.start();
+    NProgress.done();
+  });
   /* Every time the window is scrolled ... */
 
   $(window).scroll(function () {
