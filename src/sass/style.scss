@@ -13,6 +13,10 @@ body{
 
 // ------------- Reusable Classes -------------
 
+img.lazyload:not([src]) {
+	visibility: hidden;
+}
+
 #preloader { 
 	position: fixed; 
 	left: 0; top: 0; 

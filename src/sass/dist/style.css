@@ -799,6 +799,10 @@ body {
   -moz-font-smoothing: antialiased;
 }
 
+img.lazyload:not([src]) {
+  visibility: hidden;
+}
+
 #preloader {
   position: fixed;
   left: 0;
