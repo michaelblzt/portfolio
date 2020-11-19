@@ -1013,7 +1013,7 @@ body {
 }
 .content-block__container .img-container {
   display: block;
-  width: 50%;
+  width: 100%;
   max-height: 540px;
   max-width: 540px;
   margin: 0 auto;
