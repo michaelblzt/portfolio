@@ -27,12 +27,6 @@ jQuery(document).ready(function ($) {
           'transition': 'all 0.25s ease-in',
           'display': 'block'
         });
-        $('svg .st0').css({
-          'fill': '#FFFFFF'
-        });
-        $('svg .st1').css({
-          'fill': '#333333'
-        });
         $(".label-menu").css({
           'top': '1.953rem',
           'transition': 'all 0.25s ease-in'
@@ -60,12 +54,6 @@ jQuery(document).ready(function ($) {
         $('svg').css({
           'width': '3.052rem',
           'transition': 'all 0.25s ease-in'
-        });
-        $('svg .st0').css({
-          'fill': '#FFFFFF'
-        });
-        $('svg .st1').css({
-          'fill': '#333333'
         });
       }
     });

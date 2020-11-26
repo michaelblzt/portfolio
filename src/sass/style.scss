@@ -460,6 +460,10 @@ img.lazyload:not([src]) {
 
 		h1{
 			text-align:left !important;
+
+			@media #{$phone}{
+				text-align:left;
+			}
 		}
 	}
 
@@ -993,7 +997,6 @@ img.lazyload:not([src]) {
 		}
 
 		p{
-			font-size: ms(2);
 			@extend .fontLight;
 			color: rgba(255,255,255,0.8);
 			max-width: 75%;
@@ -1007,7 +1010,13 @@ img.lazyload:not([src]) {
 			@media #{$phone} {	
 				max-width: 100%;
 				font-size: 1.25rem;
-				text-align: center;
+				text-align: left;
+			}
+		}
+
+		h2{
+			@media #{$phone} {	
+				text-align:left;
 			}
 		}
 
@@ -1039,9 +1048,9 @@ img.lazyload:not([src]) {
 		}
 	}
 
-	p{
-		font-size: ms(2);
-	}
+	// p{
+	// 	font-size: ms(2);
+	// }
 
 	.presentation-block{
 		.img-container{

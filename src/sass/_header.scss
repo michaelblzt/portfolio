@@ -24,24 +24,24 @@ header{
 			width: 4.75rem;
 			display: block;
 
-			.st0{
-				background-color:#FFFFFF;
+			.path1{
+				fill: white;
 				@include transition;
 			}
-			.st1{
-				background-color: #333333;
+	
+			.path2{
+				fill: $color-black;
 				@include transition;
 			}
+		}
 
-			@media #{$phone} {
-				width:3.052rem;
+		&:hover {
+			.path1{
+				fill: $color-black;
 			}
-
-			&:hover{
-				.st0{background-color:#333333;}
-				.st1{background-color:#FFFFFF;}
+			.path2{
+				fill: #ffffff;
 			}
-
 		}
 	}
 

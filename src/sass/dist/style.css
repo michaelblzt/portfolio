@@ -1241,6 +1241,11 @@ img.lazyload:not([src]) {
   text-align: left !important;
 }
 @media only screen and (max-width : 767px) {
+  .mastahead__about h1 {
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 767px) {
   .mastahead {
     padding: 5.96rem 1rem 3.092rem 1rem;
   }
@@ -1631,7 +1636,6 @@ img.lazyload:not([src]) {
   height: auto !important;
 }
 #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
-  font-size: 1.5625rem;
   color: rgba(255, 255, 255, 0.8);
   max-width: 75%;
   margin-bottom: 1rem;
@@ -1643,7 +1647,12 @@ img.lazyload:not([src]) {
   #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
     max-width: 100%;
     font-size: 1.25rem;
-    text-align: center;
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 767px) {
+  #wrapper__about .mastahead__about h2 {
+    text-align: left;
   }
 }
 #wrapper__about .mastahead__about .button {
@@ -1668,9 +1677,6 @@ img.lazyload:not([src]) {
   #wrapper__about .work-sector {
     text-align: center;
   }
-}
-#wrapper__about p, #wrapper__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about li, #wrapper__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about li {
-  font-size: 1.5625rem;
 }
 #wrapper__about .presentation-block .img-container {
   background: url(../images/about/tof_mb_juin2015.jpg) center center no-repeat;

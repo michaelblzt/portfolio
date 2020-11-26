@@ -67,32 +67,27 @@ header .logo-container svg {
   width: 4.75rem;
   display: block;
 }
-header .logo-container svg .st0 {
-  background-color: #FFFFFF;
+header .logo-container svg .path1 {
+  fill: white;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
   -moz-transition: all 0.25s ease-in-out;
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-header .logo-container svg .st1 {
-  background-color: #333333;
+header .logo-container svg .path2 {
+  fill: #191919;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
   -moz-transition: all 0.25s ease-in-out;
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-@media only screen and (max-width : 767px) {
-  header .logo-container svg {
-    width: 3.052rem;
-  }
+header .logo-container:hover .path1 {
+  fill: #191919;
 }
-header .logo-container svg:hover .st0 {
-  background-color: #333333;
-}
-header .logo-container svg:hover .st1 {
-  background-color: #FFFFFF;
+header .logo-container:hover .path2 {
+  fill: #ffffff;
 }
 header .nav-site--normal {
   display: block;
