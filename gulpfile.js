@@ -1,42 +1,52 @@
 // Oligatoire en début de fichier
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'), // Pour SASS
+    watch = require('gulp-watch-sass'), // Pour watch
+    watchSass = require("gulp-watch-sass"), // sass:watch
+    minify = require('gulp-minify'), // Pour Compress code
+    imagemin = require('gulp-imagemin'), // Pour compress img
+    imageminWebp = require('imagemin-webp'), // Spécifique au WebP
+    imageminJpegtran = require('imagemin-jpegtran'), // Spécifique au jpeg
+    fs = require('fs'), // Pour faire marcher la compression d'image
+    path = require('path'); // Pour faire marcher la compression d'image
 
-// Pour SASS
-var sass = require('gulp-sass');
 
-// Pour watch
-var watch = require('gulp-watch-sass');
+var paths = {
+    styles: {
+      src: 'src/sass',
+      dest: 'src/css'
+    },
+    scripts: {
+      src: 'src/js/*.js',
+      dest: 'assets/js'
+    },
+    html: {
+      src: 'views/*.hbs',
+      dest: 'assets/'
+    },
+    images: {
+      src: 'src/images',
+      dest: 'src/images'
+    }
+  };
 
-// Pour Compress
-const minify = require('gulp-minify');
 
 
-// Variables de chemins
-var source = 'src/sass'; // dossier de travail
-var destination = 'src/css'; // dossier à livrer
-
-// Pour sass:watch
-const watchSass = require("gulp-watch-sass")
+// ---------------------------  PREPROCESSOR --------------------------- //
 
 // Juste prepros le sass
 gulp.task('sass', function() {
-  return gulp.src(source + '/*.scss')
+  return gulp.src(paths.styles.src + '/*.scss')
       .pipe(sass({
           outputStyle: 'compressed', // Decomment for compressing css
           includePaths: ['node_modules/susy/sass']
       }).on('error', sass.logError))
-      .pipe(gulp.dest(destination));
+      .pipe(gulp.dest(paths.styles.dest));
 });
-
-// gulp.task('compress', function() {
-//   gulp.src(['css/*.css'])
-//     .pipe(minify())
-//     .pipe(gulp.dest(destination))
-// });
 
 // WATCH + Converti le fichier scss de /app en css dans /dist 
 gulp.task("sass:watch", () => watchSass([
-  source + '/*scss'
+  paths.styles.src + '/*scss'
 ])
   .pipe(sass())
-  .pipe(gulp.dest(destination)));
+  .pipe(gulp.dest(paths.styles.dest)));

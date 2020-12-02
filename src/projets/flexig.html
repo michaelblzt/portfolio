@@ -1,17 +1,14 @@
 <!doctype html>
-
 <html lang="fr">
-
 <head class="js">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76675132-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-76675132-2');
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WVBHW4R');
 	</script>
+	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="author" content="Michaël Blaizot">
@@ -32,8 +29,8 @@
 	<link rel="shortcut icon" href="../images/favicon/favicon.png" type="image/x-icon">
 	<link rel="icon" href="../images/favicon/favicon.png" type="image/x-icon">
 	
-	<script src='../js/nprogress.js'></script>
-	<link rel='stylesheet' href='../css/nprogress.css'/>
+	<script src="../../node_modules/nprogress/nprogress.js"></script>
+	<link rel="stylesheet" href="../../node_modules/nprogress/nprogress.css"/>
 	<script src="../js/lazysizes.min.js" async="" ></script>
 	<script src="../js/loading-attribute-polyfill.min.js"></script>
 
@@ -62,7 +59,12 @@
 </head>
 
 <body class="animated fadeIn">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVBHW4R"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div id="preloader"></div>
 <header class="header--bg_black">
 	<a class="logo-container" href="../index.html" data-aos="fade-down" data-aos-delay="300">
@@ -116,40 +118,236 @@
 </header>
 
 <!-- CONTENT GOES HERE -->
-<section id="flexig-projet" class="projets__wrapper section-wrapper--pbig start-change">
+<section id="flexig-projet" class="section-wrapper--pbig start-change">
 	<div class="container--lg">
-		<h1 data-aos="fade-down"><small>flexig</small><br />Digitaliser le suivi médical, limiter les incidents humains et techniques pour améliorer les soins et la vie du patient.</h1>
-		<ul class="projet__tags" data-aos="fade-down">
-			<li data-aos="fade-down" data-aos-delay="100"><small>Année</small><br /><em>2015</em></li>
-			<li data-aos="fade-down" data-aos-delay="200"><small>Agence</small><br /><a class="link--light" href="https://www.srwk-communication.fr/">Sarawak</a></li>
-			<li data-aos="fade-down" data-aos-delay="300"><small>Compétence #1</small><br /><em>UX Design</em></li>
-			<li data-aos="fade-down" data-aos-delay="400"><small>Compétence #2</small><br /><em>UI Design</em></li>
-		</ul>
-		<figure class="projets__figure" data-aos="fade-up">
-			<img src="../images/flexig/flexig-img-1.jpg" alt="Image de présentation du projet design d'application modile pour Octapharma">
-		</figure>
-		<div class="projets__paragraphe" data-aos="fade-up">
-			<h2>La première application pour la prise en charge de patients atteints d'immunodéficience.</h2>
-			<p>Octapharma est un laboratoire pharmaceutique spécialisé dans la production de traitements pour lutter contre les maladies liées à l'immunodéficience. <br />Dans le but d'améliorer la vie de ses patients, Octapharma nous a fait confiance pour le développement d'une application mobile destinée à l'aide et au suivi médical des patients.</p>
-			<p>Développée pour iOS et Android, cette application simplifie la vie quotidienne de patient sous traitement IGs. A chaque injection, le patient peut ainsi retrouver tous les détails liés à son traitement : le  nombre d'injection, le type de produit, les soucis techniques rencontrés... Toutes ces données sont enregistrées, archivées et envoyer au médecin en charge du patient. Plus besoin d'archiver des tonnes de papier et plus l'angoisse d'en perdre une...</p>
-			<p>Développée en étroite collaboration avec le CEREDIH -  Le Centre de Référence Déficits Immunitaires Héréditaires et IRIS, l'association des patients de déficits immunitaires primitifs.</p>
+		<div class="projet">
+			<h1 data-aos="fade-down"><small>flexig</small><br />Digitaliser le suivi médical, limiter les incidents humains et techniques pour améliorer les soins et la vie du patient.</h1>
+			<ul class="projet__tags" data-aos="fade-down">
+				<li data-aos="fade-down" data-aos-delay="100"><small>Année</small><br /><em>2015</em></li>
+				<li data-aos="fade-down" data-aos-delay="200"><small>Agence</small><br /><a class="link--light" href="https://www.srwk-communication.fr/">Sarawak</a></li>
+				<li data-aos="fade-down" data-aos-delay="300"><small>Compétence #1</small><br /><em>UX Design</em></li>
+				<li data-aos="fade-down" data-aos-delay="400"><small>Compétence #2</small><br /><em>UI Design</em></li>
+			</ul>
 
-			<p>L'équipe : <a href="https://www.linkedin.com/in/paul-silvagni-a147a337/" class="link--light" target="blank">Paul Silvagni - Développement</a> / <a href="http://in-my-hood.fr/" class="link--light" target="blank">Alexis Hordessaux - Direction Artistique</a>.</p>
+			<noscript class="loading-lazy">
+				<picture class="projet__figure" data-aos="fade-up">
+					<source
+						srcset="
+							../images/flexig/flexig-img-1@400w.webp 400w,
+							../images/flexig/flexig-img-1@800w.webp 800w,
+							../images/flexig/flexig-img-1@1170w.webp 1170w, 
+							../images/flexig/flexig-img-1@2340w.webp 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						type="image/webp"			
+					>
+					<figure>
+						<img
+						srcset="
+							../images/flexig/flexig-img-1@400w.jpg 400w,
+							../images/flexig/flexig-img-1@800w.jpg 800w,
+							../images/flexig/flexig-img-1@1170w.jpg 1170w,  
+							../images/flexig/flexig-img-1@2340w.jpg 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						src="../images/flexig/flexig-img-1@1170w.jpg"
+						loading="lazy"
+						alt="flexig - img01"
+						>
+						<figcaption></figcaption>
+					</figure>
+				</picture>
+			</noscript>
 
-			<a class="link--light" href="http://flexig.com/" target="_blank"> Voir le site </a>
+			<div class="projet__paragraphe" data-aos="fade-up">
+				<h2>La première application pour la prise en charge de patients atteints d'immunodéficience.</h2>
+				<p>Octapharma est un laboratoire pharmaceutique spécialisé dans la production de traitements pour lutter contre les maladies liées à l'immunodéficience. <br />Dans le but d'améliorer la vie de ses patients, Octapharma nous a fait confiance pour le développement d'une application mobile destinée à l'aide et au suivi médical des patients.</p>
+				<p>Développée pour iOS et Android, cette application simplifie la vie quotidienne de patient sous traitement IGs. A chaque injection, le patient peut ainsi retrouver tous les détails liés à son traitement : le  nombre d'injection, le type de produit, les soucis techniques rencontrés... Toutes ces données sont enregistrées, archivées et envoyer au médecin en charge du patient. Plus besoin d'archiver des tonnes de papier et plus l'angoisse d'en perdre une...</p>
+				<p>Développée en étroite collaboration avec le CEREDIH -  Le Centre de Référence Déficits Immunitaires Héréditaires et IRIS, l'association des patients de déficits immunitaires primitifs.</p>
+
+				<p>L'équipe : <a href="https://www.linkedin.com/in/paul-silvagni-a147a337/" class="link--light" target="blank">Paul Silvagni - Développement</a> / <a href="http://in-my-hood.fr/" class="link--light" target="blank">Alexis Hordessaux - Direction Artistique</a>.</p>
+
+				<a class="link--light" href="http://flexig.com/" target="_blank"> Voir le site </a>
+			</div>
+
+			<noscript class="loading-lazy">
+				<picture class="projet__figure">
+					<source
+						srcset="
+							../images/flexig/flexig-img-2@400w.webp 400w,
+							../images/flexig/flexig-img-2@800w.webp 800w,
+							../images/flexig/flexig-img-2@1170w.webp 1170w, 
+							../images/flexig/flexig-img-2@2340w.webp 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						type="image/webp"
+						data-aos="fade-up"		
+					>
+					<figure>
+						<img
+						srcset="
+							../images/flexig/flexig-img-2@400w.jpg 400w,
+							../images/flexig/flexig-img-2@800w.jpg 800w,
+							../images/flexig/flexig-img-2@1170w.jpg 1170w,  
+							../images/flexig/flexig-img-2@2340w.jpg 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						src="../images/flexig/flexig-img-2@1170w.jpg"
+						data-aos="fade-up"
+						loading="lazy"
+						alt="flexig - img02"
+						>
+						<figcaption></figcaption>
+					</figure>
+				</picture>
+			</noscript>
+
+			<noscript class="loading-lazy">
+				<picture class="projet__figure" data-aos="fade-up">
+					<source
+						srcset="
+							../images/flexig/flexig-img-3@400w.webp 400w,
+							../images/flexig/flexig-img-3@800w.webp 800w,
+							../images/flexig/flexig-img-3@1170w.webp 1170w, 
+							../images/flexig/flexig-img-3@2340w.webp 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						type="image/webp"
+						data-aos="fade-up"			
+					>
+					<figure>
+						<img
+						srcset="
+							../images/flexig/flexig-img-3@400w.jpg 400w,
+							../images/flexig/flexig-img-3@800w.jpg 800w,
+							../images/flexig/flexig-img-3@1170w.jpg 1170w,  
+							../images/flexig/flexig-img-3@2340w.jpg 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						src="../images/flexig/flexig-img-3@1170w.jpg"
+						loading="lazy"
+						data-aos="fade-up"
+						alt="flexig - img03"
+						>
+						<figcaption></figcaption>
+					</figure>
+				</picture>
+			</noscript>
+
+			<noscript class="loading-lazy">
+				<picture class="projet__figure">
+					<source
+						srcset="
+							../images/flexig/flexig-img-4@400w.webp 400w,
+							../images/flexig/flexig-img-4@800w.webp 800w,
+							../images/flexig/flexig-img-4@1170w.webp 1170w, 
+							../images/flexig/flexig-img-4@2340w.webp 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						type="image/webp"
+						data-aos="fade-up"			
+					>
+					<figure>
+						<img
+						srcset="
+							../images/flexig/flexig-img-4@400w.jpg 400w,
+							../images/flexig/flexig-img-4@800w.jpg 800w,
+							../images/flexig/flexig-img-4@1170w.jpg 1170w,  
+							../images/flexig/flexig-img-4@2340w.jpg 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						src="../images/flexig/flexig-img-4@1170w.jpg"
+						loading="lazy"
+						alt="flexig - img04"
+						data-aos="fade-up"
+						>
+						<figcaption></figcaption>
+					</figure>
+				</picture>
+			</noscript>
+
+			<noscript class="loading-lazy">
+				<picture class="projet__figure" data-aos="fade-up">
+					<source
+						srcset="
+							../images/flexig/flexig-img-5@400w.webp 400w,
+							../images/flexig/flexig-img-5@800w.webp 800w,
+							../images/flexig/flexig-img-5@1170w.webp 1170w, 
+							../images/flexig/flexig-img-5@2340w.webp 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						type="image/webp"
+						data-aos="fade-up"			
+					>
+					<figure>
+						<img
+						srcset="
+							../images/flexig/flexig-img-5@400w.jpg 400w,
+							../images/flexig/flexig-img-5@800w.jpg 800w,
+							../images/flexig/flexig-img-5@1170w.jpg 1170w,  
+							../images/flexig/flexig-img-5@2340w.jpg 2340w
+						"
+						sizes="
+							(max-width: 375px) 400w,
+							(max-width: 375px), (-webkit-min-device-pixel-ratio: 2) 800w,
+							(min-width : 767px) 1170w,
+							(min-width : 767px), (-webkit-min-device-pixel-ratio: 2) 2340w
+						"
+						src="../images/flexig/flexig-img-5@1170w.jpg"
+						loading="lazy"
+						alt="flexig - img05"
+						data-aos="fade-up"
+						>
+						<figcaption></figcaption>
+					</figure>
+				</picture>
+			</noscript>
 		</div>
-		<figure class="projets__figure" data-aos="fade-up">
-			<img src="../images/flexig/flexig-img-2.jpg" alt="Image de présentation du projet design d'application modile pour Octapharma" class="lazyload">
-		</figure>
-		<figure class="projets__figure" data-aos="fade-up">
-			<img src="../images/flexig/flexig-img-3.jpg" alt="Image de présentation du projet design d'application modile pour Octapharma" class="lazyload">
-		</figure>
-		<figure class="projets__figure" data-aos="fade-up">
-			<img src="../images/flexig/flexig-img-4.jpg" alt="Image de présentation du projet design d'application modile pour Octapharma" class="lazyload">
-		</figure>
-		<figure class="projets__figure" data-aos="fade-up">
-			<img src="../images/flexig/flexig-img-5.jpg" alt="Image de présentation du projet design d'application modile pour Octapharma" class="lazyload">
-		</figure>
 	</div>
 	<div class="projet__navigation" data-aos="fade-up">
 		<div class="container--lg">
@@ -162,16 +360,12 @@
 	</div>
 </section>
 
-
-<!-- FIN CONTENT -->
-
-
 <!-- FOOTER -->
 	<footer id="footer" class="section-wrapper hideme">
 		<div class="container--lg">
 	 
 			<a href="mailto:michael.blzt@gmail.com" title="Envoyer un email">michael.blzt@gmail.com</a><br />
-			<p>2019 - Tous droits réservés - Made with 🍺 + ❤️ </p><br />
+			<p>2020 - Tous droits réservés - Made with 🍺 + ❤️ </p><br />
 
 			<ul class="social-media-list">
 				<li class="social-media-item"><a href="https://twitter.com/MichaelBlaizot" target="_blank" title="Profil Twitter"><i class="fab fa-twitter"></i></a></li>
@@ -181,20 +375,12 @@
 				<li class="social-media-item"><a href="https://www.instagram.com/mikblaiz/" target="_blank" title="Profil Instagram"><i class="fab fa-instagram"></i></a></li>
 			</ul>
 		</div>
-
 	</footer>
-<!-- FIN FOOTER -->
-
-<div class="colophon">
-	<p>Hey psssst... Si vous cherchez de talentueux développeurs pour votre prochain projet, n'hésitez pas à rendre visite à <a href="https://www.clement-andraud.com/" target="_blank"> Clément Andraud</a> et <a href="http://laurent-masforne.com/" target="_blank">Laurent Masforné</a>. Dites leur que vous venez de ma part :)</p>
-</div>
 
 <a href="#0" class="cd-top js-cd-top"></a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="../js/main.js"></script>
 
-
 </body>
-
 </html>

@@ -1084,26 +1084,19 @@ img.lazyload:not([src]) {
 // -------------------------
 
 // ----------------------------------------------------------------------------------------
-//	PROJETS projets.html
+//	use case <nomduprojet>.html
 // ----------------------------------------------------------------------------------------
 
-.projets__wrapper{
+.projet{
 
-	.container--lg{
-		padding-bottom: 0;
-	}
+	padding-top: 4.768rem;
 
 	@media #{$phone}{
-		padding: 0 1rem;
-
-		.container--lg{
-			padding-top: 5.96rem;
-		}
+		padding-top: 3.052rem;
 	}
 
 	h1{
 		margin-bottom: 1.953rem;
-		padding-top:3.092rem;
 
 		small{
 			font-size:0.8rem;
@@ -1116,7 +1109,7 @@ img.lazyload:not([src]) {
 		}
 	}
 
-	.projet__tags{
+	&__tags{
 		
 		@include create-flex-wrap;
 		justify-content: flex-start;
@@ -1154,12 +1147,12 @@ img.lazyload:not([src]) {
 		}	
 	}
 
-	.projets__paragraphe{
-		margin: 3.052rem 0;
+	&__paragraphe{
+		display: block;
 		max-width: 80%;
-		margin: 0 auto 3.052rem auto;
+		margin: 3.052rem auto;
 
-		.projets__title{
+		.projet__title{
 			font-size:1.25rem;
 			@extend .fontBold;
 			color: $color-black;
@@ -1213,22 +1206,28 @@ img.lazyload:not([src]) {
 		}
 	}
 
-	.projets__figure{
+	&__figure{
+		display:block;
 		max-width:100%;
 		margin: 3.052rem auto;
 
-		figcaption{
-			@extend .fontItalic;
-			color: $color-grey-medium;
-			text-align:center;
-			margin-top: 0.512rem;
+		figure{
+			
+			figcaption{
+				@extend .fontItalic;
+				color: $color-grey-medium;
+				text-align:center;
+				margin: 0.512rem auto 0 auto;
+			}
 		}
 
 		
 	}
 
 	.video__wrapper{
-		background-color: $color-blue;
+		background-color: $color-grey-light;
+		margin: 3.052rem auto;
+
 		video{
 			width:48%;
 			display:block;
@@ -1239,15 +1238,47 @@ img.lazyload:not([src]) {
 
 		figcaption{
 			background-color: white;
-			display:block;
+			text-align: center;
 			padding-top:0.512rem;
-			
+			@extend .fontItalic;
+			color: $color-grey-medium;
 		}
-
 	}
 
 	.figure--last{
 		margin: 0 auto;
+	}
+}
+
+// -------- Spécifique par id de projet
+// Ajoute un fond de couleur aux vidéos en rapport avec le projet
+#pechavy-projet{ 
+	.container--lg{
+		.projet{
+			.video__wrapper{
+				background-color: $pechavy-color;
+			}
+		}
+	}
+}
+
+#kreasound-projet{ 
+	.container--lg{
+		.projet{
+			.video__wrapper{
+				background-color: $kreasound-color;
+			}
+		}
+	}
+}
+
+#carl-projet{ 
+	.container--lg{
+		.projet{
+			.video__wrapper{
+				background-color: $carl-color;
+			}
+		}
 	}
 }
 
@@ -1267,7 +1298,7 @@ img.lazyload:not([src]) {
 	}
 	
 
-	.projet__navigation__inside{
+	&__navigation__inside{
 		@include create-flex-wrap;
 		justify-content: space-around;
 		width:100%;

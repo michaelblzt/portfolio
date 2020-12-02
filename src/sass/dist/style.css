@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ul li, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, .projet__paragraphe ol li, .projet__paragraphe ul li, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -80,12 +80,12 @@ ms(11) - 11.642rem = 186px
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projet__paragraphe ol li::-moz-selection, .projet__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projet__paragraphe ol li::selection, .projet__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -114,53 +114,53 @@ html[xmlns] .clearfix {
 
 @font-face {
   font-family: "TTNorms-Light";
-  src: url("../fonts/TTNorms-Light/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Light/TTNorms-Light.otf") format("opentype"), url("../fonts/TTNorms-Light/TTNorms-Light.woff") format("woff"), url("../fonts/TTNorms-Light/TTNorms-Light.ttf") format("truetype"), url("../fonts/TTNorms-Light/TTNorms-Light.svg#TTNorms-Light") format("svg");
+  src: url("../fonts/TTNorms-Light/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Light/TTNorms-Light.woff") format("woff"), url("../fonts/TTNorms-Light/TTNorms-Light.svg#TTNorms-Light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTNorms-Regular";
-  src: url("../fonts/TTNorms-Regular/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Regular/TTNorms-Regular.otf") format("opentype"), url("../fonts/TTNorms-Regular/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular/TTNorms-Regular.ttf") format("truetype"), url("../fonts/TTNorms-Regular/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  src: url("../fonts/TTNorms-Regular/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Regular/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTNorms-Italic";
-  src: url("../fonts/TTNorms-Italic/TTNorms-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Italic/TTNorms-Italic.otf") format("opentype"), url("../fonts/TTNorms-Italic/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic/TTNorms-Italic.ttf") format("truetype"), url("../fonts/TTNorms-Italic/TTNorms-Italic.svg#TTNorms-Italic") format("svg");
+  src: url("../fonts/TTNorms-Italic/TTNorms-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Italic/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic/TTNorms-Italic.svg#TTNorms-Italic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTNorms-Medium";
-  src: url("../fonts/TTNorms-Medium/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Medium/TTNorms-Medium.otf") format("opentype"), url("../fonts/TTNorms-Medium/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium/TTNorms-Medium.ttf") format("truetype"), url("../fonts/TTNorms-Medium/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  src: url("../fonts/TTNorms-Medium/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Medium/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTNorms-Bold";
-  src: url("../fonts/TTNorms-Bold/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Bold/TTNorms-Bold.otf") format("opentype"), url("../fonts/TTNorms-Bold/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold/TTNorms-Bold.ttf") format("truetype"), url("../fonts/TTNorms-Bold/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  src: url("../fonts/TTNorms-Bold/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Bold/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTNorms-Black";
-  src: url("../fonts/TTNorms-Black/TTNorms-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Black/TTNorms-Black.otf") format("opentype"), url("../fonts/TTNorms-Black/TTNorms-Black.woff") format("woff"), url("../fonts/TTNorms-Black/TTNorms-Black.ttf") format("truetype"), url("../fonts/TTNorms-Black/TTNorms-Black.svg#TTNorms-Black") format("svg");
+  src: url("../fonts/TTNorms-Black/TTNorms-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Black/TTNorms-Black.woff") format("woff"), url("../fonts/TTNorms-Black/TTNorms-Black.svg#TTNorms-Black") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-.fontBold, .projets__wrapper .projets__paragraphe h4, .projets__wrapper .projets__paragraphe .projets__title, #services .list-services-container .title, #code-block .code-block__container .code-block__element .code-block__txt h3, .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title h2, h3, h2, h1 strong {
+.fontBold, .projet__paragraphe h4, .projet__paragraphe .projet__title, #services .list-services-container .title, #code-block .code-block__container .code-block__element .code-block__txt h3, .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projet__paragraphe ol li, .projet__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projet__paragraphe ul li, .projet__paragraphe ul .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title h2, h3, h2, h1 strong {
   font-family: "TTNorms-Bold", Arial, sans-serif;
 }
 
-.fontRegular, #wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li em, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li em, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li em, #services .list-services-container li, #code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li, body, h4 {
+.fontRegular, #wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projet__paragraphe ol li em, .projet__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projet__paragraphe ul li em, .projet__paragraphe ul #wrapper__about .mastahead__about li em, #services .list-services-container li, #code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ol li, .projet__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ul li, .projet__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li, body, h4 {
   font-family: "TTNorms-Regular", Arial, sans-serif;
 }
 
-.fontLight, #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li, .popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets .popup-projets__pLeft li, h1 {
+.fontLight, #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projet__paragraphe ol li, .projet__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projet__paragraphe ul li, .projet__paragraphe ul #wrapper__about .mastahead__about li, .popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projet__paragraphe ol li, .projet__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projet__paragraphe ul li, .projet__paragraphe ul .popup-projets .popup-projets__pLeft li, h1 {
   font-family: "TTNorms-Light", Arial, sans-serif;
 }
 
-.fontItalic, .projets__wrapper .projets__figure figcaption, i {
+.fontItalic, .projet .video__wrapper figcaption, .projet__figure figure figcaption, i {
   font-family: "TTNorms-Italic", Arial, sans-serif;
 }
 
@@ -214,7 +214,7 @@ h4 {
   color: #191919;
 }
 
-p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ul li {
+p, .projet__paragraphe ol li, .projet__paragraphe ul li {
   font-size: 1.25rem;
 }
 
@@ -228,12 +228,12 @@ p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__par
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projet__paragraphe ol li::-moz-selection, .projet__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projet__paragraphe ol li::selection, .projet__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -266,12 +266,12 @@ html[xmlns] .clearfix {
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projet__paragraphe ol li::-moz-selection, .projet__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projet__paragraphe ol li::selection, .projet__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -329,32 +329,27 @@ header .logo-container svg {
   width: 4.75rem;
   display: block;
 }
-header .logo-container svg .st0 {
-  background-color: #FFFFFF;
+header .logo-container svg .path1 {
+  fill: white;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
   -moz-transition: all 0.25s ease-in-out;
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-header .logo-container svg .st1 {
-  background-color: #333333;
+header .logo-container svg .path2 {
+  fill: #191919;
   -webkit-transition: all 0.25s ease-in-out;
   /* Safari */
   -moz-transition: all 0.25s ease-in-out;
   /* Firefox */
   transition: all 0.25s ease-in-out;
 }
-@media only screen and (max-width : 767px) {
-  header .logo-container svg {
-    width: 3.052rem;
-  }
+header .logo-container:hover .path1 {
+  fill: #191919;
 }
-header .logo-container svg:hover .st0 {
-  background-color: #333333;
-}
-header .logo-container svg:hover .st1 {
-  background-color: #FFFFFF;
+header .logo-container:hover .path2 {
+  fill: #ffffff;
 }
 header .nav-site--normal {
   display: block;
@@ -596,7 +591,7 @@ header .nav-site--modif input ~ nav .nav-site__social-list {
     margin-top: 15%;
   }
 }
-header .nav-site--modif input ~ nav .nav-site__social-list p, header .nav-site--modif input ~ nav .nav-site__social-list .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol header .nav-site--modif input ~ nav .nav-site__social-list li, header .nav-site--modif input ~ nav .nav-site__social-list .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul header .nav-site--modif input ~ nav .nav-site__social-list li {
+header .nav-site--modif input ~ nav .nav-site__social-list p, header .nav-site--modif input ~ nav .nav-site__social-list .projet__paragraphe ol li, .projet__paragraphe ol header .nav-site--modif input ~ nav .nav-site__social-list li, header .nav-site--modif input ~ nav .nav-site__social-list .projet__paragraphe ul li, .projet__paragraphe ul header .nav-site--modif input ~ nav .nav-site__social-list li {
   color: #6b6b6b;
   text-align: center;
 }
@@ -655,12 +650,12 @@ header .nav-site--modif input:checked + label::before {
   transition: all 0.25s ease-in-out;
 }
 
-p::-moz-selection, .projets__wrapper .projets__paragraphe ol li::-moz-selection, .projets__wrapper .projets__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+p::-moz-selection, .projet__paragraphe ol li::-moz-selection, .projet__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
 }
-p::selection, .projets__wrapper .projets__paragraphe ol li::selection, .projets__wrapper .projets__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+p::selection, .projet__paragraphe ol li::selection, .projet__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
   color: #FFCF56 !important;
   background: #FFFFFF !important;
   padding: 1rem;
@@ -694,7 +689,7 @@ footer {
   color: #6b6b6b;
   text-align: center;
 }
-footer p, footer .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol footer li, footer .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul footer li {
+footer p, footer .projet__paragraphe ol li, .projet__paragraphe ol footer li, footer .projet__paragraphe ul li, .projet__paragraphe ul footer li {
   font-size: 1rem;
 }
 footer a {
@@ -717,15 +712,15 @@ footer a:hover {
   padding: 1rem;
   text-align: center;
 }
-.colophon p, .colophon .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .colophon li, .colophon .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .colophon li {
+.colophon p, .colophon .projet__paragraphe ol li, .projet__paragraphe ol .colophon li, .colophon .projet__paragraphe ul li, .projet__paragraphe ul .colophon li {
   color: #999;
   font-size: 1rem;
 }
-.colophon p a, .colophon .projets__wrapper .projets__paragraphe ol li a, .projets__wrapper .projets__paragraphe ol .colophon li a, .colophon .projets__wrapper .projets__paragraphe ul li a, .projets__wrapper .projets__paragraphe ul .colophon li a {
+.colophon p a, .colophon .projet__paragraphe ol li a, .projet__paragraphe ol .colophon li a, .colophon .projet__paragraphe ul li a, .projet__paragraphe ul .colophon li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
-.colophon p a:hover, .colophon .projets__wrapper .projets__paragraphe ol li a:hover, .projets__wrapper .projets__paragraphe ol .colophon li a:hover, .colophon .projets__wrapper .projets__paragraphe ul li a:hover, .projets__wrapper .projets__paragraphe ul .colophon li a:hover {
+.colophon p a:hover, .colophon .projet__paragraphe ol li a:hover, .projet__paragraphe ol .colophon li a:hover, .colophon .projet__paragraphe ul li a:hover, .projet__paragraphe ul .colophon li a:hover {
   color: white;
 }
 
@@ -788,6 +783,11 @@ footer a:hover {
 
 .button--black {
   background-color: #191919;
+}
+
+.button--border_white {
+  border: 1px solid white;
+  color: white;
 }
 
 body {
@@ -933,7 +933,7 @@ img.lazyload:not([src]) {
     color: rgba(0, 0, 0, 0.25);
   }
 }
-.section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li {
+.section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projet__paragraphe ol li, .projet__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projet__paragraphe ul li, .projet__paragraphe ul .section-wrapper .wrapper-title li {
   font-size: 1rem;
   color: #191919;
   text-align: center;
@@ -943,12 +943,12 @@ img.lazyload:not([src]) {
   text-transform: uppercase;
 }
 @media only screen and (max-width : 1024px) {
-  .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li {
+  .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projet__paragraphe ol li, .projet__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projet__paragraphe ul li, .projet__paragraphe ul .section-wrapper .wrapper-title li {
     top: 0;
   }
 }
 @media only screen and (max-width : 767px) {
-  .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .section-wrapper .wrapper-title li {
+  .section-wrapper .wrapper-title p, .section-wrapper .wrapper-title .projet__paragraphe ol li, .projet__paragraphe ol .section-wrapper .wrapper-title li, .section-wrapper .wrapper-title .projet__paragraphe ul li, .projet__paragraphe ul .section-wrapper .wrapper-title li {
     top: 0;
   }
 }
@@ -1044,7 +1044,7 @@ img.lazyload:not([src]) {
   background-image: -o-linear-gradient(left, #FFCF56 0%, #FFCF56 100%);
   background-image: linear-gradient(to right, #FFCF56 0%, #FFCF56 100%);
 }
-.content-block__container .txt-container p, .content-block__container .txt-container .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .content-block__container .txt-container li, .content-block__container .txt-container .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .content-block__container .txt-container li {
+.content-block__container .txt-container p, .content-block__container .txt-container .projet__paragraphe ol li, .projet__paragraphe ol .content-block__container .txt-container li, .content-block__container .txt-container .projet__paragraphe ul li, .projet__paragraphe ul .content-block__container .txt-container li {
   margin: 1.953rem 0;
   color: #a2a2a2;
 }
@@ -1107,7 +1107,7 @@ img.lazyload:not([src]) {
 .popup-projets .popup-projets__pLeft {
   width: 58%;
 }
-.popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets .popup-projets__pLeft li {
+.popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projet__paragraphe ol li, .projet__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projet__paragraphe ul li, .projet__paragraphe ul .popup-projets .popup-projets__pLeft li {
   font-size: 1.5625rem;
   color: #191919;
 }
@@ -1116,7 +1116,7 @@ img.lazyload:not([src]) {
     margin-bottom: 1rem;
     width: 100%;
   }
-  .popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets .popup-projets__pLeft li {
+  .popup-projets .popup-projets__pLeft p, .popup-projets .popup-projets__pLeft .projet__paragraphe ol li, .projet__paragraphe ol .popup-projets .popup-projets__pLeft li, .popup-projets .popup-projets__pLeft .projet__paragraphe ul li, .projet__paragraphe ul .popup-projets .popup-projets__pLeft li {
     font-size: 1.564rem;
     text-align: center;
   }
@@ -1147,7 +1147,7 @@ img.lazyload:not([src]) {
 .popup-projets:hover {
   background-color: #191919;
 }
-.popup-projets:hover .popup-projets__pLeft p, .popup-projets:hover .popup-projets__pLeft .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .popup-projets:hover .popup-projets__pLeft li, .popup-projets:hover .popup-projets__pLeft .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .popup-projets:hover .popup-projets__pLeft li {
+.popup-projets:hover .popup-projets__pLeft p, .popup-projets:hover .popup-projets__pLeft .projet__paragraphe ol li, .projet__paragraphe ol .popup-projets:hover .popup-projets__pLeft li, .popup-projets:hover .popup-projets__pLeft .projet__paragraphe ul li, .projet__paragraphe ul .popup-projets:hover .popup-projets__pLeft li {
   color: white;
 }
 .popup-projets:hover .popup-projets__pRight .button--black {
@@ -1190,7 +1190,7 @@ img.lazyload:not([src]) {
   transition: all 0.25s ease-in-out;
 }
 
-.link--light, .projet__navigation .projet__navigation__inside .projet-navigation__link, .projets__wrapper .projets__paragraphe a {
+.link--light, .projet__navigation__navigation__inside .projet-navigation__link, .projet__paragraphe a {
   font-size: 1rem;
   color: #191919;
   text-decoration: none;
@@ -1207,7 +1207,7 @@ img.lazyload:not([src]) {
   background-image: -o-linear-gradient(left, #FFCF56 0%, #FFCF56 100%);
   background-image: linear-gradient(to right, #FFCF56 0%, #FFCF56 100%);
 }
-.link--light:hover, .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projets__wrapper .projets__paragraphe a:hover {
+.link--light:hover, .projet__navigation__navigation__inside .projet-navigation__link:hover, .projet__paragraphe a:hover {
   color: #191919;
   background-size: 100% 8px;
 }
@@ -1273,7 +1273,7 @@ img.lazyload:not([src]) {
 .design-block .projets-voir {
   padding: 1.953rem 0;
 }
-.design-block .projets-voir p, .design-block .projets-voir .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .design-block .projets-voir li, .design-block .projets-voir .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .design-block .projets-voir li {
+.design-block .projets-voir p, .design-block .projets-voir .projet__paragraphe ol li, .projet__paragraphe ol .design-block .projets-voir li, .design-block .projets-voir .projet__paragraphe ul li, .projet__paragraphe ul .design-block .projets-voir li {
   text-align: center;
   color: #a2a2a2;
   margin-top: 1rem;
@@ -1281,7 +1281,7 @@ img.lazyload:not([src]) {
   display: inline-block;
   width: 100%;
 }
-.design-block .projets-voir .link--light, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link, .design-block .projets-voir .projets__wrapper .projets__paragraphe a, .projets__wrapper .projets__paragraphe .design-block .projets-voir a {
+.design-block .projets-voir .link--light, .design-block .projets-voir .projet__navigation__navigation__inside .projet-navigation__link, .projet__navigation__navigation__inside .design-block .projets-voir .projet-navigation__link, .design-block .projets-voir .projet__paragraphe a, .projet__paragraphe .design-block .projets-voir a {
   width: auto;
   text-align: center;
   color: #a2a2a2;
@@ -1291,7 +1291,7 @@ img.lazyload:not([src]) {
   display: block;
   max-width: 250px;
 }
-.design-block .projets-voir .link--light:hover, .design-block .projets-voir .projet__navigation .projet__navigation__inside .projet-navigation__link:hover, .projet__navigation .projet__navigation__inside .design-block .projets-voir .projet-navigation__link:hover, .design-block .projets-voir .projets__wrapper .projets__paragraphe a:hover, .projets__wrapper .projets__paragraphe .design-block .projets-voir a:hover {
+.design-block .projets-voir .link--light:hover, .design-block .projets-voir .projet__navigation__navigation__inside .projet-navigation__link:hover, .projet__navigation__navigation__inside .design-block .projets-voir .projet-navigation__link:hover, .design-block .projets-voir .projet__paragraphe a:hover, .projet__paragraphe .design-block .projets-voir a:hover {
   color: #191919;
   background-size: 100% 15px;
 }
@@ -1418,7 +1418,7 @@ img.lazyload:not([src]) {
   transition: all 0.25s ease-in-out;
   margin-bottom: 0.5rem;
 }
-#code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li {
+#code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ol li, .projet__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ul li, .projet__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li {
   font-size: 1rem;
   color: #a2a2a2;
   width: 90%;
@@ -1635,16 +1635,16 @@ img.lazyload:not([src]) {
 #wrapper__about .mastahead__about .content-block__wrapper {
   height: auto !important;
 }
-#wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
+#wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projet__paragraphe ol li, .projet__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projet__paragraphe ul li, .projet__paragraphe ul #wrapper__about .mastahead__about li {
   color: rgba(255, 255, 255, 0.8);
   max-width: 75%;
   margin-bottom: 1rem;
 }
-#wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li em, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li em, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li em {
+#wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projet__paragraphe ol li em, .projet__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projet__paragraphe ul li em, .projet__paragraphe ul #wrapper__about .mastahead__about li em {
   color: white;
 }
 @media only screen and (max-width : 767px) {
-  #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul #wrapper__about .mastahead__about li {
+  #wrapper__about .mastahead__about p, #wrapper__about .mastahead__about .projet__paragraphe ol li, .projet__paragraphe ol #wrapper__about .mastahead__about li, #wrapper__about .mastahead__about .projet__paragraphe ul li, .projet__paragraphe ul #wrapper__about .mastahead__about li {
     max-width: 100%;
     font-size: 1.25rem;
     text-align: left;
@@ -1701,32 +1701,28 @@ img.lazyload:not([src]) {
   }
 }
 
-.projets__wrapper .container--lg {
-  padding-bottom: 0;
+.projet {
+  padding-top: 4.768rem;
 }
 @media only screen and (max-width : 767px) {
-  .projets__wrapper {
-    padding: 0 1rem;
-  }
-  .projets__wrapper .container--lg {
-    padding-top: 5.96rem;
+  .projet {
+    padding-top: 3.052rem;
   }
 }
-.projets__wrapper h1 {
+.projet h1 {
   margin-bottom: 1.953rem;
-  padding-top: 3.092rem;
 }
-.projets__wrapper h1 small {
+.projet h1 small {
   font-size: 0.8rem;
   color: #a2a2a2;
   text-transform: uppercase;
 }
 @media only screen and (max-width : 767px) {
-  .projets__wrapper h1 {
+  .projet h1 {
     padding-top: 2.441rem;
   }
 }
-.projets__wrapper .projet__tags {
+.projet__tags {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1735,18 +1731,18 @@ img.lazyload:not([src]) {
   align-content: stretch;
   width: 100%;
 }
-.projets__wrapper .projet__tags li {
+.projet__tags li {
   text-align: left;
   font-size: 1.25rem;
   margin: 0 3.052rem 1.953rem 0;
   color: #191919;
 }
-.projets__wrapper .projet__tags li small {
+.projet__tags li small {
   font-size: 0.512rem;
   text-transform: uppercase;
   color: #a2a2a2;
 }
-.projets__wrapper .projet__tags li em {
+.projet__tags li em {
   background-repeat: repeat-x;
   background-position: 0 100%;
   background-size: 100% 15px;
@@ -1755,82 +1751,97 @@ img.lazyload:not([src]) {
   background-image: linear-gradient(to right, #FFCF56 0%, #FFCF56 100%);
   background-size: 100% 0.512rem;
 }
-.projets__wrapper .projet__tags li a {
+.projet__tags li a {
   font-size: 1.25rem;
 }
 @media only screen and (max-width : 767px) {
-  .projets__wrapper .projet__tags {
+  .projet__tags {
     justify-content: space-between;
   }
-  .projets__wrapper .projet__tags li {
+  .projet__tags li {
     margin: 0 1.564rem 1rem 0;
   }
 }
-.projets__wrapper .projets__paragraphe {
-  margin: 3.052rem 0;
+.projet__paragraphe {
+  display: block;
   max-width: 80%;
-  margin: 0 auto 3.052rem auto;
+  margin: 3.052rem auto;
 }
-.projets__wrapper .projets__paragraphe .projets__title {
+.projet__paragraphe .projet__title {
   font-size: 1.25rem;
   color: #191919;
   margin-bottom: 0.512rem;
 }
-.projets__wrapper .projets__paragraphe p, .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ul li {
+.projet__paragraphe p, .projet__paragraphe ol li, .projet__paragraphe ul li {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-.projets__wrapper .projets__paragraphe p strong, .projets__wrapper .projets__paragraphe ol li strong, .projets__wrapper .projets__paragraphe ul li strong {
+.projet__paragraphe p strong, .projet__paragraphe ol li strong, .projet__paragraphe ul li strong {
   color: #191919;
 }
-.projets__wrapper .projets__paragraphe a {
+.projet__paragraphe a {
   font-size: 1.25rem;
 }
-.projets__wrapper .projets__paragraphe ul {
+.projet__paragraphe ul {
   list-style: disc;
   margin-left: 2rem;
 }
-.projets__wrapper .projets__paragraphe ol {
+.projet__paragraphe ol {
   list-style: lower-alpha;
   margin-left: 2rem;
 }
-.projets__wrapper .projets__paragraphe h4 {
+.projet__paragraphe h4 {
   font-size: 1.25rem;
   color: #191919;
   margin-bottom: 1rem;
 }
 @media only screen and (max-width : 767px) {
-  .projets__wrapper .projets__paragraphe {
+  .projet__paragraphe {
     max-width: 100%;
     margin-bottom: 3.052rem;
   }
 }
-.projets__wrapper .projets__figure {
+.projet__figure {
+  display: block;
   max-width: 100%;
   margin: 3.052rem auto;
 }
-.projets__wrapper .projets__figure figcaption {
+.projet__figure figure figcaption {
   color: #a2a2a2;
   text-align: center;
-  margin-top: 0.512rem;
+  margin: 0.512rem auto 0 auto;
 }
-.projets__wrapper .video__wrapper {
-  background-color: #ABCFED;
+.projet .video__wrapper {
+  background-color: #f2eceb;
+  margin: 3.052rem auto;
 }
-.projets__wrapper .video__wrapper video {
+.projet .video__wrapper video {
   width: 48%;
   display: block;
   margin: 0 auto;
   padding: 1rem;
   max-height: 568px;
 }
-.projets__wrapper .video__wrapper figcaption {
+.projet .video__wrapper figcaption {
   background-color: white;
-  display: block;
+  text-align: center;
   padding-top: 0.512rem;
+  color: #a2a2a2;
 }
-.projets__wrapper .figure--last {
+.projet .figure--last {
   margin: 0 auto;
+}
+
+#pechavy-projet .container--lg .projet .video__wrapper {
+  background-color: #4E8F36;
+}
+
+#kreasound-projet .container--lg .projet .video__wrapper {
+  background-color: #506EFB;
+}
+
+#carl-projet .container--lg .projet .video__wrapper {
+  background-color: #D0E4F4;
 }
 
 .projet__navigation {
@@ -1847,7 +1858,7 @@ img.lazyload:not([src]) {
 .projet__navigation .container--lg {
   padding: 0;
 }
-.projet__navigation .projet__navigation__inside {
+.projet__navigation__navigation__inside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1855,31 +1866,31 @@ img.lazyload:not([src]) {
   justify-content: space-around;
   width: 100%;
 }
-.projet__navigation .projet__navigation__inside .projet-navigation__link {
+.projet__navigation__navigation__inside .projet-navigation__link {
   color: #a2a2a2;
   font-size: 3.0517578125rem;
   margin-right: 1.953rem;
 }
-.projet__navigation .projet__navigation__inside .projet-navigation__link:hover {
+.projet__navigation__navigation__inside .projet-navigation__link:hover {
   color: #191919;
   background-size: 100% 1.953rem;
 }
 @media only screen and (max-width : 767px) {
-  .projet__navigation .projet__navigation__inside .projet-navigation__link {
+  .projet__navigation__navigation__inside .projet-navigation__link {
     font-size: 1.563rem;
   }
 }
-.projet__navigation .projet__navigation__inside p, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .projet__navigation .projet__navigation__inside li, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .projet__navigation .projet__navigation__inside li {
+.projet__navigation__navigation__inside p, .projet__navigation__navigation__inside .projet__paragraphe ul li, .projet__paragraphe ul .projet__navigation__navigation__inside li, .projet__navigation__navigation__inside .projet__paragraphe ol li, .projet__paragraphe ol .projet__navigation__navigation__inside li {
   font-size: 3.0517578125rem;
   margin-right: 1.953rem;
   color: #191919;
 }
 @media only screen and (max-width : 767px) {
-  .projet__navigation .projet__navigation__inside p, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ul li, .projets__wrapper .projets__paragraphe ul .projet__navigation .projet__navigation__inside li, .projet__navigation .projet__navigation__inside .projets__wrapper .projets__paragraphe ol li, .projets__wrapper .projets__paragraphe ol .projet__navigation .projet__navigation__inside li {
+  .projet__navigation__navigation__inside p, .projet__navigation__navigation__inside .projet__paragraphe ul li, .projet__paragraphe ul .projet__navigation__navigation__inside li, .projet__navigation__navigation__inside .projet__paragraphe ol li, .projet__paragraphe ol .projet__navigation__navigation__inside li {
     font-size: 1.5625rem;
   }
 }
-.projet__navigation .projet__navigation__inside .nav--last {
+.projet__navigation__navigation__inside .nav--last {
   margin-right: 0;
 }
 
