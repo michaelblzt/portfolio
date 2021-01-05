@@ -78,9 +78,17 @@ img.lazyload:not([src]) {
 				margin-top:1.953rem;
 			}
 
+			@media #{$phone} {
+				max-width:100%;
+			}
+
 			@media #{$phone-xxs} {
 				margin-top:1.953rem;
 			}
+		}
+
+		@media #{$phone} {
+			padding: 0 1rem;
 		}
 	}
 }

@@ -33,6 +33,10 @@ header{
 				fill: $color-black;
 				@include transition;
 			}
+
+			@media #{$phone} {
+				width: 3.052rem;
+			}
 		}
 
 		&:hover {
@@ -44,9 +48,7 @@ header{
 			}
 		}
 
-		@media #{$phone} {
-			width: 1.953rem;
-		}
+	
 	}
 
 // DISPLAY DESKTOP
