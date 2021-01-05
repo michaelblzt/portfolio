@@ -73,8 +73,9 @@ img.lazyload:not([src]) {
 				color:$color-yellow;
 			}
 
-			@media #{$phone} {
+			@media #{$tablet} {
 				max-width:90%;
+				margin-top:1.953rem;
 			}
 
 			@media #{$phone-xxs} {
