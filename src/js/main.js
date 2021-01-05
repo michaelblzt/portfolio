@@ -189,4 +189,3 @@ jQuery(document).ready(function($) {
         if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
     }
 })(); 
-

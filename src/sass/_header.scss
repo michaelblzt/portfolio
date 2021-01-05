@@ -43,6 +43,10 @@ header{
 				fill: #ffffff;
 			}
 		}
+
+		@media #{$phone} {
+			width: 1.953rem;
+		}
 	}
 
 // DISPLAY DESKTOP

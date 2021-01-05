@@ -89,6 +89,11 @@ header .logo-container:hover .path1 {
 header .logo-container:hover .path2 {
   fill: #ffffff;
 }
+@media only screen and (max-width : 767px) {
+  header .logo-container {
+    width: 1.953rem;
+  }
+}
 header .nav-site--normal {
   display: block;
   display: flex;
