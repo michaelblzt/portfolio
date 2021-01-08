@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .button{
 	display:inline-block;
 	color: white;
@@ -34,12 +37,17 @@
 	}
 }
 
+.button--contact{
+	color: $color-black !important;
+	text-transform: none;
+}
+
 .button--margin-bottom{
 	margin: 0 auto 1rem auto !important;
 }
 
 .button--big{
-	padding: 1.25rem 1.563rem;
+	padding: 1rem 1.563rem;
 }
 
 .button--pink{
@@ -49,10 +57,6 @@
 .button--yellow{
 	background-color: $color-yellow;
 	color: $color-black;
-}
-
-.button--black{
-	background-color: $color-black;
 }
 
 .button--border_white{

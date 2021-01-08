@@ -1,0 +1,105 @@
+.transition {
+  -webkit-transition: all 0.25s ease-in-out;
+  /* Safari */
+  transition: all 0.25s ease-in-out;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+  color: #FFCF56 !important;
+  background: #FFFFFF !important;
+  padding: 1rem;
+}
+p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+  color: #FFCF56 !important;
+  background: #FFFFFF !important;
+  padding: 1rem;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 1.563rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+  -webkit-appearance: none;
+  opacity: 1;
+  -webkit-transition: all 0.25s ease-in-out;
+  /* Safari */
+  -moz-transition: all 0.25s ease-in-out;
+  /* Firefox */
+  transition: all 0.25s ease-in-out;
+  font-size: ms(-1);
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  background: #191919;
+}
+.button:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width : 767px) {
+  .button {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+  }
+}
+
+.button--small {
+  padding: 1rem 1.25rem;
+}
+@media only screen and (max-width : 767px) {
+  .button--small {
+    padding: 1.25rem 1.563rem;
+  }
+}
+
+.button--contact {
+  color: #191919 !important;
+  text-transform: none;
+}
+
+.button--margin-bottom {
+  margin: 0 auto 1rem auto !important;
+}
+
+.button--big {
+  padding: 1rem 1.563rem;
+}
+
+.button--pink {
+  background-color: #ff4967;
+}
+
+.button--yellow {
+  background-color: #FFCF56;
+  color: #191919;
+}
+
+.button--border_white {
+  border: 1px solid white;
+  color: white;
+}

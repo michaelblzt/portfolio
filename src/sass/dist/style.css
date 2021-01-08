@@ -152,7 +152,7 @@ html[xmlns] .clearfix {
   font-family: "TTNorms-Bold", Arial, sans-serif;
 }
 
-.fontRegular, #wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projet__paragraphe ol li em, .projet__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projet__paragraphe ul li em, .projet__paragraphe ul #wrapper__about .mastahead__about li em, #services .list-services-container li, #code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ol li, .projet__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ul li, .projet__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li, body, h4 {
+.fontRegular, #wrapper__about .mastahead__about p em, #wrapper__about .mastahead__about .projet__paragraphe ol li em, .projet__paragraphe ol #wrapper__about .mastahead__about li em, #wrapper__about .mastahead__about .projet__paragraphe ul li em, .projet__paragraphe ul #wrapper__about .mastahead__about li em, #services .list-services-container li, #services .list-services-container p, #services .list-services-container .projet__paragraphe ol li, .projet__paragraphe ol #services .list-services-container li, #services .list-services-container .projet__paragraphe ul li, .projet__paragraphe ul #services .list-services-container li, #code-block .code-block__container .code-block__element .code-block__txt p, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ol li, .projet__paragraphe ol #code-block .code-block__container .code-block__element .code-block__txt li, #code-block .code-block__container .code-block__element .code-block__txt .projet__paragraphe ul li, .projet__paragraphe ul #code-block .code-block__container .code-block__element .code-block__txt li, body, h4 {
   font-family: "TTNorms-Regular", Arial, sans-serif;
 }
 
@@ -820,73 +820,6 @@ img.lazyload:not([src]) {
   background: #191919 url(../images/loader.svg) no-repeat center center;
 }
 
-.jumbo-video {
-  position: absolute;
-  text-align: center;
-  width: 100vw;
-  height: 63vh;
-}
-.jumbo-video, .jumbo-video video, .jumbo-video .viewport-header {
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 63vh;
-}
-.jumbo-video .overlay-video {
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 63vh;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.jumbo-video video {
-  object-fit: cover;
-  width: 100vw;
-  height: 63vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.jumbo-video .viewport-header {
-  position: relative;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1.953rem;
-}
-.jumbo-video .viewport-header h1 {
-  color: white;
-  max-width: 75%;
-}
-.jumbo-video .viewport-header h1 strong {
-  color: #FFCF56;
-}
-@media only screen and (max-width : 1024px) {
-  .jumbo-video .viewport-header h1 {
-    max-width: 90%;
-    margin-top: 1.953rem;
-  }
-}
-@media only screen and (max-width : 767px) {
-  .jumbo-video .viewport-header h1 {
-    max-width: 100%;
-  }
-}
-@media only screen and (max-width : 375px) {
-  .jumbo-video .viewport-header h1 {
-    margin-top: 1.953rem;
-  }
-}
-@media only screen and (max-width : 767px) {
-  .jumbo-video .viewport-header {
-    padding: 0 1rem;
-  }
-}
-
 .container--lg {
   width: 100%;
   max-width: 1170px;
@@ -1296,6 +1229,97 @@ img.lazyload:not([src]) {
   color: #FFCF56;
 }
 
+.jumbo-video {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 63vh;
+}
+.jumbo-video, .jumbo-video video, .jumbo-video .viewport-header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 63vh;
+}
+.jumbo-video .overlay-video {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 63vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.jumbo-video video {
+  object-fit: cover;
+  width: 100vw;
+  height: 63vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.jumbo-video .viewport-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.953rem;
+}
+.jumbo-video .viewport-header h1 {
+  color: white;
+  max-width: 75%;
+}
+.jumbo-video .viewport-header h1 strong {
+  color: #FFCF56;
+}
+@media only screen and (max-width : 1024px) {
+  .jumbo-video .viewport-header h1 {
+    max-width: 90%;
+    margin-top: 1.953rem;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .jumbo-video .viewport-header h1 {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width : 375px) {
+  .jumbo-video .viewport-header h1 {
+    margin-top: 1.953rem;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .jumbo-video .viewport-header {
+    padding: 0 1rem;
+  }
+}
+
+.client-wrapper {
+  position: relative;
+  top: 63vh;
+}
+.client-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3.052rem;
+}
+.client-wrapper ul li {
+  width: 22%;
+  margin: 0 1rem 1rem 0;
+  background-color: #FAFAFA;
+  padding: 1.25rem;
+}
+@media only screen and (max-width : 767px) {
+  .client-wrapper ul li {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
 .design-block {
   display: block;
   background-color: #FAF7F1;
@@ -1527,28 +1551,28 @@ img.lazyload:not([src]) {
     margin-top: 1.953rem;
   }
 }
-#services .list-services-container ul {
+#services .list-services-container ul, #services .list-services-container .services-philosophy {
   display: block;
   width: 31%;
   list-style: none;
   padding-left: 3%;
 }
-#services .list-services-container ul:first-of-type {
+#services .list-services-container ul:first-of-type, #services .list-services-container .services-philosophy:first-of-type {
   padding-left: 0;
 }
 @media only screen and (max-width : 767px) {
-  #services .list-services-container ul:first-of-type {
+  #services .list-services-container ul:first-of-type, #services .list-services-container .services-philosophy:first-of-type {
     padding-left: 5%;
   }
 }
 @media only screen and (max-width : 1024px) {
-  #services .list-services-container ul {
+  #services .list-services-container ul, #services .list-services-container .services-philosophy {
     width: 33%;
     margin-bottom: 1.953rem;
   }
 }
 @media only screen and (max-width : 767px) {
-  #services .list-services-container ul {
+  #services .list-services-container ul, #services .list-services-container .services-philosophy {
     width: 100%;
   }
 }
@@ -1563,7 +1587,7 @@ img.lazyload:not([src]) {
     display: block;
   }
 }
-#services .list-services-container li {
+#services .list-services-container li, #services .list-services-container p, #services .list-services-container .projet__paragraphe ol li, .projet__paragraphe ol #services .list-services-container li, #services .list-services-container .projet__paragraphe ul li, .projet__paragraphe ul #services .list-services-container li {
   font-size: 1rem;
   color: #a2a2a2;
   margin-bottom: 0.8rem;
@@ -1718,25 +1742,6 @@ img.lazyload:not([src]) {
 }
 #wrapper__about .presentation-block .img-container {
   background: url(../images/about/tof_mb_juin2015.jpg) center center no-repeat;
-}
-#wrapper__about .client-wrapper ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 3.052rem;
-}
-#wrapper__about .client-wrapper ul li {
-  width: 22%;
-  margin: 0 1rem 1rem 0;
-  background-color: #FAFAFA;
-  padding: 1.25rem;
-}
-@media only screen and (max-width : 767px) {
-  #wrapper__about .client-wrapper ul li {
-    width: 100%;
-    margin: 0 0 1rem 0;
-  }
 }
 
 .projet {

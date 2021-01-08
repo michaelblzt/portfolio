@@ -27,72 +27,6 @@ img.lazyload:not([src]) {
 	background: $color-black url(../images/loader.svg) no-repeat center center;
 }
 
-.jumbo-video{
-	position: absolute;
-	text-align: center;
-	width: 100vw;
-	height: 63vh;
-
-	&, video, .viewport-header {
-		@include coverer;
-		height:63vh;
-	}
-
-	.overlay-video{
-		@include coverer;
-		height:63vh;
-		display:block;
-		background-color: rgba(0, 0, 0, 0.80);
-		
-	}
-
-	video{ // Pour la video en home page
-		object-fit: cover;
-		width: 100vw;
-		height: 63vh;
-		position: absolute;
-		//z-index:-100;
-		top: 0;
-		left: 0;
-
-	}
-
-	.viewport-header{
-		position: relative;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0 1.953rem;
-
-		h1{
-			color: white;
-			max-width: 75%;
-	
-			strong{
-				color:$color-yellow;
-			}
-
-			@media #{$tablet} {
-				max-width:90%;
-				margin-top:1.953rem;
-			}
-
-			@media #{$phone} {
-				max-width:100%;
-			}
-
-			@media #{$phone-xxs} {
-				margin-top:1.953rem;
-			}
-		}
-
-		@media #{$phone} {
-			padding: 0 1rem;
-		}
-	}
-}
-
 .container--lg{
 	width:100%;
 	max-width: 1170px;
@@ -518,7 +452,93 @@ img.lazyload:not([src]) {
 
 }
 
+.jumbo-video{
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	height: 63vh;
 
+	&, video, .viewport-header {
+		@include coverer;
+		height:63vh;
+	}
+
+	.overlay-video{
+		@include coverer;
+		height:63vh;
+		display:block;
+		background-color: rgba(0, 0, 0, 0.80);
+		
+	}
+
+	video{ // Pour la video en home page
+		object-fit: cover;
+		width: 100vw;
+		height: 63vh;
+		position: absolute;
+		//z-index:-100;
+		top: 0;
+		left: 0;
+
+	}
+
+	.viewport-header{
+		position: relative;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 1.953rem;
+
+		h1{
+			color: white;
+			max-width: 75%;
+	
+			strong{
+				color:$color-yellow;
+			}
+
+			@media #{$tablet} {
+				max-width:90%;
+				margin-top:1.953rem;
+			}
+
+			@media #{$phone} {
+				max-width:100%;
+			}
+
+			@media #{$phone-xxs} {
+				margin-top:1.953rem;
+			}
+		}
+
+		@media #{$phone} {
+			padding: 0 1rem;
+		}
+	}
+}
+
+
+.client-wrapper{
+	position:relative;
+	top: 63vh;
+	ul{
+		@include create-flex-wrap;
+		margin-bottom: 3.052rem;
+
+		li{
+			width:22%;
+			margin: 0 1rem 1rem 0;
+			background-color: #FAFAFA;
+			padding: 1.25rem;
+
+			@media #{$phone} {	
+				width: 100%;
+				margin: 0 0 1rem 0;
+			}
+		}
+	}
+}
 
 
 // -------------  Section Design-Block-------------
@@ -862,7 +882,7 @@ img.lazyload:not([src]) {
 			margin-top: 1.953rem;
 		}
 
-		ul{
+		ul, .services-philosophy{
 			display:block;
 		 	width: 31%;
 		 	list-style:none;
@@ -900,7 +920,7 @@ img.lazyload:not([src]) {
 
 		}
 
-	   	li{
+	   	li, p{
 	   		font-size:1rem;
 	   		@extend .fontRegular;
 	   		color:$color-grey-medium;
@@ -1094,26 +1114,8 @@ img.lazyload:not([src]) {
 		}
 	}
 
-	.client-wrapper{
-		ul{
-			@include create-flex-wrap;
-			margin-bottom: 3.052rem;
-
-			li{
-				width:22%;
-				margin: 0 1rem 1rem 0;
-				background-color: #FAFAFA;
-				padding: 1.25rem;
-
-				@media #{$phone} {	
-					width: 100%;
-					margin: 0 0 1rem 0;
-				}
-			}
-		}
-	}
-
 }
+
 
 // -------------------------
 //	FIN ABOUT about.html
