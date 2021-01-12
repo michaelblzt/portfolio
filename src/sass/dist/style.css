@@ -376,7 +376,7 @@ header .nav-site--normal ul li {
   max-width: 200px;
   margin-right: 2.441rem;
 }
-header .nav-site--normal ul li :last-child {
+header .nav-site--normal ul li:last-of-type {
   margin-right: 0;
 }
 header .nav-site--normal ul li a {
@@ -389,6 +389,10 @@ header .nav-site--normal ul li a {
   /* Firefox */
   transition: all 0.25s ease-in-out;
   opacity: 0.8;
+}
+header .nav-site--normal ul li a .active {
+  font-weight: bold;
+  opacity: 1;
 }
 header .nav-site--normal ul li .messenger-link {
   background: url(../images/messenger-icon.png) no-repeat;
@@ -729,6 +733,44 @@ footer a:hover {
   color: white;
 }
 
+.transition {
+  -webkit-transition: all 0.25s ease-in-out;
+  /* Safari */
+  transition: all 0.25s ease-in-out;
+}
+
+p::-moz-selection, .projet__paragraphe ol li::-moz-selection, .projet__paragraphe ul li::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, em::-moz-selection, i::-moz-selection {
+  color: #FFCF56 !important;
+  background: #FFFFFF !important;
+  padding: 1rem;
+}
+p::selection, .projet__paragraphe ol li::selection, .projet__paragraphe ul li::selection, h1::selection, h2::selection, h3::selection, a::selection, span::selection, strong::selection, em::selection, i::selection {
+  color: #FFCF56 !important;
+  background: #FFFFFF !important;
+  padding: 1rem;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
 .button {
   display: inline-block;
   color: white;
@@ -770,12 +812,17 @@ footer a:hover {
   }
 }
 
+.button--contact {
+  color: #191919 !important;
+  text-transform: none;
+}
+
 .button--margin-bottom {
   margin: 0 auto 1rem auto !important;
 }
 
 .button--big {
-  padding: 1.25rem 1.563rem;
+  padding: 1rem 1.563rem;
 }
 
 .button--pink {
@@ -785,10 +832,6 @@ footer a:hover {
 .button--yellow {
   background-color: #FFCF56;
   color: #191919;
-}
-
-.button--black {
-  background-color: #191919;
 }
 
 .button--border_white {
@@ -1274,7 +1317,7 @@ img.lazyload:not([src]) {
 .jumbo-video .viewport-header h1 strong {
   color: #FFCF56;
 }
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 1280px) {
   .jumbo-video .viewport-header h1 {
     max-width: 90%;
     margin-top: 1.953rem;
@@ -1730,6 +1773,9 @@ img.lazyload:not([src]) {
 }
 #wrapper__about .presentation-wrapper {
   background-color: #FAFAFA;
+}
+#wrapper__about .client-wrapper {
+  top: 0;
 }
 #wrapper__about .work-sector {
   margin-bottom: 1rem;

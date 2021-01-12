@@ -494,11 +494,11 @@ img.lazyload:not([src]) {
 			color: white;
 			max-width: 75%;
 	
-			strong{
+			strong{	
 				color:$color-yellow;
 			}
 
-			@media #{$tablet} {
+			@media #{$laptop} {
 				max-width:90%;
 				margin-top:1.953rem;
 			}
@@ -1087,12 +1087,15 @@ img.lazyload:not([src]) {
 				}
 			}
 		}
-
-	
 	}
+
 
 	.presentation-wrapper{
 		background-color: #FAFAFA;
+	}
+
+	.client-wrapper{
+		top: 0;
 	}
 
 	.work-sector{

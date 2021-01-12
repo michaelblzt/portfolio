@@ -114,7 +114,7 @@ header .nav-site--normal ul li {
   max-width: 200px;
   margin-right: 2.441rem;
 }
-header .nav-site--normal ul li :last-child {
+header .nav-site--normal ul li:last-of-type {
   margin-right: 0;
 }
 header .nav-site--normal ul li a {
@@ -127,6 +127,10 @@ header .nav-site--normal ul li a {
   /* Firefox */
   transition: all 0.25s ease-in-out;
   opacity: 0.8;
+}
+header .nav-site--normal ul li .active {
+  font-weight: bold;
+  opacity: 1 !important;
 }
 header .nav-site--normal ul li .messenger-link {
   background: url(../images/messenger-icon.png) no-repeat;
@@ -162,9 +166,6 @@ header .nav-site--normal ul li:hover .borderLeftRight:hover::after, header .nav-
   header .nav-site--normal ul li {
     display: none;
   }
-}
-header .nav-site--normal ul .active a {
-  opacity: 1;
 }
 header .nav-site--modif {
   position: absolute;

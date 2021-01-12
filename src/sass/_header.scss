@@ -70,7 +70,7 @@ header{
 				max-width: 200px;
 				margin-right: 2.441rem;
 
-				:last-child{
+				&:last-of-type{
 					margin-right: 0;
 				}
 
@@ -80,6 +80,11 @@ header{
 					font-size: ms(1);
 					@include transition;
 					opacity: .8;
+				}
+
+				.active{
+					font-weight: bold;
+					opacity: 1 !important;
 				}
 
 				.messenger-link{
@@ -122,12 +127,6 @@ header{
 
 				@media #{$tablet, $phone} {
 					display: none;
-				}
-			}
-
-			.active{
-				a{
-					opacity: 1;
 				}
 			}
 
