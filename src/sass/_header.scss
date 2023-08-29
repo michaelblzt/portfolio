@@ -1,0 +1,364 @@
+@import 'variables';
+@import 'mixins';
+
+// ------------- HEADER -------------
+
+header{
+	width:100%;
+	padding: 0;
+	z-index:9998;
+	position:fixed;
+	@include transition;
+	@include create-flex-wrap;
+	background-color: rgba(0,0,0,0);
+
+	
+	.logo-container{
+		@include transition;
+		display: block;
+		padding: 1rem 1.953rem;
+		position:relative;
+		z-index:9999;
+
+		svg{
+			width: 4.75rem;
+			display: block;
+
+			.path1{
+				fill: white;
+				@include transition;
+			}
+	
+			.path2{
+				fill: $color-black;
+				@include transition;
+			}
+
+			@media #{$phone} {
+				width: 3.052rem;
+			}
+		}
+
+		&:hover {
+			.path1{
+				fill: $color-black;
+			}
+			.path2{
+				fill: #ffffff;
+			}
+		}
+
+	
+	}
+
+// DISPLAY DESKTOP
+	.nav-site--normal {
+		display:block;
+		@include create-flex-wrap;
+		width:50%;
+		padding-right:1.953rem;
+		justify-content: center;
+
+
+		ul{
+			width:100%;
+			text-align:right;
+			align-self: center;
+
+			li{
+				display:inline-block;
+				max-width: 200px;
+				margin-right: 2.441rem;
+
+				&:last-of-type{
+					margin-right: 0;
+				}
+
+				a{
+					text-decoration: none;
+					color: white;
+					font-size: ms(1);
+					@include transition;
+					opacity: .8;
+				}
+
+				.active{
+					font-weight: bold;
+					opacity: 1 !important;
+				}
+
+				.messenger-link{
+					background: url(../images/messenger-icon.png) no-repeat;
+				    background-size: 100%;
+				    display: block;
+				    width: 28px;
+				}
+
+				&:hover, &:active, &:focus{
+					a{
+						opacity: 1;
+					}
+					
+					.borderLeftRight {
+					  display: inline-block;
+					  position: relative;
+					  color: #474E51;
+					}
+
+					.borderLeftRight::after {
+					  content: '';
+					  position: absolute;
+					  width: 100%;
+					  transform: scaleX(0);
+					  height: 2px;
+					  bottom: 0;
+					  left: 0;
+					  background-color: #5878F3;
+					  transform-origin: bottom right;
+					  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+					}
+
+					.borderLeftRight:hover::after {
+					  transform: scaleX(1);
+					  transform-origin: bottom left;
+					}
+
+				}
+
+				@media #{$tablet, $phone} {
+					display: none;
+				}
+			}
+
+		}
+
+	}
+
+
+	// NAVIGATION BURGER STYLE MOBILE VERSION
+	.nav-site--modif{
+		position: absolute;
+		right: 0;
+		width: 100%;
+		display: none;	
+		//background-color: red;
+
+		@media #{$tablet, $phone} {
+			display: block;
+		}
+
+		input + label {
+	      position: fixed;
+	      top: 1.953rem;
+	      right: 1.953rem;
+	      height: 20px;
+	      width: 75px; 
+	      z-index: 5;
+	      @include transition;
+
+			&::before{
+				content: 'Menu';
+				color: white;
+				text-align: right;
+				@include transition;
+				transition-delay: .5s;
+				font-size: 1.25rem;
+				position: absolute;
+				top: -6px;
+			}
+
+		  	span{
+		    	position: absolute;
+			    width: 15px;
+			    height: 2px;
+			    top: 50%;
+			    z-index: 99;
+			    margin-top: -1px;
+			    right: 0;
+			    display: block;
+			    background: white;
+			    @include transition;
+		  	}
+
+			span:first-child {
+				top: 4px; 
+			}
+			span:last-child {
+				top: 16px; 
+		  	}      
+		}
+
+		label:hover {
+		  cursor: pointer;
+		  opacity: 0.8;
+		}
+
+		input:checked + label { 
+
+			span {
+				opacity: 0;
+				top: 50%;
+		  	}
+			span:first-child {
+				opacity: 1;
+				transform: rotate(405deg);
+			}
+			span:last-child {
+				opacity: 1;
+				transform: rotate(-405deg);
+			}
+		}
+
+		#burger{
+			position: absolute;
+			opacity: 0;
+			top: 40px;
+			right: 40px;
+			width: auto;
+		}
+
+		input ~ nav {
+			background: transparent;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			z-index: 1;
+			@include transition;
+			transition-delay: .5s;
+			overflow: hidden;
+
+			& > ul {
+			    text-align: center;
+			    padding-top: 13%;
+
+				& > li {
+			      opacity: 0;
+			      @include transition;
+			      transition-delay: 0s;
+			      padding-bottom: 1.953rem;
+
+					& > a {
+						text-decoration: none;
+						color: $color-grey-medium;
+						font-family: 'TTNorms-Regular', Arial, sans-serif;
+						display: block;
+						font-size: ms-function(7);
+						@include transition;
+
+						@media #{$phone}{
+							font-size:2.441rem;
+						}
+
+						span{
+							display: block;
+							font-size:1rem;
+							color: $color-grey-dark;
+						}
+
+						&:hover{
+							color: $color-yellow;
+
+							span{
+								color: white;
+							}
+						}
+
+						&:active{
+							opacity: 1;
+							color: $color-yellow;
+						}
+					}
+			    }
+
+			    .active{
+					a{
+						opacity: 1;
+						color: $color-yellow;
+					}
+				}
+
+			    @media #{$phone} { // UL
+			    	padding-top: 40%;
+			    }
+			}
+
+			.nav-site__social-list{
+				opacity: 0;
+	      		@include transition;
+	      		margin-top: 2.5%;
+
+				@media #{$phone}{
+					margin-top:15%;
+				}
+
+				p{
+					color:$color-grey-dark;
+					text-align:center;
+				}
+
+				ul{
+					width:25%;
+					display: flex;
+					flex-direction:row;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin: 1rem auto;
+					padding-top: 0;// Reintialise le padding de & > ul
+
+					@media #{$phone} {
+						width:75%;
+					}
+
+					li{
+
+						a{
+							text-decoration: none;
+							color:white;
+							font-size:1.25rem;
+							opacity: 0.8;
+
+							&:hover{
+								opacity: 1;
+								color: $color-yellow;
+							}
+						}
+					}
+				}
+			}	
+		}
+
+		input:checked ~ nav { 
+		height: 100vh;
+		width:100%;
+		transition-delay: 0s;
+		background: $color-black;
+
+			> ul {
+				> li {
+				  opacity: 1;
+				  transition-delay: .5s;
+				}
+			}
+
+			& > .nav-site__social-list{
+				opacity: 1;
+				transition-delay: .5s;
+			}
+		}
+
+		input:checked + label{
+			&::before{
+			position:absolute;
+			content:'Quitter';
+			color: white;
+			right:23px;
+			}
+		}
+	}
+}
+
+.header--bg_black{
+	background-color: $color-black !important;
+}

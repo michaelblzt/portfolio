@@ -1,0 +1,1432 @@
+// Toutes les dépendences scss (font, reset, ... sont installées dans _base.scss)
+@import 'base';
+
+body{
+	@extend .fontRegular;
+	font-size:1rem;
+	line-height: 1.5;
+	color: $color-grey-dark;
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	overflow-x:hidden
+}
+
+// ------------- Reusable Classes -------------
+
+img.lazyload:not([src]) {
+	visibility: hidden;
+}
+
+#preloader { 
+	position: fixed; 
+	left: 0; top: 0; 
+	z-index: 9999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: $color-black url(../images/loader.svg) no-repeat center center;
+}
+
+.container--lg{
+	width:100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	position:relative;
+	//padding:0 1.953rem;
+
+	@media #{$bigScreens} {
+		padding:0;
+	}
+
+	@media #{$phone} {
+		padding: 0 1rem;
+	}
+}
+
+.container--md{
+	width:50%;
+	margin: 0 auto;
+	position:relative;
+
+	@media #{$tablet} {
+		width:95%;
+	}
+}
+
+.design-block-home{
+	position:relative;
+	top:63vh;
+	margin-bottom:63vh;
+}
+
+.section-wrapper{
+	width:100%;
+	display:block;
+	@include padding-inside-blocks;
+
+	@media #{$tablet} {
+		@include padding-inside-blocks--xs;	
+	}
+
+	.wrapper-title{
+		position: relative;
+		width: 100%;
+		display: block;
+		margin-bottom: 1.25rem;
+	  
+		h2{
+		  color: rgba(0, 0, 0, 0.05);
+		  text-align: center;
+		  font-size: ms(8);
+		  top: 0;
+		  width: 100%;
+		  @extend .fontBold;
+	  
+		  @media #{$tablet} {
+			font-size: ms(4);
+			color: rgba(0, 0, 0, 0.25);
+		  }
+	  
+		  @media #{$phone} {
+			font-size: ms(3);
+			color: rgba(0, 0, 0, 0.25);
+		  }
+		}
+	  
+		p{
+		  font-size: ms(0);
+		  color: $color-black;
+		  text-align: center;
+		  position: relative;
+		  display: block;
+		  top: -86px;
+		  @extend .fontBold;
+		  text-transform: uppercase;
+	  
+			@media #{$tablet} {
+			  top: 0;
+			}
+	  
+			@media #{$phone} {
+			  top: 0;
+			}
+		}
+	  
+		&::after{
+		  display: block;
+		  margin: 0 auto;
+		  position: relative;
+		  top: -1.563rem;
+		  content: '';
+		  width: 50px;
+		  height: 2px;
+		  background-color: $color-yellow;
+	  
+		  @media #{$phone, $tablet} {
+			opacity: 0;
+		  }
+		}
+	  
+		@media #{$phone, $tablet} {
+		  margin: 0 0 1.953rem 0;
+		}
+	  
+	  }
+
+
+}
+
+.section-wrapper--pbig{
+	@include padding-inside-blocks--lg;
+	@media #{$phone} {
+		@include padding-inside-blocks--xs;	
+	}
+}
+
+.section-wrapper--pmax{
+	@include padding-inside-blocks--xl;
+	@media #{$phone} {
+		@include padding-inside-blocks--xs;	
+	}
+}
+
+// Blocks projets
+.content-block{
+	&__wrapper{
+		margin:1.953rem;
+
+		@media #{$tablet}{
+			margin: 3.052rem 0;
+		}
+	}
+
+	&__container{
+		background: transparent;
+		@include transition;
+		text-decoration:none;
+		width:100%;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		position:relative;
+
+		.img-container{
+			display: block;
+			width: 100%;
+			max-height:540px;
+			max-width: 540px;
+			margin: 0 auto;
+			
+
+			picture{
+				display:block;
+				width:100%;
+				height:100%;
+				overflow: hidden;
+
+				img{
+					width:100%;
+					height:100%;
+					transform: scale(1);
+					@include transition;
+				}
+			}
+		}
+
+		.txt-container{
+			width: 45%;
+			display: block;
+			text-align: left;
+
+			small{
+				font-size: ms(-1);
+				color: $color-grey-medium;
+			}
+
+			h3{
+				
+				em{
+					@include underlining-horizontal;
+					@include underlining--yellow;
+				}
+			}
+
+			p{
+				margin: 1.953rem 0;
+				color:$color-grey-medium;
+			}
+
+			ul{
+				margin: 1.953rem 0;
+
+				li{
+					font-size: ms(0);
+					color: $color-grey-medium;
+				
+					span{
+						color:$color-yellow;
+					}
+				}
+
+			}
+		}
+
+		@media #{$phone} {
+
+			.img-container{
+				margin-bottom: 0;
+				width:100%;
+			}
+			.txt-container{
+				background: white;
+				width: 100%;
+				text-align:center;
+				padding: 1rem;
+
+				a{
+					width:75%;
+					margin: 0 auto;
+				}
+
+				h3{
+					font-size:1.563rem;
+				}
+
+				ul{
+					margin: 15px 0;
+				}
+				
+			}
+		}
+
+		&:hover{
+			.img-container{
+				picture{
+					img{
+						-webkit-box-shadow: 10px 32px 64px 0px rgba(0,0,0,0.15);
+						-moz-box-shadow: 10px 32px 64px 0px rgba(0,0,0,0.15);
+						box-shadow: 10px 32px 64px 0px rgba(0,0,0,0.10);
+						-moz-transform: scale(1.01);
+						-webkit-transform: scale(1.01);
+						transform: scale(1.01);
+						overflow:hidden;
+					}
+				}
+			}	
+		}
+	}
+}
+
+.popup-projets{ // Style particulier pour crée un encart en haut de page projet.html pour annoncer une rubrique "évènement"
+	background-color: $color-yellow;
+	padding: 1rem 1.953rem;
+	width: 90%;
+	margin: 1rem auto;
+	@include border-radius(0.512rem);
+	@include transition;
+	@include create-flex-wrap;
+	//@include box-shadow-none;
+
+	.popup-projets__pLeft{
+		width: 58%;
+
+		p{
+			font-size: ms(2);
+			@extend .fontLight;
+			color: $color-black;
+		}
+
+		@media #{$phone}{
+			margin-bottom:1rem;
+			width: 100%;
+
+			p{
+				font-size:1.564rem;
+				text-align:center;
+			}
+		}
+	}
+	.popup-projets__pRight{
+		width: 25%;
+		align-self: center;
+
+		.button{
+			margin: 0 auto;
+			display:block;
+			max-width:15rem;
+		}
+
+		@media #{$phone}{
+			width: 100%;
+
+			.button{
+				width: 100% !important;
+				max-width:100%;
+			}
+		}
+	}
+
+	@media #{$phone}{
+		flex-direction: column;
+	}
+
+	&:hover{
+		background-color: $color-black;
+		//@include box-shadow-custom;
+
+		.popup-projets__pLeft{
+			p{
+				color: white;
+			}
+		}
+
+		.popup-projets__pRight{
+			.button--black{
+				background-color: $color-yellow;
+				color: $color-black;
+			}
+		}
+	}
+}
+
+
+.social-media-list{
+	@include create-flex-wrap;
+	width:25%;
+	list-style:none;
+	margin: 0 auto;
+
+	@media #{$phone} {
+		width:95%;
+	}
+
+	.social-media-item{
+		
+		text-align:center;
+		width:20%;
+		@include transition;
+
+		a{
+			width: 100%;
+			height: 100%;
+			font-size: 1.25rem;
+			text-align:center;
+			@include transition;
+		}
+	}
+}
+
+.link--light{
+	font-size:ms(0);
+    color: $color-black;
+    text-decoration: none;
+    @include transition;
+    @include underlining-horizontal;
+    background-size: 100% 0px; // change the second value to the desired height of the underline
+    @include underlining--yellow; 
+
+    &:hover{
+      color:$color-black;
+      background-size: 100% 8px; // change the second value to the desired height of the underline
+    }
+}
+
+// -------------------------
+//	INDEX
+// -------------------------
+
+// ------------- Section "Head" -------------
+
+
+.mastahead{
+	position: relative;
+	width:100%;
+	background-size: cover;
+	padding: 9.313rem 5.96rem 5.96rem 5.96rem;
+
+	&__home{
+	
+		@media #{$phone} {	
+			background: none;
+			background-color: $color-black;
+		}
+	}
+	
+	&__works{
+		background:  -webkit-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/bg-works.jpg) no-repeat;
+		background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/bg-works.jpg) no-repeat;
+		background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/bg-works.jpg) no-repeat;
+		background-position: 100% 50%;
+		background-size:cover;
+	}
+
+	&__about{
+		background:  -webkit-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+		background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+		background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+		background-position: 100% 50%;
+
+		h1{
+			text-align:left !important;
+
+			@media #{$phone}{
+				text-align:left;
+			}
+		}
+	}
+
+	@media #{$phone} {
+		padding: 5.96rem 1rem 3.092rem 1rem;
+	}
+
+	h1{
+		color: white;
+		text-align:center;
+
+		strong{
+			color:$color-yellow;
+		}
+	}
+
+}
+
+.jumbo-video{
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	height: 63vh;
+
+	&, video, .viewport-header {
+		@include coverer;
+		height:63vh;
+	}
+
+	.overlay-video{
+		@include coverer;
+		height:63vh;
+		display:block;
+		background-color: rgba(0, 0, 0, 0.80);
+		
+	}
+
+	video{ // Pour la video en home page
+		object-fit: cover;
+		width: 100vw;
+		height: 63vh;
+		position: absolute;
+		//z-index:-100;
+		top: 0;
+		left: 0;
+
+	}
+
+	.viewport-header{
+		position: relative;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 1.953rem;
+
+		h1{
+			color: white;
+			max-width: 75%;
+	
+			strong{	
+				color:$color-yellow;
+			}
+
+			@media #{$laptop} {
+				max-width:90%;
+				margin-top:1.953rem;
+			}
+
+			@media #{$phone} {
+				max-width:100%;
+			}
+
+			@media #{$phone-xxs} {
+				margin-top:1.953rem;
+			}
+		}
+
+		@media #{$phone} {
+			padding: 0 1rem;
+		}
+	}
+}
+
+
+.client-wrapper{
+	position:relative;
+	top: 63vh;
+	ul{
+		@include create-flex-wrap;
+		margin-bottom: 3.052rem;
+
+		li{
+			width:22%;
+			margin: 0 1rem 1rem 0;
+			background-color: #FAFAFA;
+			padding: 1.25rem;
+
+			@media #{$phone} {	
+				width: 100%;
+				margin: 0 0 1rem 0;
+			}
+		}
+	}
+}
+
+
+// -------------  Section Design-Block-------------
+
+.design-block{
+	display:block;
+	background-color: $color-sand;
+	
+
+	& > div > div:last-of-type{
+		margin-bottom: 0;
+
+		@media #{$phone}{
+			margin-bottom: 1.953rem;			
+		}
+	}
+
+	.projets-voir{
+		@include padding-inside-blocks--xs;
+
+		p{
+			text-align:center;
+			color: $color-grey-medium;
+			margin-top:1rem;
+			font-size: ms(4);
+			display:inline-block;
+			width:100%;
+		}
+
+		.link--light{
+			width: auto;
+			text-align: center;
+			color: $color-grey-medium;
+			margin: 1.953rem auto;
+			text-transform: uppercase;
+			font-size:ms(2);
+			display: block;
+			max-width: 250px;
+
+			&:hover{
+				color:$color-black;
+				background-size: 100% 15px; // change the second value to the desired height of the underline
+			}
+		}
+
+		@media #{$phone}{
+			@include padding-inside-blocks--xs;
+		}
+	}
+
+	.content-block__wrapper{
+		margin-bottom: 5.96rem;
+	}
+
+	// Spécification par projets -- relatif à .content-block__wrapper
+
+	.teleshopping-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $teleshopping-color;
+					color: $color-black;
+				}
+			}
+		}
+	}
+
+	.pechavy-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $pechavy-color;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.naturamind-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $naturamind-color;
+					color: $color-black;
+				}
+			}
+		}
+	}
+
+	.kreasound-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $kreasound-color;
+				}
+			}
+		}
+	}
+
+	.flexig-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background:#6CB741;
+				}
+			}
+		}
+		
+	}
+
+	.carl-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $carl-color;
+					color: $color-black;
+				}
+			}
+		}	
+	}
+
+	.bartoux-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $bartoux-color;
+				}
+			}
+		}	
+	}
+
+	.pmu-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $pmu-color;
+					color: $color-black;
+				}
+			}
+		}	
+	}
+
+	.novotel-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $novotel-color;
+					color: $color-black;
+				}
+			}
+		}	
+	}
+
+	.maskcoop-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $maskcoop-color;
+					color: $color-black;
+				}
+			}
+		}	
+	}
+
+	.pme_partner-projet{
+
+		&:hover{ // Permet de mettre le button à la couleur du projet
+			.txt-container{
+				.button--black{
+					background: $pme_partner-color;
+					color: white;
+				}
+			}
+		}	
+	}
+
+
+
+	// FIN Spécification par projets
+
+	.last{
+		margin-bottom:0;
+	}
+}
+
+// ------------- FIN Section Design-Block-------------
+
+
+// ------------- Section Code-Block-------------
+
+
+#code-block{
+	background-color: $blue_light;
+
+	.code-block__container{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width:100%;
+		list-style: none;
+		position:relative;
+		height:auto;
+	
+		.code-block__element{
+			width:31%;
+			position:relative;
+			overflow:hidden;
+
+			.overlay{
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba($color-black, .7);
+				z-index: 1;
+				@include transition;
+				height: 100%;
+				text-decoration: none;
+				color: white;
+
+				.hidden-txt{
+					text-align: center;
+					display: none;
+					z-index:9999;
+					@include transition;
+					margin-top:30%;
+					position:relative;
+				}
+			}
+
+			.code-block__txt{
+				text-align: center;
+				position:relative;
+				z-index:4;
+				padding: 1rem;
+				background: white;
+				@include transition;
+
+				h3{
+					@extend .fontBold;
+					font-size:1.25rem;
+					color:$color-black;
+					@include transition;
+					margin-bottom: 0.5rem;
+				}
+
+				p{
+					font-size: 1rem;
+					color:$color-grey-medium;
+					@extend .fontRegular;
+					width:90%;
+					margin: 0 auto;
+				}
+			}
+
+			&:hover{ // Gère le :hover de works-block__element
+				color: $color-black;
+				.overlay{
+					opacity: 1;
+
+					.hidden-txt{
+						display: block;
+
+						&::after{
+							content: '';
+							display: block;
+							background-color: white;
+							width: 3.052rem;
+							height: 2px;
+							margin: 0 auto;
+							@include transition;
+							position: relative;
+						}
+
+						&:hover{
+							color: $color-black !important;
+							&::after{
+								width: calc(3.052rem * 2);
+								height: 35px;
+								margin-top:-30px;
+								z-index:-2
+								
+							}
+						}
+						
+					}
+				}
+
+				.code-block__txt{
+					background: $color-black;
+					h3{
+						color: white;
+					}
+				}
+			}
+		}
+
+		@media #{$phone} { // Gere les media-queries de div.works-block__container
+			flex-direction: column;
+			margin-top: 1.953rem;
+
+			.code-block__element{
+				width: 100%;
+				margin-bottom: 1.953rem;
+			}
+		}
+
+	}
+
+
+}
+
+
+
+// --------------------- Services -----------------------------
+
+#services{
+
+	.list-services-container{
+		list-style:none;
+		@include create-flex-wrap;
+		width:100%;
+		margin-bottom: 1.953rem;
+
+		@media #{$phone} {
+			width:95%;
+			flex-direction: column;
+			margin-top: 1.953rem;
+		}
+
+		ul, .services-philosophy{
+			display:block;
+		 	width: 31%;
+		 	list-style:none;
+		 	padding-left:3%;
+
+		 	&:first-of-type{
+		 		padding-left:0;
+
+		 		@media #{$phone} {
+		 			padding-left:5%;
+		 		}
+		 	}
+
+		 	@media #{$tablet} {
+	   			width:33%;
+	   			margin-bottom: 1.953rem;
+		 	}
+
+		 	@media #{$phone} {
+	   			width:100%;
+	   		}
+
+	   	}
+
+	   	.title{
+			color: $color-yellow;
+			font-size:1.25rem;
+			@extend .fontBold;
+			margin-bottom: 1rem;
+			text-align:left !important;
+
+			@media #{$tablet} {
+				display:block; 	
+			}
+
+		}
+
+	   	li, p{
+	   		font-size:1rem;
+	   		@extend .fontRegular;
+	   		color:$color-grey-medium;
+			margin-bottom: 0.8rem;
+			width: 95%;
+	   	}
+	}
+
+ }
+
+
+
+// ------------- Contact Me -----------------
+
+#contact-me{
+	position: relative;
+	// background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.giphy.com/media/3o6ZtePMHI8NvAiYRG/giphy.gif) no-repeat top center;
+	// background-size: cover;
+	// background-position: 100% 36%;
+	height: 35vh;
+
+	.contact-video{
+		position: absolute;
+		text-align: center;
+		width: 100vw;
+		height: 35vh;
+	
+		&, video, .contact-container {
+			@include coverer;
+			height: 35vh;
+
+			@media #{$phone}{
+				height:20vh;
+			}
+		}
+
+		video{
+			object-fit: cover; 
+			width: 100vw;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.overlay-video{
+			@include coverer;
+			height:35.1vh;
+			display:block;
+			background-color: rgba(0, 0, 0, 0.80);
+
+			@media #{$phone}{
+				height:20.1vh;
+			}
+
+		}
+
+		.contact-container{
+			position: relative;
+			text-align: center;
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height:35vh;
+
+			@media #{$phone}{
+				height:20vh;
+			}
+
+			h4{
+				color: $color-grey-medium;
+				width:100%;
+			}
+
+			a{
+				color: $color-yellow;
+				font-size: 1.563rem;
+				width:100%;
+				overflow: hidden;
+				position: relative;
+				outline: none;
+				vertical-align: bottom;
+				text-decoration: none;
+				white-space: nowrap;
+				z-index: 2;
+				@include transition;
+
+				&:hover{
+					opacity: 0.8;
+				}
+
+			}
+		}
+		
+	}
+
+	@media #{$phone}{
+		height: 20vh;
+
+		h4{
+			font-size: ms(1)!important;
+			text-align: center;
+		}
+
+		a{
+			display: block;
+			text-align: center;
+			font-family: 'TTNorms-Bold';
+			font-size: ms(1) !important;
+		
+		}
+	}
+}	
+
+
+// -------------------------
+//	FIN INDEX
+// -------------------------
+// -------------------------
+//	ABOUT
+// -------------------------
+
+#wrapper__about{
+	position:relative;
+	
+	.mastahead__about{
+
+		.content-block__wrapper{
+			height: auto !important;
+		}
+
+		p{
+			@extend .fontLight;
+			color: rgba(255,255,255,0.8);
+			max-width: 75%;
+			margin-bottom: 1rem;
+
+			em{
+				color: white;
+				@extend .fontRegular;
+			}
+
+			@media #{$phone} {	
+				max-width: 100%;
+				font-size: 1.25rem;
+				text-align: left;
+			}
+		}
+
+		h2{
+			@media #{$phone} {	
+				text-align:left;
+			}
+		}
+
+		.button{
+			margin-right: 1rem !important;
+
+			&:last-of-type{
+				margin-right:0 !important;
+
+				@media #{$phone} {	
+					margin-right: 1rem !important;
+				}
+			}
+		}
+	}
+
+
+	.presentation-wrapper{
+		background-color: #FAFAFA;
+	}
+
+	.client-wrapper{
+		top: 0;
+	}
+
+	.work-sector{
+		margin-bottom: 1rem;
+		color: $color-yellow;
+
+		@media #{$phone} {	
+			text-align:center;
+		}
+	}
+
+	// p{
+	// 	font-size: ms(2);
+	// }
+
+	.presentation-block{
+		.img-container{
+			background: url(../images/about/tof_mb_juin2015.jpg) center center no-repeat;
+		}
+	}
+
+}
+
+
+// -------------------------
+//	FIN ABOUT about.html
+// -------------------------
+
+// ----------------------------------------------------------------------------------------
+//	use case <nomduprojet>.html
+// ----------------------------------------------------------------------------------------
+
+.projet{
+
+	padding-top: 4.768rem;
+
+	@media #{$phone}{
+		padding-top: 3.052rem;
+	}
+
+	h1{
+		margin-bottom: 1.953rem;
+
+		small{
+			font-size:0.8rem;
+			color: $color-grey-medium;
+			text-transform:uppercase;
+		}
+
+		@media #{$phone}{
+			padding-top:2.441rem;
+		}
+	}
+
+	&__tags{
+		
+		@include create-flex-wrap;
+		justify-content: flex-start;
+		align-content: stretch;
+		width:100%;
+
+		li{
+			text-align: left;
+			font-size:1.25rem;
+			margin: 0 3.052rem 1.953rem 0;
+			color: $color-black;
+
+			small{
+				font-size: 0.512rem;
+				text-transform: uppercase;
+				color: $color-grey-medium;
+			}
+
+			em{
+				@include underlining-horizontal;
+				@include underlining--yellow;
+				background-size: 100% 0.512rem;
+			}
+			a{
+				font-size: 1.25rem;
+			}
+		}
+
+		@media #{$phone}{
+			justify-content: space-between;
+
+			li{
+				margin: 0 1.564rem 1rem 0;
+			}
+		}	
+	}
+
+	&__paragraphe{
+		display: block;
+		max-width: 80%;
+		margin: 3.052rem auto;
+
+		.projet__title{
+			font-size:1.25rem;
+			@extend .fontBold;
+			color: $color-black;
+			margin-bottom: 0.512rem;		
+		}
+
+		p{
+			font-size:1.25rem;
+			margin-bottom: 1rem;
+
+			strong{
+				color: $color-black;
+			}
+		}
+
+		a{
+			@extend .link--light;
+			font-size: 1.25rem;
+		}
+
+		ul{
+			list-style: disc; 
+			margin-left: 2rem;
+
+			li{
+				@extend p;
+			}
+		}
+
+		ol{
+			list-style: lower-alpha;
+			margin-left: 2rem;
+
+			li{
+				@extend p;
+			}
+		}
+
+
+		h4{
+			@extend .fontBold;
+			font-size: ms(1);
+			color: $color-black;
+			margin-bottom: 1rem;
+		}
+
+
+		@media #{$phone}{
+			max-width: 100%;
+			margin-bottom: 3.052rem;
+		}
+	}
+
+	&__figure{
+		display:block;
+		max-width:100%;
+		margin: 3.052rem auto;
+
+		figure{
+			
+			figcaption{
+				@extend .fontItalic;
+				color: $color-grey-medium;
+				text-align:center;
+				margin: 0.512rem auto 0 auto;
+			}
+		}
+
+		
+	}
+
+	.video__wrapper{
+		background-color: $color-grey-light;
+		margin: 3.052rem auto;
+
+		video{
+			width:48%;
+			display:block;
+			margin: 0 auto;
+			padding: 1rem;
+			max-height:568px;
+		}
+
+		figcaption{
+			background-color: white;
+			text-align: center;
+			padding-top:0.512rem;
+			@extend .fontItalic;
+			color: $color-grey-medium;
+		}
+	}
+
+	.figure--last{
+		margin: 0 auto;
+	}
+}
+
+// -------- Spécifique par id de projet
+// Ajoute un fond de couleur aux vidéos en rapport avec le projet
+#pechavy-projet{ 
+	.container--lg{
+		.projet{
+			.video__wrapper{
+				background-color: $pechavy-color;
+			}
+		}
+	}
+}
+
+#kreasound-projet{ 
+	.container--lg{
+		.projet{
+			.video__wrapper{
+				background-color: $kreasound-color;
+			}
+		}
+	}
+}
+
+#carl-projet{ 
+	.container--lg{
+		.projet{
+			.video__wrapper{
+				background-color: $carl-color;
+			}
+		}
+	}
+}
+
+.projet__navigation{
+	margin: 3.052rem auto 0 auto;
+	@include padding-inside-blocks;
+	text-align: center;
+	//background-color: #FAFAFA;
+	display:block;
+
+	@media #{$phone}{
+		margin: 1.953rem auto 0 auto;
+		padding: 1.953rem 0 3.052rem 0;
+	}
+
+	.container--lg{
+		padding: 0;
+
+		.projet__navigation__inside{
+			@include create-flex-wrap;
+			justify-content: space-around;
+			width:100%;
+	
+			.projet-navigation__link{
+				@extend .link--light;
+				color: $color-grey-medium;
+				font-size: ms(5);
+				margin-right: 1.953rem;
+	
+				&:hover{
+					color:$color-black;
+					  background-size: 100% 1.953rem; // change the second value to the desired height of the underline
+				}
+	
+				@media #{$phone}{
+					font-size:1.563rem;
+				}
+			}
+	
+			p{
+				font-size: ms(5);
+				margin-right: 1.953rem;
+				color: $color-black;
+	
+				@media #{$phone}{
+					font-size: ms(2);
+				}
+			}
+	
+			.nav--last{
+				margin-right: 0;
+			}
+		}
+	}
+
+}
+
+// ----------------------------------------------------------------------------------------
+//	FIN PROJETS
+// ----------------------------------------------------------------------------------------
+
+
+//Display the animation fadeIn scroll project
+.hideme{
+	opacity:0;
+}
+.cd-top{
+	position: fixed;
+	bottom: 2.441rem;
+	right:2.441rem;
+	display:inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	text-decoration:none;
+	color: white;
+	text-align:center;
+	overflow: hidden;
+	visibility: hidden;
+	@include transition;
+	opacity: 0;
+	background: $color-grey-dark url(../images/arrow-top.svg) no-repeat 50% 47%;
+
+	&.cd-top--show{ //bouton devient visible
+		 visibility: visible;
+		 opacity: 1;
+		 @include transition;
+	}
+
+	&.cd-top--fade-out{ //Si l'utilisateur continue de scroller, l'opacité du bouton diminue
+		 opacity: .5; 
+		 @include transition;
+	}
+
+	&:hover{
+		//@include box-shadow-custom;
+		background-color: $color-black;
+		opacity: 1;
+	}
+
+	@media #{$phone}{
+		bottom: 0.521rem;
+		right: 0.521rem;
+		width:45px;
+		height:45px;
+		background-size:50%;
+	}
+
+}

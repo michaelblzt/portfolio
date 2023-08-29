@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+// ------------- Footer -------------
+
+footer{
+	width:100%;
+	padding: 3.052rem 0;
+	background-color: $color-black;
+	color:$color-grey-dark;
+	text-align:center;
+	
+	p{
+		font-size: ms(0);
+	}
+
+	a{
+		text-decoration: none;
+		color:white;
+
+		@include transition;
+
+			&:hover{
+				opacity:0.8;
+				color: $color-yellow;
+			}
+	}
+}
+
+.colophon{
+	width: 100%;
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+
+    p{
+		color: #999;
+		font-size: ms(0);
+
+     	a{
+	    	text-decoration: none;
+	    	color: rgba(255,255,255,0.8);
+
+	    	&:hover{
+				color: rgba(255,255,255,1);
+	    	}
+    	}
+    }
+
+
+}
