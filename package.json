@@ -5,7 +5,8 @@
     "scripts": {
         "test": "echo \"Error: c'est une erreur\" && exit 1",
         "start": "parcel ./src/index.html  --port 8080",
-        "build": "parcel build ./src/index.html"
+        "build": "parcel build ./src/index.html",
+        "gulp": "node ./node_modules/gulp/bin/gulp.js"
     },
     "repository": {
         "type": "git",
