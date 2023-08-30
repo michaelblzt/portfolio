@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "Personal portfolio",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "echo \"Error: c'est une erreur\" && exit 1",
         "start": "parcel ./src/index.html  --port 8080",
-        "build": "parcel build /src/index.html /dist/"
+        "build": "parcel build ./src/index.html"
     },
     "repository": {
         "type": "git",
