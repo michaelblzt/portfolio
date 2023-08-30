@@ -5,7 +5,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "parcel ./src/index.html  --port 8080",
-        "build": "parcel build ./src/index.html ./dist/"
+        "build": "parcel build /src/index.html /dist/"
     },
     "repository": {
         "type": "git",
@@ -27,7 +27,6 @@
         "gulp-sass": "^5.1.0",
         "gulp-util": "^3.0.8",
         "gulp-watch-sass": "^1.4.1",
-        
         "lazysizes": "^5.3.2",
         "loading-attribute-polyfill": "^2.1.1",
         "modularscale-sass": "^3.0.10",
@@ -37,6 +36,7 @@
         "parcel": "^2.9.3",
         "path": "^0.12.7",
         "postcss": "^8.4.28",
-        "tailwindcss": "^3.3.3"
+        "tailwindcss": "^3.3.3",
+        "uuid": "^9.0.0"
     }
 }
