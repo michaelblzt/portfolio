@@ -1,4 +1,12 @@
 {
     "git.ignoreLimitWarning": true,
-    "compile-hero.disable-compile-files-on-did-save-code": false
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "files.exclude": {
+        "**/.DS_Store": false,
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false,
+        "**/Thumbs.db": false
+    }
 }

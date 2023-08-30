@@ -1,17 +1,11 @@
 {
-    "overrides": {
-        "graceful-fs": "^4.2.11"
-    },
     "name": "portfolio2018",
     "version": "1.0.0",
     "description": "Personal portfolio",
-    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/index.html --port 8080",
-        "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.html --out-dir ./dist/",
-        "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
-        "gulp": "node ./node_modules/gulp/bin/gulp.js"
+        "start": "parcel ./src/index.html  --port 8080",
+        "build": "parcel build ./src/index.html ./dist/"
     },
     "repository": {
         "type": "git",
@@ -33,9 +27,7 @@
         "gulp-sass": "^5.1.0",
         "gulp-util": "^3.0.8",
         "gulp-watch-sass": "^1.4.1",
-        "imagemin": "^8.0.1",
-        "imagemin-jpegtran": "^7.0.0",
-        "imagemin-webp": "^8.0.0",
+        
         "lazysizes": "^5.3.2",
         "loading-attribute-polyfill": "^2.1.1",
         "modularscale-sass": "^3.0.10",
@@ -46,8 +38,5 @@
         "path": "^0.12.7",
         "postcss": "^8.4.28",
         "tailwindcss": "^3.3.3"
-    },
-    "resolutions": {
-        "deasync": "0.1.16"
     }
 }
