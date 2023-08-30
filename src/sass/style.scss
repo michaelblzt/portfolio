@@ -427,6 +427,7 @@ img.lazyload:not([src]) {
 		background:  -webkit-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
 		background:  -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
 		background:  linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, .8)), url(../images/about/poster_wordpress_5pointz.jpg) no-repeat;
+		background-size:cover;
 		background-position: 100% 50%;
 
 		h1{
